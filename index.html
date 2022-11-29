@@ -90,7 +90,7 @@
           </nav>
 
           <!-- login -->
-          <button type="button" class="btn-reset header__login btn-login">
+          <button aria-label="Открыть форму авторизации" aria-expanded="false" class="btn-reset header__login btn-login">
             <i class="bx bx__left bx-user header__top-icon btn-login__icon"></i>
             <span class="btn-login__text">Войти</span>
           </button>
@@ -107,7 +107,7 @@
           <!-- logo -->
           <div class="logo">
             <a href="/" class="logo__link">
-              <img class="logo__img" loading="lazy" src=" img/logo.svg" alt="RMC">
+              <img class="logo__img" loading="lazy" src=" img/logo.svg" width="109" height="48" alt="RMC">
             </a>
             <div class="description">Интернет-магазин мотозапчастей <span class="h-mob">с доставкой по России с 2008 года</span>
             </div>
@@ -120,8 +120,9 @@
             <!-- form-search -->
             <form action="" class="form form-search">
               <div class="form-search__inner">
-                <input type="text" name="header-search" class="form__input input-search" placeholder="Поиск товаров">
-                <button type="submit" class="btn-reset form-search__btn"><i class="bx bx-search-alt form-search__btn-icon"></i>
+
+                <input type="text" name="search-tovar" class="form__input input-search" placeholder="Поиск товаров">
+                <button aria-label="Поиск товаров" aria-expanded="false" type="submit" class="btn-reset form-search__btn"><i class="bx bx-search-alt form-search__btn-icon"></i>
                 </button>
               </div>
             </form>
@@ -149,13 +150,13 @@
               <ul class="dropdown-chat__list">
                 <li>
                   <a href="whatsapp://send?phone=+79629105600&text=Приветствуем! Рады будем помочь!" target="_blank">
-                    <i class="bx bx__left bxl-whatsapp"></i>
+                    <i class="bx bx__left bxl-whatsapp" title="Написать в Whatsapp"></i>
                     Whatsapp
                   </a>
                 </li>
                 <li>
                   <a href="https://t.me/+79629105600" target="_blank">
-                    <i class="bx bx__left bxl-telegram"></i>
+                    <i class="bx bx__left bxl-telegram" title="Написать в Telegram"></i>
                     Telegram
                   </a>
                 </li>
@@ -391,7 +392,7 @@
               </picture>
 
               <div class="moto-transport__item--footer">
-                <h4 class="moto-transport__item--name">Мотоциклы</h4>
+                <h3 class="moto-transport__item--name">Мотоциклы</h3>
                 <i class="bx bx-right-arrow-alt moto-transport__item--arrow"></i>
               </div>
             </a>
@@ -404,7 +405,7 @@
               </picture>
 
               <div class="moto-transport__item--footer">
-                <h4 class="moto-transport__item--name">Квадрациклы</h4>
+                <h3 class="moto-transport__item--name">Квадрациклы</h3>
                 <i class="bx bx-right-arrow-alt moto-transport__item--arrow"></i>
               </div>
             </a>
@@ -417,7 +418,7 @@
               </picture>
 
               <div class="moto-transport__item--footer">
-                <h4 class="moto-transport__item--name">Скутеры</h4>
+                <h3 class="moto-transport__item--name">Скутеры</h3>
                 <i class="bx bx-right-arrow-alt moto-transport__item--arrow"></i>
               </div>
             </a>
@@ -429,7 +430,7 @@
                   <img loading="lazy" src="./img/snowmobile-img.png" class="moto-transport__item--img" width="349" height="240" alt="Снегоход">
               </picture>
               <div class="moto-transport__item--footer">
-                <h4 class="moto-transport__item--name">Снегоходы</h4>
+                <h3 class="moto-transport__item--name">Снегоходы</h3>
                 <i class="bx bx-right-arrow-alt moto-transport__item--arrow"></i>
               </div>
             </a>
@@ -855,8 +856,8 @@
             <h2 class="section-h2 tovars__h2">Хиты продаж</h2>
             <!-- slider-arrows -->
             <div class="slider-arows">
-              <button class="slider-arow slider-arow--prev"></button>
-              <button class="slider-arow slider-arow--next"></button>
+              <button aria-label="Листать назад" aria-expanded="true" class="slider-arow slider-arow--prev"></button>
+              <button aria-label="Листать вперед" aria-expanded="true" class="slider-arow slider-arow--next"></button>
             </div>
           </div>
           <!-- tovars-slider -->
@@ -891,7 +892,7 @@
               <!-- кнопки -->
               <div class="card-tovar__buttons">
                 <a href="#" class="btn btn__outline card-tovar__more-btn">Подробнее</a>
-                <button class="btn-resset btn-icon card-tovar__cart-btn"><i class="bx bx-cart-add"></i>
+                <button aria-label="Добавить товар в корзину" aria-expanded="false" class="btn-resset btn-icon card-tovar__cart-btn"><i class="bx bx-cart-add"></i>
                 </button>
               </div>
             </div>
@@ -925,7 +926,7 @@
               <!-- кнопки -->
               <div class="card-tovar__buttons">
                 <a href="#" class="btn btn__outline card-tovar__more-btn">Подробнее</a>
-                <button class="btn-resset btn-icon card-tovar__cart-btn"><i class="bx bx-cart-add"></i>
+                <button aria-label="Добавить товар в корзину" aria-expanded="false" class="btn-resset btn-icon card-tovar__cart-btn"><i class="bx bx-cart-add"></i>
                 </button>
               </div>
             </div>
@@ -959,7 +960,7 @@
               <!-- кнопки -->
               <div class="card-tovar__buttons">
                 <a href="#" class="btn btn__outline card-tovar__more-btn">Подробнее</a>
-                <button class="btn-resset btn-icon card-tovar__cart-btn"><i class="bx bx-cart-add"></i>
+                <button aria-label="Добавить товар в корзину" aria-expanded="false" class="btn-resset btn-icon card-tovar__cart-btn"><i class="bx bx-cart-add"></i>
                 </button>
               </div>
             </div>
@@ -993,7 +994,7 @@
               <!-- кнопки -->
               <div class="card-tovar__buttons">
                 <a href="#" class="btn btn__outline card-tovar__more-btn">Подробнее</a>
-                <button class="btn-resset btn-icon card-tovar__cart-btn"><i class="bx bx-cart-add"></i>
+                <button aria-label="Добавить товар в корзину" aria-expanded="false" class="btn-resset btn-icon card-tovar__cart-btn"><i class="bx bx-cart-add"></i>
                 </button>
               </div>
             </div>
@@ -1012,8 +1013,8 @@
             <h2 class="section-h2 tovars__h2">Новинки</h2>
             <!-- slider-arrows -->
             <div class="slider-arows">
-              <button class="slider-arow slider-arow--prev"></button>
-              <button class="slider-arow slider-arow--next"></button>
+              <button aria-label="Листать назад" aria-expanded="true" class="slider-arow slider-arow--prev"></button>
+              <button aria-label="Листать вперед" aria-expanded="true" class="slider-arow slider-arow--next"></button>
             </div>
           </div>
           <!-- tovars-slider -->
@@ -1048,7 +1049,7 @@
               <!-- кнопки -->
               <div class="card-tovar__buttons">
                 <a href="#" class="btn btn__outline card-tovar__more-btn">Подробнее</a>
-                <button class="btn-resset btn-icon card-tovar__cart-btn"><i class="bx bx-cart-add"></i>
+                <button aria-label="Добавить товар в корзину" aria-expanded="false" class="btn-resset btn-icon card-tovar__cart-btn"><i class="bx bx-cart-add"></i>
                 </button>
               </div>
             </div>
@@ -1082,7 +1083,7 @@
               <!-- кнопки -->
               <div class="card-tovar__buttons">
                 <a href="#" class="btn btn__outline card-tovar__more-btn">Подробнее</a>
-                <button class="btn-resset btn-icon card-tovar__cart-btn"><i class="bx bx-cart-add"></i>
+                <button aria-label="Добавить товар в корзину" aria-expanded="false" class="btn-resset btn-icon card-tovar__cart-btn"><i class="bx bx-cart-add"></i>
                 </button>
               </div>
             </div>
@@ -1116,7 +1117,7 @@
               <!-- кнопки -->
               <div class="card-tovar__buttons">
                 <a href="#" class="btn btn__outline card-tovar__more-btn">Подробнее</a>
-                <button class="btn-resset btn-icon card-tovar__cart-btn"><i class="bx bx-cart-add"></i>
+                <button aria-label="Добавить товар в корзину" aria-expanded="false" class="btn-resset btn-icon card-tovar__cart-btn"><i class="bx bx-cart-add"></i>
                 </button>
               </div>
             </div>
@@ -1150,7 +1151,7 @@
               <!-- кнопки -->
               <div class="card-tovar__buttons">
                 <a href="#" class="btn btn__outline card-tovar__more-btn">Подробнее</a>
-                <button class="btn-resset btn-icon card-tovar__cart-btn"><i class="bx bx-cart-add"></i>
+                <button aria-label="Добавить товар в корзину" aria-expanded="false" class="btn-resset btn-icon card-tovar__cart-btn"><i class="bx bx-cart-add"></i>
                 </button>
               </div>
             </div>
@@ -1169,8 +1170,8 @@
             <h2 class="section-h2 tovars__h2">Оригиналы</h2>
             <!-- slider-arrows -->
             <div class="slider-arows">
-              <button class="slider-arow slider-arow--prev"></button>
-              <button class="slider-arow slider-arow--next"></button>
+              <button aria-label="Листать назад" aria-expanded="true" class="slider-arow slider-arow--prev"></button>
+              <button aria-label="Листать вперед" aria-expanded="true" class="slider-arow slider-arow--next"></button>
             </div>
           </div>
           <!-- tovars-slider -->
@@ -1205,7 +1206,7 @@
               <!-- кнопки -->
               <div class="card-tovar__buttons">
                 <a href="#" class="btn btn__outline card-tovar__more-btn">Подробнее</a>
-                <button class="btn-resset btn-icon card-tovar__cart-btn"><i class="bx bx-cart-add"></i>
+                <button aria-label="Добавить товар в корзину" aria-expanded="false" class="btn-resset btn-icon card-tovar__cart-btn"><i class="bx bx-cart-add"></i>
                 </button>
               </div>
             </div>
@@ -1239,7 +1240,7 @@
               <!-- кнопки -->
               <div class="card-tovar__buttons">
                 <a href="#" class="btn btn__outline card-tovar__more-btn">Подробнее</a>
-                <button class="btn-resset btn-icon card-tovar__cart-btn"><i class="bx bx-cart-add"></i>
+                <button aria-label="Добавить товар в корзину" aria-expanded="false" class="btn-resset btn-icon card-tovar__cart-btn"><i class="bx bx-cart-add"></i>
                 </button>
               </div>
             </div>
@@ -1273,7 +1274,7 @@
               <!-- кнопки -->
               <div class="card-tovar__buttons">
                 <a href="#" class="btn btn__outline card-tovar__more-btn">Подробнее</a>
-                <button class="btn-resset btn-icon card-tovar__cart-btn"><i class="bx bx-cart-add"></i>
+                <button aria-label="Добавить товар в корзину" aria-expanded="false" class="btn-resset btn-icon card-tovar__cart-btn"><i class="bx bx-cart-add"></i>
                 </button>
               </div>
             </div>
@@ -1307,7 +1308,7 @@
               <!-- кнопки -->
               <div class="card-tovar__buttons">
                 <a href="#" class="btn btn__outline card-tovar__more-btn">Подробнее</a>
-                <button class="btn-resset btn-icon card-tovar__cart-btn"><i class="bx bx-cart-add"></i>
+                <button aria-label="Добавить товар в корзину" aria-expanded="false" class="btn-resset btn-icon card-tovar__cart-btn"><i class="bx bx-cart-add"></i>
                 </button>
               </div>
             </div>
@@ -1379,15 +1380,13 @@
             <!-- кнопки чатов -->
             <div class="feedback__buttons">
               <!-- whatsapp -->
-              <a class="btn btn-whatsapp" href="whatsapp://send?phone=+79629105600&text=Приветствуем! Рады будем помочь!" target="_blank">
-                <i class="bx bx__left bxl-whatsapp"></i>
-                <span class="btn__text">Написать в WhatsApp</span>
-              </a>
+              <a class="btn btn-whatsapp" href="whatsapp://send?phone=+79629105600&text=Приветствуем! Рады будем помочь!" target="_blank" title="Написать в Whatsapp"><i class="bx bx__left bxl-whatsapp"></i><span class="btn__text">Написать в WhatsApp</span>
+                    </a>
               <!-- telegram -->
-              <a class="btn btn-telegram" href="https://t.me/+79629105600" target="_blank">
-                <i class="bx bx__left bxl-telegram"></i>
-                <span class="btn__text">Написать в Telegram</span>
-              </a>
+              <a class="btn btn-telegram" href="https://t.me/+79629105600" target="_blank" title="Написать в Telegram"><i
+							class="bx bx__left bxl-telegram"></i>
+                        <span class="btn__text">Написать в Telegram</span>
+                    </a>
             </div>
           </div>
         </div>
@@ -1615,12 +1614,12 @@
 
           <div class="footer__col social">
             <ul class="footer__list">
-              <li class="footer__item"><a class="footer__link social__link" href="whatsapp://send?phone=+79629105600&text=Приветствуем! Рады будем помочь!"><i class="bx bxl-whatsapp"
-								target="_blank"></i>
+              <li class="footer__item"><a class="footer__link social__link" href="whatsapp://send?phone=+79629105600&text=Приветствуем! Рады будем помочь!"><i class="bx bxl-whatsapp" target="_blank"
+								title="Написать в Whatsapp"></i>
                             WhatsApp</a>
               </li>
               <li class="footer__item"><a class="footer__link social__link" href="https://t.me/+79629105600"><i class="bx bxl-telegram"
-								target="_blank"></i> Telegram</a>
+								target="_blank" title="Написать в Telegram"></i> Telegram</a>
               </li>
               <li class="footer__item"><a class="footer__link social__link" href="https://vk.com/1rmc_ru"><i class="bx bxl-vk"
 								target="_blank"></i>
