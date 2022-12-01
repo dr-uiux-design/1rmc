@@ -39,14 +39,17 @@
   <meta property="og:latitude" content="" />
   <meta property="og:longitude" content="" />
 
-  <!-- Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
-
   <!-- CSS -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
-  <link rel="stylesheet" href="css/main.css">
+  <!-- Предварительная загрузка и асинхронность -->
+  <link href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css" rel="preload" as="style" onload="this.rel='stylesheet'">
+  <link href="css/main.css" rel="preload" as="style" onload="this.rel='stylesheet'">
+
+  <!-- если браузер не поддерживает js или отключен у пользователя в браузере -->
+  <noscript>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="css/main.css">
+  </noscript>
+
 </head>
 
 <body class="page__body">
