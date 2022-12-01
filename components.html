@@ -261,11 +261,11 @@
         <!-- Card Tovar -->
         <div class="cards-tovar pbt64">
           <h4 class="mb32">Cards Tovar</h4>
-          <!-- Слайдер товаров -->
-          <section class="section-pb tovars">
+          <!-- Слайдер товаров (вертикальные карточки) -->
+          <section class="section-ptb tovars">
             <div class="container">
               <div class="tovars__header">
-                <h2 class="section-h2 tovars__h2">Заголовок</h2>
+                <h2 class="section-h2 tovars__h2">Также рекомендуем</h2>
                 <!-- slider-arrows -->
                 <div class="slider-arows">
                   <button aria-label="Листать назад" aria-expanded="true" class="slider-arow slider-arow--prev"></button>
@@ -274,7 +274,7 @@
               </div>
               <!-- tovars-slider -->
               <div class="tovars__list tovars-slider tovars__grid">
-                <!-- card-tovar -->
+                <!-- карточка товара вертикальная -->
                 <div class="card-tovar">
                   <!-- бэйджи -->
                   <div class="card-tovar__badges">
@@ -308,7 +308,7 @@
                     </button>
                   </div>
                 </div>
-                <!-- card-tovar -->
+                <!-- карточка товара вертикальная -->
                 <div class="card-tovar">
                   <!-- бэйджи -->
                   <div class="card-tovar__badges">
@@ -342,7 +342,7 @@
                     </button>
                   </div>
                 </div>
-                <!-- card-tovar -->
+                <!-- карточка товара вертикальная -->
                 <div class="card-tovar">
                   <!-- бэйджи -->
                   <div class="card-tovar__badges">
@@ -376,7 +376,7 @@
                     </button>
                   </div>
                 </div>
-                <!-- card-tovar -->
+                <!-- карточка товара вертикальная -->
                 <div class="card-tovar">
                   <!-- бэйджи -->
                   <div class="card-tovar__badges">
@@ -419,6 +419,152 @@
           </section>
         </div>
 
+      </div>
+
+      <hr>
+
+      <!-- Podbor Pages -->
+      <div class="podbor podbor--pages">
+        <!-- фон -->
+        <!-- фоновое изображение -->
+        <div class="block-bg">
+          <div style="background: #212121; opacity:0.9;" class="block-bg__overlay"></div>
+          <div class="block-bg__images">
+            <picture>
+              <source srcset="img/podbor-bg.webp" type="image/webp">
+                <img loading="lazy" src="img/fpodbor-bg.jpg" class="" width="100%" height="100%" alt="">
+            </picture>
+          </div>
+        </div>
+
+        <div class="container">
+
+          <h3 class="podbor__title">Подобрать запчасть</h3>
+
+          <!-- выбранные параметры -->
+          <div class="podbor__options options-podbor is-active">
+            <div class="options-podbor__group">
+              <div class="options-podbor__label">Ваш выбор:</div>
+              <ul class="options-podbor__list">
+                <li class="options-podbor__item item-tip is-active">Мотоцикл</li>
+                <li class="options-podbor__item item-brend">BMW</li>
+                <li class="options-podbor__item item-model">F650GS (K75)</li>
+                <li class="options-podbor__item item-year">2001</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- выбор типа транспорта -->
+          <div class="podbor__tips tips-moto">
+            <div class="tips-moto__item is-active">
+              <div class="tips-moto__icon ic-motobike"></div>
+              <div class="tips-moto__name">Мотоцикл</div>
+            </div>
+            <div class="tips-moto__item">
+              <div class="tips-moto__icon ic-atv"></div>
+              <div class="tips-moto__name">Квадрацикл</div>
+            </div>
+            <div class="tips-moto__item">
+              <div class="tips-moto__icon ic-scooter"></div>
+              <div class="tips-moto__name">Скутер</div>
+            </div>
+            <div class="tips-moto__item">
+              <div class="tips-moto__icon ic-snowmobile"></div>
+              <div class="tips-moto__name">Снегоход</div>
+            </div>
+          </div>
+
+          <!-- селекты выбора (бренд/модель/год) -->
+          <div class="podbor__selects is-active">
+            <div class="selects-group">
+              <div class="select-custom">
+                <div class="select-custom__item">Бренд</div>
+                <!-- dropdown + search -->
+                <div class="dropdown">
+                  <!-- dropdown__search -->
+                  <div class="dropdown__search">
+                    <input type="text" name="dropdown-search" class="form__input input-search" placeholder="Поиск">
+                  </div>
+                  <!-- dropdown__list -->
+                  <ul class="list-reset dropdown__list dropdown__list--scroll">
+                    <li class="dropdown__item">Option</li>
+                    <li class="dropdown__item">Option</li>
+                    <li class="dropdown__item">Option</li>
+                    <li class="dropdown__item is-active">Option Selected</li>
+                    <li class="dropdown__item">Option</li>
+                    <li class="dropdown__item">Option</li>
+                    <li class="dropdown__item">Option</li>
+                    <li class="dropdown__item">Option</li>
+                    <li class="dropdown__item">Option</li>
+                    <li class="dropdown__item">Option</li>
+                    <li class="dropdown__item">Option</li>
+                    <li class="dropdown__item">Option</li>
+                    <li class="dropdown__item">Option</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="select-custom">
+                <div class="select-custom__item">Модель</div>
+                <!-- dropdown + search -->
+                <div class="dropdown">
+                  <!-- dropdown__search -->
+                  <div class="dropdown__search">
+                    <input type="text" name="dropdown-search" class="form__input input-search" placeholder="Поиск">
+                  </div>
+                  <!-- dropdown__list -->
+                  <ul class="list-reset dropdown__list dropdown__list--scroll">
+                    <li class="dropdown__item">Option</li>
+                    <li class="dropdown__item">Option</li>
+                    <li class="dropdown__item">Option</li>
+                    <li class="dropdown__item is-active">Option Selected</li>
+                    <li class="dropdown__item">Option</li>
+                    <li class="dropdown__item">Option</li>
+                    <li class="dropdown__item">Option</li>
+                    <li class="dropdown__item">Option</li>
+                    <li class="dropdown__item">Option</li>
+                    <li class="dropdown__item">Option</li>
+                    <li class="dropdown__item">Option</li>
+                    <li class="dropdown__item">Option</li>
+                    <li class="dropdown__item">Option</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="select-custom">
+                <div class="select-custom__item">Год</div>
+                <!-- dropdown + search -->
+                <div class="dropdown">
+                  <!-- dropdown__search -->
+                  <div class="dropdown__search">
+                    <input type="text" name="dropdown-search" class="form__input input-search" placeholder="Поиск">
+                  </div>
+                  <!-- dropdown__list -->
+                  <ul class="list-reset dropdown__list dropdown__list--scroll">
+                    <li class="dropdown__item">Option</li>
+                    <li class="dropdown__item">Option</li>
+                    <li class="dropdown__item">Option</li>
+                    <li class="dropdown__item is-active">Option Selected</li>
+                    <li class="dropdown__item">Option</li>
+                    <li class="dropdown__item">Option</li>
+                    <li class="dropdown__item">Option</li>
+                    <li class="dropdown__item">Option</li>
+                    <li class="dropdown__item">Option</li>
+                    <li class="dropdown__item">Option</li>
+                    <li class="dropdown__item">Option</li>
+                    <li class="dropdown__item">Option</li>
+                    <li class="dropdown__item">Option</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <!-- кнопка подбора -->
+            <button class="btn btn podbor__btn podbor__btn--success">Подобрать</button>
+          </div>
+          <!-- кнопка очистить -->
+          <button class="btn-reset podbor__btn podbor__btn--clear is-active">Очистить выбор</button>
+        </div>
       </div>
 
     </main>
