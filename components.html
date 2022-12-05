@@ -240,7 +240,7 @@
 
         <hr>
 
-        <!-- Badges -->
+        <!-- Components -->
         <div class="badges pbt64">
           <h4 class="mb32">Badges</h4>
           <!-- для товара -->
@@ -257,6 +257,97 @@
           <div class="badge badge--green">оплачен</div>
           <div class="badge badge--error">отменен</div>
           <div class="badge badge-custom" style="background: #009688">кастомный</div>
+
+          <div class="mb32"></div>
+
+          <h4 class="mb32">Pagination</h4>
+          <!-- pagination-wrapper (обертка, которая выравнивает пагинацию справа) -->
+          <div class="pagination-wrapper">
+            <!-- pagination -->
+            <div class="pagination">
+              <nav class="pagination__nav" aria-label="Навигация по страницам">
+                <ul class="pagination__list">
+                  <li class="pagination__item">
+                    <a class="pagination__link" href="#" aria-label="Предыдущая страница">
+                      <span aria-hidden="true"><i class="bx bx-chevron-left"></i></span>
+                    </a>
+                  </li>
+                  <li class="pagination__item"><a class="pagination__link is-active" href="#">1</a>
+                  </li>
+                  <li class="pagination__item"><a class="pagination__link" href="#">2</a>
+                  </li>
+                  <li class="pagination__item"><a class="pagination__link" href="#">3</a>
+                  </li>
+                  <li class="pagination__item"><a class="pagination__link" href="#">14</a>
+                  </li>
+                  <li class="pagination__item">
+                    <a class="pagination__link" href="#" aria-label="Следущая страница">
+                      <span aria-hidden="true"><i class="bx bx-chevron-right"></i></span>
+                    </a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+
+          </div>
+        </div>
+
+        <hr>
+
+        <!-- Checkbox and RadioButton -->
+        <div class="badges pbt64">
+          <h4 class="mb32">Checkbox & RadioButton </h4>
+
+          <!-- CheckBox -->
+          <label class="check">
+            <input class="check__input" type="checkbox">
+            <span class="check__box"></span>
+            <span class="check__label">Нормальный</span>
+          </label>
+
+          <label class="check">
+            <input class="check__input" type="checkbox" checked>
+            <span class="check__box"></span>
+            <span class="check__label">Выбранный</span>
+          </label>
+
+          <label class="check check--disabled">
+            <input class="check__input" type="checkbox" disabled>
+            <span class="check__box"></span>
+            <span class="check__label">Не активный</span>
+          </label>
+
+          <label class="check check--disabled">
+            <input class="check__input" type="checkbox" checked disabled>
+            <span class="check__box"></span>
+            <span class="check__label">Выбранный неактивный</span>
+          </label>
+
+          <!-- RadioButton -->
+          <label class="radio">
+            <input class="radio__input" type="radio" value="1">
+            <span class="radio__dot"></span>
+            <span class="radio__label">Нормальный</span>
+          </label>
+
+          <label class="radio">
+            <input class="radio__input" type="radio" value="2" checked>
+            <span class="radio__dot"></span>
+            <span class="radio__label">Выбранный</span>
+          </label>
+
+          <label class="radio radio--disabled">
+            <input class="radio__input" type="radio" value="3" disabled>
+            <span class="radio__dot"></span>
+            <span class="radio__label">Не активный</span>
+          </label>
+
+          <label class="radio radio--disabled">
+            <input class="radio__input" type="radio" value="4" checked disabled>
+            <span class="radio__dot"></span>
+            <span class="radio__label">Выбранный неактивный</span>
+          </label>
+
         </div>
 
         <hr>
@@ -420,155 +511,133 @@
               </div>
             </div>
           </section>
+          <!-- Слайдер товаров (горизонтальные карточки) -->
+          <section class="section-ptb tovars bg-gray">
+            <div class="container">
+              <div class="tovars__header">
+                <h2 class="section-h2 tovars__h2">Похожие товары</h2>
+                <!-- slider-arrows -->
+                <div class="slider-arows">
+                  <button aria-label="Листать назад" aria-expanded="true" class="slider-arow slider-arow--prev"></button>
+                  <button aria-label="Листать вперед" aria-expanded="true" class="slider-arow slider-arow--next"></button>
+                </div>
+              </div>
+              <!-- tovars-slider -->
+              <div class="tovars__list tovars-slider tovars__grid tovars__grid--3">
+                <!-- карточка товара горизонтальная -->
+                <div class="card-tovar card-tovar--horizontal">
+                  <!-- бэйджи -->
+                  <div class="card-tovar__badges">
+                    <div class="badge badge--hit">Хит</div>
+                  </div>
+
+                  <div class="card-tovar__body">
+                    <!-- картинка -->
+                    <a href="#" class="card-tovar__img">
+                      <picture>
+                        <source srcset="img/tovar-img.webp" type="image/webp">
+                          <img loading="lazy" src="img/tovar-img.jpg" class="" width="180" height="180" alt="название товара">
+                      </picture>
+                    </a>
+
+                    <!-- информация -->
+                    <div class="card-tovar__info">
+                      <div class="card-tovar__artikul">Артикул: <span class="card-tovar__artikul--number">024-0093</span>
+                      </div>
+                      <a href="#" class="card-tovar__name">Набор IPONE для ухода за цепью ROAD</a>
+                      <div class="card-tovar__price">от <span class="card-tovar__price--sum"> 2 280</span> ₽</div>
+                      <div class="card-tovar__nalichie">В наличии: <span class="card-tovar__nalichie--sum">7 шт.</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- кнопки -->
+                  <div class="card-tovar__buttons">
+                    <a href="#" class="btn btn__outline card-tovar__more-btn">Подробнее</a>
+                    <button aria-label="Добавить товар в корзину" aria-expanded="false" class="btn-resset btn-icon card-tovar__cart-btn"><i class="bx bx-cart-add"></i>
+                    </button>
+                  </div>
+                </div>
+                <!-- карточка товара горизонтальная -->
+                <div class="card-tovar card-tovar--horizontal">
+                  <!-- бэйджи -->
+                  <div class="card-tovar__badges">
+                    <div class="badge badge--hit">Хит</div>
+                  </div>
+
+                  <div class="card-tovar__body">
+                    <!-- картинка -->
+                    <a href="#" class="card-tovar__img">
+                      <picture>
+                        <source srcset="img/tovar-img.webp" type="image/webp">
+                          <img loading="lazy" src="img/tovar-img.jpg" class="" width="180" height="180" alt="название товара">
+                      </picture>
+                    </a>
+
+                    <!-- информация -->
+                    <div class="card-tovar__info">
+                      <div class="card-tovar__artikul">Артикул: <span class="card-tovar__artikul--number">024-0093</span>
+                      </div>
+                      <a href="#" class="card-tovar__name">Набор IPONE для ухода за цепью ROAD</a>
+                      <div class="card-tovar__price">от <span class="card-tovar__price--sum"> 2 280</span> ₽</div>
+                      <div class="card-tovar__nalichie">В наличии: <span class="card-tovar__nalichie--sum">7 шт.</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- кнопки -->
+                  <div class="card-tovar__buttons">
+                    <a href="#" class="btn btn__outline card-tovar__more-btn">Подробнее</a>
+                    <button aria-label="Добавить товар в корзину" aria-expanded="false" class="btn-resset btn-icon card-tovar__cart-btn"><i class="bx bx-cart-add"></i>
+                    </button>
+                  </div>
+                </div>
+                <!-- карточка товара горизонтальная -->
+                <div class="card-tovar card-tovar--horizontal">
+                  <!-- бэйджи -->
+                  <div class="card-tovar__badges">
+                    <div class="badge badge--hit">Хит</div>
+                  </div>
+
+                  <div class="card-tovar__body">
+                    <!-- картинка -->
+                    <a href="#" class="card-tovar__img">
+                      <picture>
+                        <source srcset="img/tovar-img.webp" type="image/webp">
+                          <img loading="lazy" src="img/tovar-img.jpg" class="" width="180" height="180" alt="название товара">
+                      </picture>
+                    </a>
+
+                    <!-- информация -->
+                    <div class="card-tovar__info">
+                      <div class="card-tovar__artikul">Артикул: <span class="card-tovar__artikul--number">024-0093</span>
+                      </div>
+                      <a href="#" class="card-tovar__name">Набор IPONE для ухода за цепью ROAD</a>
+                      <div class="card-tovar__price">от <span class="card-tovar__price--sum"> 2 280</span> ₽</div>
+                      <div class="card-tovar__nalichie">В наличии: <span class="card-tovar__nalichie--sum">7 шт.</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- кнопки -->
+                  <div class="card-tovar__buttons">
+                    <a href="#" class="btn btn__outline card-tovar__more-btn">Подробнее</a>
+                    <button aria-label="Добавить товар в корзину" aria-expanded="false" class="btn-resset btn-icon card-tovar__cart-btn"><i class="bx bx-cart-add"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="tovars__footer">
+                <a href="#" class="more-link">Перейти в каталог <i class="bx bx-chevron-right"></i></a>
+              </div>
+            </div>
+          </section>
         </div>
 
       </div>
 
       <hr>
-
-      <!-- Podbor Pages -->
-      <div class="podbor podbor--pages">
-        <!-- фон -->
-        <!-- фоновое изображение -->
-        <div class="block-bg">
-          <div style="background: #212121; opacity:0.9;" class="block-bg__overlay"></div>
-          <div class="block-bg__images">
-            <picture>
-              <source srcset="img/podbor-bg.webp" type="image/webp">
-                <img loading="lazy" src="img/fpodbor-bg.jpg" class="" width="100%" height="100%" alt="">
-            </picture>
-          </div>
-        </div>
-
-        <div class="container">
-
-          <h3 class="podbor__title">Подобрать запчасть</h3>
-
-          <!-- выбранные параметры -->
-          <div class="podbor__options options-podbor is-active">
-            <div class="options-podbor__group">
-              <div class="options-podbor__label">Ваш выбор:</div>
-              <ul class="options-podbor__list">
-                <li class="options-podbor__item item-tip is-active">Мотоцикл</li>
-                <li class="options-podbor__item item-brend">BMW</li>
-                <li class="options-podbor__item item-model">F650GS (K75)</li>
-                <li class="options-podbor__item item-year">2001</li>
-              </ul>
-            </div>
-          </div>
-
-          <!-- выбор типа транспорта -->
-          <div class="podbor__tips tips-moto">
-            <div class="tips-moto__item is-active">
-              <div class="tips-moto__icon ic-motobike"></div>
-              <div class="tips-moto__name">Мотоцикл</div>
-            </div>
-            <div class="tips-moto__item">
-              <div class="tips-moto__icon ic-atv"></div>
-              <div class="tips-moto__name">Квадрацикл</div>
-            </div>
-            <div class="tips-moto__item">
-              <div class="tips-moto__icon ic-scooter"></div>
-              <div class="tips-moto__name">Скутер</div>
-            </div>
-            <div class="tips-moto__item">
-              <div class="tips-moto__icon ic-snowmobile"></div>
-              <div class="tips-moto__name">Снегоход</div>
-            </div>
-          </div>
-
-          <!-- селекты выбора (бренд/модель/год) -->
-          <div class="podbor__selects is-active">
-            <div class="selects-group">
-              <div class="select-custom">
-                <div class="select-custom__item">Бренд</div>
-                <!-- dropdown + search -->
-                <div class="dropdown">
-                  <!-- dropdown__search -->
-                  <div class="dropdown__search">
-                    <input type="text" name="dropdown-search" class="form__input input-search" placeholder="Поиск">
-                  </div>
-                  <!-- dropdown__list -->
-                  <ul class="list-reset dropdown__list dropdown__list--scroll">
-                    <li class="dropdown__item">Option</li>
-                    <li class="dropdown__item">Option</li>
-                    <li class="dropdown__item">Option</li>
-                    <li class="dropdown__item is-active">Option Selected</li>
-                    <li class="dropdown__item">Option</li>
-                    <li class="dropdown__item">Option</li>
-                    <li class="dropdown__item">Option</li>
-                    <li class="dropdown__item">Option</li>
-                    <li class="dropdown__item">Option</li>
-                    <li class="dropdown__item">Option</li>
-                    <li class="dropdown__item">Option</li>
-                    <li class="dropdown__item">Option</li>
-                    <li class="dropdown__item">Option</li>
-                  </ul>
-                </div>
-              </div>
-
-              <div class="select-custom">
-                <div class="select-custom__item">Модель</div>
-                <!-- dropdown + search -->
-                <div class="dropdown">
-                  <!-- dropdown__search -->
-                  <div class="dropdown__search">
-                    <input type="text" name="dropdown-search" class="form__input input-search" placeholder="Поиск">
-                  </div>
-                  <!-- dropdown__list -->
-                  <ul class="list-reset dropdown__list dropdown__list--scroll">
-                    <li class="dropdown__item">Option</li>
-                    <li class="dropdown__item">Option</li>
-                    <li class="dropdown__item">Option</li>
-                    <li class="dropdown__item is-active">Option Selected</li>
-                    <li class="dropdown__item">Option</li>
-                    <li class="dropdown__item">Option</li>
-                    <li class="dropdown__item">Option</li>
-                    <li class="dropdown__item">Option</li>
-                    <li class="dropdown__item">Option</li>
-                    <li class="dropdown__item">Option</li>
-                    <li class="dropdown__item">Option</li>
-                    <li class="dropdown__item">Option</li>
-                    <li class="dropdown__item">Option</li>
-                  </ul>
-                </div>
-              </div>
-
-              <div class="select-custom">
-                <div class="select-custom__item">Год</div>
-                <!-- dropdown + search -->
-                <div class="dropdown">
-                  <!-- dropdown__search -->
-                  <div class="dropdown__search">
-                    <input type="text" name="dropdown-search" class="form__input input-search" placeholder="Поиск">
-                  </div>
-                  <!-- dropdown__list -->
-                  <ul class="list-reset dropdown__list dropdown__list--scroll">
-                    <li class="dropdown__item">Option</li>
-                    <li class="dropdown__item">Option</li>
-                    <li class="dropdown__item">Option</li>
-                    <li class="dropdown__item is-active">Option Selected</li>
-                    <li class="dropdown__item">Option</li>
-                    <li class="dropdown__item">Option</li>
-                    <li class="dropdown__item">Option</li>
-                    <li class="dropdown__item">Option</li>
-                    <li class="dropdown__item">Option</li>
-                    <li class="dropdown__item">Option</li>
-                    <li class="dropdown__item">Option</li>
-                    <li class="dropdown__item">Option</li>
-                    <li class="dropdown__item">Option</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-
-            <!-- кнопка подбора -->
-            <button class="btn btn podbor__btn podbor__btn--success">Подобрать</button>
-          </div>
-          <!-- кнопка очистить -->
-          <button class="btn-reset podbor__btn podbor__btn--clear is-active">Очистить выбор</button>
-        </div>
-      </div>
 
     </main>
 

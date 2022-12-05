@@ -109,7 +109,7 @@
           </button>
           <!-- logo -->
           <div class="logo">
-            <a href="/" class="logo__link">
+            <a href="./" class="logo__link">
               <img class="logo__img" loading="lazy" src=" img/logo.svg" width="109" height="48" alt="RMC">
             </a>
             <div class="description">Интернет-магазин мотозапчастей <span class="h-mob">с доставкой по России с 2008 года</span>
@@ -206,18 +206,6 @@
       <!-- подбор -->
       <!-- podbor-pages -->
       <div class="podbor podbor--pages">
-        <!-- фон -->
-        <!-- фоновое изображение -->
-        <div class="block-bg">
-          <div style="background: #212121; opacity:0.9;" class="block-bg__overlay"></div>
-          <div class="block-bg__images">
-            <picture>
-              <source srcset="img/podbor-bg.webp" type="image/webp">
-                <img loading="lazy" src="img/fpodbor-bg.jpg" class="" width="100%" height="100%" alt="">
-            </picture>
-          </div>
-        </div>
-
         <div class="container">
 
           <h3 class="podbor__title">Подобрать запчасть</h3>
@@ -373,6 +361,7 @@
                 <meta itemprop="position" content="2">
               </a>
             </li>
+
           </ul>
         </div>
       </div>
@@ -383,7 +372,7 @@
 
           <h2 class="page-title">Бренды</h2>
 
-          <div class="brends__grid">
+          <div class="brends__list">
             <!-- brend-item -->
             <a href="#" class="brend">
               <!-- картинка -->
@@ -648,6 +637,47 @@
               <div class="brend__name">BMW <span class="brend__num">32</span>
               </div>
             </a>
+            <!-- brend-item -->
+            <a href="#" class="brend">
+              <!-- картинка -->
+              <picture class="brend__logo">
+                <source srcset="./img/brends/logo-bmw.webp" type="image/webp">
+                  <img loading="lazy" src="img/brends/logo-bmw.jpg" width="80" height="80" alt="BMW">
+              </picture>
+              <!-- название -->
+              <div class="brend__name">BMW <span class="brend__num">32</span>
+              </div>
+            </a>
+          </div>
+
+          <!-- pagination-wrapper (обертка, которая выравнивает пагинацию справа) -->
+          <div class="pagination-wrapper">
+            <!-- pagination -->
+            <div class="pagination">
+              <nav class="pagination__nav" aria-label="Навигация по страницам">
+                <ul class="pagination__list">
+                  <li class="pagination__item">
+                    <a class="pagination__link" href="#" aria-label="Предыдущая страница">
+                      <span aria-hidden="true"><i class="bx bx-chevron-left"></i></span>
+                    </a>
+                  </li>
+                  <li class="pagination__item"><a class="pagination__link is-active" href="#">1</a>
+                  </li>
+                  <li class="pagination__item"><a class="pagination__link" href="#">2</a>
+                  </li>
+                  <li class="pagination__item"><a class="pagination__link" href="#">3</a>
+                  </li>
+                  <li class="pagination__item"><a class="pagination__link" href="#">14</a>
+                  </li>
+                  <li class="pagination__item">
+                    <a class="pagination__link" href="#" aria-label="Следущая страница">
+                      <span aria-hidden="true"><i class="bx bx-chevron-right"></i></span>
+                    </a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+
           </div>
         </div>
       </section>
