@@ -143,7 +143,8 @@
           </button>
         </div>
         <hr>
-        <!-- Селекты + Dropdown -->
+
+        <!-- Select + Dropdown -->
         <div class="selects pbt64">
           <h4 class="mb32">Select</h4>
 
@@ -236,6 +237,42 @@
             </ul>
           </div>
 
+          <div class="mb32"></div>
+
+          <h5>Dropdown Сортировка</h5>
+
+          <!-- dropdown sort -->
+          <div class="dropdown">
+            <!-- dropdown__list -->
+            <ul class="list-reset dropdown__list">
+              <li class="dropdown__item is-active">Все</li>
+              <li class="dropdown__item">По алфавиту А-Я</li>
+              <li class="dropdown__item">По алфавиту Я-А</li>
+              <li class="dropdown__item">По увеличению цены</li>
+              <li class="dropdown__item">По уменьшению цены</li>
+              <li class="dropdown__item">По наличию</li>
+            </ul>
+          </div>
+
+          <div class="mb32"></div>
+
+          <!-- dropdown links -->
+          <div class="dropdown dropdown-links podcategories__dropdown">
+            <!-- dropdown__list -->
+            <ul class="list-reset dropdown__list">
+              <li class="dropdown__item"><a href="#" class="dropdown__link">Все</a>
+              </li>
+              <li class="dropdown__item"><a href="#" class="dropdown__link">Ссылка на подкатегорию</a>
+              </li>
+              <li class="dropdown__item"><a href="#" class="dropdown__link">Ссылка на подкатегорию</a>
+              </li>
+              <li class="dropdown__item"><a href="#" class="dropdown__link">Ссылка на подкатегорию</a>
+              </li>
+              <li class="dropdown__item"><a href="#" class="dropdown__link">Ссылка на подкатегорию</a>
+              </li>
+            </ul>
+          </div>
+
         </div>
 
         <hr>
@@ -261,35 +298,33 @@
           <div class="mb32"></div>
 
           <h4 class="mb32">Pagination</h4>
-          <!-- pagination-wrapper (обертка, которая выравнивает пагинацию справа) -->
-          <div class="pagination-wrapper">
-            <!-- pagination -->
-            <div class="pagination">
-              <nav class="pagination__nav" aria-label="Навигация по страницам">
-                <ul class="pagination__list">
-                  <li class="pagination__item">
-                    <a class="pagination__link" href="#" aria-label="Предыдущая страница">
-                      <span aria-hidden="true"><i class="bx bx-chevron-left"></i></span>
-                    </a>
-                  </li>
-                  <li class="pagination__item"><a class="pagination__link is-active" href="#">1</a>
-                  </li>
-                  <li class="pagination__item"><a class="pagination__link" href="#">2</a>
-                  </li>
-                  <li class="pagination__item"><a class="pagination__link" href="#">3</a>
-                  </li>
-                  <li class="pagination__item"><a class="pagination__link" href="#">14</a>
-                  </li>
-                  <li class="pagination__item">
-                    <a class="pagination__link" href="#" aria-label="Следущая страница">
-                      <span aria-hidden="true"><i class="bx bx-chevron-right"></i></span>
-                    </a>
-                  </li>
-                </ul>
-              </nav>
-            </div>
 
+          <!-- pagination -->
+          <div class="pagination">
+            <nav class="pagination__nav" aria-label="Навигация по страницам">
+              <ul class="pagination__list">
+                <li class="pagination__item">
+                  <a class="pagination__link" href="#" aria-label="Предыдущая страница">
+                    <span aria-hidden="true"><i class="bx bx-chevron-left"></i></span>
+                  </a>
+                </li>
+                <li class="pagination__item"><a class="pagination__link is-active" href="#">1</a>
+                </li>
+                <li class="pagination__item"><a class="pagination__link" href="#">2</a>
+                </li>
+                <li class="pagination__item"><a class="pagination__link" href="#">3</a>
+                </li>
+                <li class="pagination__item"><a class="pagination__link" href="#">14</a>
+                </li>
+                <li class="pagination__item">
+                  <a class="pagination__link" href="#" aria-label="Следущая страница">
+                    <span aria-hidden="true"><i class="bx bx-chevron-right"></i></span>
+                  </a>
+                </li>
+              </ul>
+            </nav>
           </div>
+
         </div>
 
         <hr>
@@ -352,9 +387,20 @@
 
         <hr>
 
+        <div class="badges pbt64">
+          <h4 class="mb32">Poppover Filter + Tooltip</h4>
+
+          <!-- poppover-filter -->
+          <div class="poppover-filter">
+            <div class="poppover-filter__label">Выбрано <span class="num">56</span>
+            </div>
+            <a href="" class="poppover-filter__link">Показать</a>
+          </div>
+
+        </div>
+
         <!-- Card Tovar -->
         <div class="cards-tovar pbt64">
-          <h4 class="mb32">Cards Tovar</h4>
           <!-- Слайдер товаров (вертикальные карточки) -->
           <section class="section-ptb tovars">
             <div class="container">
