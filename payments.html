@@ -59,7 +59,7 @@
   <!-- btn_to_Top -->
   <a href="#top-page" class="btn-reset btn-top is-active" title="Наверх"></a>
 
-  <div class="page__wrapper">
+  <section class="page__wrapper">
     <header class="header header-fixed">
       <!-- header-top -->
       <div class="header__top">
@@ -369,323 +369,141 @@
         </div>
       </div>
 
-      <!-- Бренды -->
-      <section class="section-pb brends brends--page">
+      <!-- Оплата -->
+      <section class="section-pb page-payments">
+        <div class="container">
+          <h1 class="page-title">Доставка</h1>
+
+          <!-- Оплата -->
+          <div class="client-info">
+
+            <!-- Наличный расчет -->
+            <div class="client-info__item">
+              <div class="client-info__header">
+                <img class="client-info__icon" loading="lazy" src="img/icons/ic_pay-nal.svg" width="32" height="" alt="32">
+                <h3 class="client-info__title">Наличный расчет</h3>
+              </div>
+              <p>Оплатить наличными можно как в Пункте выдачи заказов (Мурманский проезд, д. 1А, стр. 1, офис 4.10), так и при курьерской доставке по Москве и ближайшему Подмосковью.</p>
+            </div>
+
+            <!-- Наличный расчет -->
+            <div class="client-info__item">
+              <div class="client-info__header">
+                <img class="client-info__icon" loading="lazy" src="img/icons/ic_pay-cart.svg" width="32" height="" alt="32">
+                <h3 class="client-info__title">Оплата пластиковыми картами</h3>
+              </div>
+              <p>Наш интернет-магазин — 1RMC.RU принимает к оплате пластиковые карты без дополнительных комиссий и сборов. Оплачивать картой вы сможете как при оформлении заказа онлайн, так и в нашем Пункте выдачи заказов.</p>
+              <p>К оплате принимаются карты следующих типов: Visa, Master Card, Maestro, Мир.</p>
+              <div class="client-info__img">
+                <img loading="lazy" src="img/payment/carts-img.jpg" width="272" height="32" alt="">
+              </div>
+
+            </div>
+
+            <!-- Оплата электронными деньгами -->
+            <div class="client-info__item">
+              <div class="client-info__header">
+                <img class="client-info__icon" loading="lazy" src="img/icons/ic_pay-webmoney.svg" width="32" height="" alt="32">
+                <h3 class="client-info__title">Оплата электронными деньгами</h3>
+              </div>
+              <p>Мы принимаем платежи электронными деньгами следующих систем: ЮMoney, WebMoney, QIWI Wallet.</p>
+              <div class="client-info__img">
+                <img loading="lazy" src="img/payment/webmoney-img.jpg" width="112" height="32" alt="">
+              </div>
+
+            </div>
+
+            <!-- Оплата с баланса мобильного телефона -->
+            <div class="client-info__item">
+              <div class="client-info__header">
+                <img class="client-info__icon" loading="lazy" src="img/icons/ic_pay-mob.svg" width="32" height="" alt="32">
+                <h3 class="client-info__title">Оплата с баланса мобильного телефона</h3>
+              </div>
+              <p>Мы принимаем переводы с баланса мобильного телефона следующих операторов: Билайн, Мегафон, МТС, Теле2, Ростелеком.</p>
+              <div class="client-info__img">
+                <img loading="lazy" src="img/payment/mobile-operators-img.jpg" width="192" height="32" alt="">
+              </div>
+
+            </div>
+
+            <!-- Оплата банковскими переводами -->
+            <div class="client-info__item">
+              <div class="client-info__header">
+                <img class="client-info__icon" loading="lazy" src="img/icons/ic_pay-bank.svg" width="32" height="" alt="32">
+                <h3 class="client-info__title">Оплата банковскими переводами</h3>
+              </div>
+              <p>Если Вы являетесь клиентом одного из нижеперечисленных банков, то можете оплатить заказ со своего банковского счета: Сбербанк, Альфа-Клик, Промсвязьбанк, MasterPass.</p>
+              <div class="client-info__img">
+                <img loading="lazy" src="img/payment/banks-img.jpg" width="328" height="32" alt="">
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- Общий порядок проведения платежей -->
+      <section class="mb-48 page-payments__text">
         <div class="container">
 
-          <div class="page-header">
-            <h2 class="page-title">Бренды</h2>
-            <p class="page-description">Наш интернет-магазин является официальным дилером представленных торговых марок. Это означает, что вся продукция действительно фирменная, никакого «серого импорта», на все товары распространяется гарантия производителя, цены в нашем магазине
-              соответствуют, рекомендованным производителем.</p>
+          <div class="text-block">
+            <h3 class="text-block__title">Общий порядок проведения платежей онлайн</h3>
+            <p>При выборе электронной (безналичной) формы оплаты заказов на сайте 1RMC.RU вы будете автоматически перенаправлены на платёжную форму процессингового центра Яндекс.Касса, для внесения данных вашей банковской карты. Это значит, что ваши конфиденциальные
+              данные (реквизиты карты, регистрационные данные и др.) не поступают в наш интернет-магазин, их обработка полностью защищена и никто, в том числе наш интернет-магазин, не может получить персональные и банковские данные Покупателя.</p>
+            <p>Все данные, введённые вами в платёжной форме процессингового центра Яндекс.Касса, полностью защищены в соответствии с требованиями стандарта безопасности PCI DSS, что обеспечивает безопасную обработку реквизитов Банковской карты Держателя.
+              Применяемая технология передачи данных гарантирует безопасность по сделкам с Банковскими картами путём использования протоколов Secure Sockets Layer (SSL), Verified by Visa, Secure Code, и закрытых банковских сетей, имеющих высшую степень
+              защиты.</p>
+            <p>На указанный вами при оформлении платежа адрес электронной почты, будет отправлено сообщение об авторизации платежа. Сразу после совершения платежа вы будете перенаправлены обратно на сайт 1RMC.RU. Информация о вашем платеже может идти до нас от 5 секунд
+              до нескольких минут. В случае, если по вашему мнению произошла задержка в обработке заказа, вам необходимо обратиться по телефону <a class="page-link" href="tel:+79629105600" target="_blank">+7 962 910-56-00</a> или электронной почте: <a class="page-link"
+              href="mailto:zakaz@1rmc.ru" target="_blank">zakaz@1rmc.ru</a>.
+            </p>
           </div>
 
-          <div class="brends__list">
-            <!-- brend-item -->
-            <a href="#" class="brend">
-              <!-- картинка -->
-              <picture class="brend__logo">
-                <source srcset="./img/brends/logo-bmw.webp" type="image/webp">
-                  <img loading="lazy" src="img/brends/logo-bmw.jpg" width="80" height="80" alt="BMW">
-              </picture>
-              <!-- название -->
-              <div class="brend__name">BMW <span class="brend__num">32</span>
-              </div>
-            </a>
-            <!-- brend-item -->
-            <a href="#" class="brend">
-              <!-- картинка -->
-              <picture class="brend__logo">
-                <source srcset="./img/brends/logo-bmw.webp" type="image/webp">
-                  <img loading="lazy" src="img/brends/logo-bmw.jpg" width="80" height="80" alt="BMW">
-              </picture>
-              <!-- название -->
-              <div class="brend__name">BMW <span class="brend__num">32</span>
-              </div>
-            </a>
-            <!-- brend-item -->
-            <a href="#" class="brend">
-              <!-- картинка -->
-              <picture class="brend__logo">
-                <source srcset="./img/brends/logo-bmw.webp" type="image/webp">
-                  <img loading="lazy" src="img/brends/logo-bmw.jpg" width="80" height="80" alt="BMW">
-              </picture>
-              <!-- название -->
-              <div class="brend__name">BMW <span class="brend__num">32</span>
-              </div>
-            </a>
-            <!-- brend-item -->
-            <a href="#" class="brend">
-              <!-- картинка -->
-              <picture class="brend__logo">
-                <source srcset="./img/brends/logo-bmw.webp" type="image/webp">
-                  <img loading="lazy" src="img/brends/logo-bmw.jpg" width="80" height="80" alt="BMW">
-              </picture>
-              <!-- название -->
-              <div class="brend__name">BMW <span class="brend__num">32</span>
-              </div>
-            </a>
-            <!-- brend-item -->
-            <a href="#" class="brend">
-              <!-- картинка -->
-              <picture class="brend__logo">
-                <source srcset="./img/brends/logo-bmw.webp" type="image/webp">
-                  <img loading="lazy" src="img/brends/logo-bmw.jpg" width="80" height="80" alt="BMW">
-              </picture>
-              <!-- название -->
-              <div class="brend__name">BMW <span class="brend__num">32</span>
-              </div>
-            </a>
-            <!-- brend-item -->
-            <a href="#" class="brend">
-              <!-- картинка -->
-              <picture class="brend__logo">
-                <source srcset="./img/brends/logo-bmw.webp" type="image/webp">
-                  <img loading="lazy" src="img/brends/logo-bmw.jpg" width="80" height="80" alt="BMW">
-              </picture>
-              <!-- название -->
-              <div class="brend__name">BMW <span class="brend__num">32</span>
-              </div>
-            </a>
-            <!-- brend-item -->
-            <a href="#" class="brend">
-              <!-- картинка -->
-              <picture class="brend__logo">
-                <source srcset="./img/brends/logo-bmw.webp" type="image/webp">
-                  <img loading="lazy" src="img/brends/logo-bmw.jpg" width="80" height="80" alt="BMW">
-              </picture>
-              <!-- название -->
-              <div class="brend__name">BMW <span class="brend__num">32</span>
-              </div>
-            </a>
-            <!-- brend-item -->
-            <a href="#" class="brend">
-              <!-- картинка -->
-              <picture class="brend__logo">
-                <source srcset="./img/brends/logo-bmw.webp" type="image/webp">
-                  <img loading="lazy" src="img/brends/logo-bmw.jpg" width="80" height="80" alt="BMW">
-              </picture>
-              <!-- название -->
-              <div class="brend__name">BMW <span class="brend__num">32</span>
-              </div>
-            </a>
-            <!-- brend-item -->
-            <a href="#" class="brend">
-              <!-- картинка -->
-              <picture class="brend__logo">
-                <source srcset="./img/brends/logo-bmw.webp" type="image/webp">
-                  <img loading="lazy" src="img/brends/logo-bmw.jpg" width="80" height="80" alt="BMW">
-              </picture>
-              <!-- название -->
-              <div class="brend__name">BMW <span class="brend__num">32</span>
-              </div>
-            </a>
-            <!-- brend-item -->
-            <a href="#" class="brend">
-              <!-- картинка -->
-              <picture class="brend__logo">
-                <source srcset="./img/brends/logo-bmw.webp" type="image/webp">
-                  <img loading="lazy" src="img/brends/logo-bmw.jpg" width="80" height="80" alt="BMW">
-              </picture>
-              <!-- название -->
-              <div class="brend__name">BMW <span class="brend__num">32</span>
-              </div>
-            </a>
-            <!-- brend-item -->
-            <a href="#" class="brend">
-              <!-- картинка -->
-              <picture class="brend__logo">
-                <source srcset="./img/brends/logo-bmw.webp" type="image/webp">
-                  <img loading="lazy" src="img/brends/logo-bmw.jpg" width="80" height="80" alt="BMW">
-              </picture>
-              <!-- название -->
-              <div class="brend__name">BMW <span class="brend__num">32</span>
-              </div>
-            </a>
-            <!-- brend-item -->
-            <a href="#" class="brend">
-              <!-- картинка -->
-              <picture class="brend__logo">
-                <source srcset="./img/brends/logo-bmw.webp" type="image/webp">
-                  <img loading="lazy" src="img/brends/logo-bmw.jpg" width="80" height="80" alt="BMW">
-              </picture>
-              <!-- название -->
-              <div class="brend__name">BMW <span class="brend__num">32</span>
-              </div>
-            </a>
-            <!-- brend-item -->
-            <a href="#" class="brend">
-              <!-- картинка -->
-              <picture class="brend__logo">
-                <source srcset="./img/brends/logo-bmw.webp" type="image/webp">
-                  <img loading="lazy" src="img/brends/logo-bmw.jpg" width="80" height="80" alt="BMW">
-              </picture>
-              <!-- название -->
-              <div class="brend__name">BMW <span class="brend__num">32</span>
-              </div>
-            </a>
-            <!-- brend-item -->
-            <a href="#" class="brend">
-              <!-- картинка -->
-              <picture class="brend__logo">
-                <source srcset="./img/brends/logo-bmw.webp" type="image/webp">
-                  <img loading="lazy" src="img/brends/logo-bmw.jpg" width="80" height="80" alt="BMW">
-              </picture>
-              <!-- название -->
-              <div class="brend__name">BMW <span class="brend__num">32</span>
-              </div>
-            </a>
-            <!-- brend-item -->
-            <a href="#" class="brend">
-              <!-- картинка -->
-              <picture class="brend__logo">
-                <source srcset="./img/brends/logo-bmw.webp" type="image/webp">
-                  <img loading="lazy" src="img/brends/logo-bmw.jpg" width="80" height="80" alt="BMW">
-              </picture>
-              <!-- название -->
-              <div class="brend__name">BMW <span class="brend__num">32</span>
-              </div>
-            </a>
-            <!-- brend-item -->
-            <a href="#" class="brend">
-              <!-- картинка -->
-              <picture class="brend__logo">
-                <source srcset="./img/brends/logo-bmw.webp" type="image/webp">
-                  <img loading="lazy" src="img/brends/logo-bmw.jpg" width="80" height="80" alt="BMW">
-              </picture>
-              <!-- название -->
-              <div class="brend__name">BMW <span class="brend__num">32</span>
-              </div>
-            </a>
-            <!-- brend-item -->
-            <a href="#" class="brend">
-              <!-- картинка -->
-              <picture class="brend__logo">
-                <source srcset="./img/brends/logo-bmw.webp" type="image/webp">
-                  <img loading="lazy" src="img/brends/logo-bmw.jpg" width="80" height="80" alt="BMW">
-              </picture>
-              <!-- название -->
-              <div class="brend__name">BMW <span class="brend__num">32</span>
-              </div>
-            </a>
-            <!-- brend-item -->
-            <a href="#" class="brend">
-              <!-- картинка -->
-              <picture class="brend__logo">
-                <source srcset="./img/brends/logo-bmw.webp" type="image/webp">
-                  <img loading="lazy" src="img/brends/logo-bmw.jpg" width="80" height="80" alt="BMW">
-              </picture>
-              <!-- название -->
-              <div class="brend__name">BMW <span class="brend__num">32</span>
-              </div>
-            </a>
-            <!-- brend-item -->
-            <a href="#" class="brend">
-              <!-- картинка -->
-              <picture class="brend__logo">
-                <source srcset="./img/brends/logo-bmw.webp" type="image/webp">
-                  <img loading="lazy" src="img/brends/logo-bmw.jpg" width="80" height="80" alt="BMW">
-              </picture>
-              <!-- название -->
-              <div class="brend__name">BMW <span class="brend__num">32</span>
-              </div>
-            </a>
-            <!-- brend-item -->
-            <a href="#" class="brend">
-              <!-- картинка -->
-              <picture class="brend__logo">
-                <source srcset="./img/brends/logo-bmw.webp" type="image/webp">
-                  <img loading="lazy" src="img/brends/logo-bmw.jpg" width="80" height="80" alt="BMW">
-              </picture>
-              <!-- название -->
-              <div class="brend__name">BMW <span class="brend__num">32</span>
-              </div>
-            </a>
-            <!-- brend-item -->
-            <a href="#" class="brend">
-              <!-- картинка -->
-              <picture class="brend__logo">
-                <source srcset="./img/brends/logo-bmw.webp" type="image/webp">
-                  <img loading="lazy" src="img/brends/logo-bmw.jpg" width="80" height="80" alt="BMW">
-              </picture>
-              <!-- название -->
-              <div class="brend__name">BMW <span class="brend__num">32</span>
-              </div>
-            </a>
-            <!-- brend-item -->
-            <a href="#" class="brend">
-              <!-- картинка -->
-              <picture class="brend__logo">
-                <source srcset="./img/brends/logo-bmw.webp" type="image/webp">
-                  <img loading="lazy" src="img/brends/logo-bmw.jpg" width="80" height="80" alt="BMW">
-              </picture>
-              <!-- название -->
-              <div class="brend__name">BMW <span class="brend__num">32</span>
-              </div>
-            </a>
-            <!-- brend-item -->
-            <a href="#" class="brend">
-              <!-- картинка -->
-              <picture class="brend__logo">
-                <source srcset="./img/brends/logo-bmw.webp" type="image/webp">
-                  <img loading="lazy" src="img/brends/logo-bmw.jpg" width="80" height="80" alt="BMW">
-              </picture>
-              <!-- название -->
-              <div class="brend__name">BMW <span class="brend__num">32</span>
-              </div>
-            </a>
-            <!-- brend-item -->
-            <a href="#" class="brend">
-              <!-- картинка -->
-              <picture class="brend__logo">
-                <source srcset="./img/brends/logo-bmw.webp" type="image/webp">
-                  <img loading="lazy" src="img/brends/logo-bmw.jpg" width="80" height="80" alt="BMW">
-              </picture>
-              <!-- название -->
-              <div class="brend__name">BMW <span class="brend__num">32</span>
-              </div>
-            </a>
-            <!-- brend-item -->
-            <a href="#" class="brend">
-              <!-- картинка -->
-              <picture class="brend__logo">
-                <source srcset="./img/brends/logo-bmw.webp" type="image/webp">
-                  <img loading="lazy" src="img/brends/logo-bmw.jpg" width="80" height="80" alt="BMW">
-              </picture>
-              <!-- название -->
-              <div class="brend__name">BMW <span class="brend__num">32</span>
-              </div>
-            </a>
+          <div class="text-block">
+            <h3 class="text-block__title">Защита персональных данных покупателя</h3>
+            <p class="mb-24">Персональные данные Покупателя обрабатываются в соответствии с Федеральным законом от 27.07.2006 № 152-Ф3 «О персональных данных». При регистрации на нашем сайте — 1RMC.RU Покупатель предоставляет следующую информацию: ФИО, адрес электронной
+              почты, телефон, адрес доставки (почтовый адрес с индексом для доставки почтой РФ). Предоставляя свои персональные данные Продавцу, Покупатель соглашается на их обработку Продавцом, в том числе в целях продвижения товаров и услуг. Не считается
+              нарушением предоставление Продавцом информации агентам и третьим лицам, действующим на основании договора с Продавцом, для исполнения обязательств перед Покупателем.
+            </p>
+            <p class="mb-8">Продавец использует персональные данные Покупателя:</p>
+            <ul class="mb-24 list-reset">
+              <li>— при регистрации на сайте 1RMC.RU;</li>
+              <li>— для выполнения своих обязательств перед Покупателем;</li>
+              <li>— для оценки и анализа работы сайта.</li>
+            </ul>
+            <p>Продавец имеет право отправлять информационные, в том числе рекламные сообщения, на электронную почту и телефон Покупателя с его согласия. Покупатель вправе отказаться от получения рекламной и другой информации без объяснения причины отказа.
+              Сервисные сообщения, информирующие Покупателя о заказе и этапах его обработки, отправляются автоматически и не могут быть отклонены Покупателем. Продавец не несёт ответственности за сведения, предоставленные Покупателем на сайте в общедоступной
+              форме.</p>
           </div>
 
-          <!-- показать еще + pagination -->
-          <div class="catalog__flex2">
-            <!-- показать еще -->
-            <button type="button" class="btn-reset btn btn__outline btn-more">Показать еще</button>
+        </div>
+      </section>
 
-            <!-- pagination -->
-            <div class="pagination">
-              <nav class="pagination__nav" aria-label="Навигация по страницам">
-                <ul class="pagination__list">
-                  <li class="pagination__item">
-                    <a class="pagination__link" href="#" aria-label="Предыдущая страница">
-                      <span aria-hidden="true"><i class="bx bx-chevron-left"></i></span>
-                    </a>
-                  </li>
-                  <li class="pagination__item"><a class="pagination__link is-active" href="#">1</a>
-                  </li>
-                  <li class="pagination__item"><a class="pagination__link" href="#">2</a>
-                  </li>
-                  <li class="pagination__item"><a class="pagination__link" href="#">3</a>
-                  </li>
-                  <li class="pagination__item"><a class="pagination__link" href="#">14</a>
-                  </li>
-                  <li class="pagination__item">
-                    <a class="pagination__link" href="#" aria-label="Следущая страница">
-                      <span aria-hidden="true"><i class="bx bx-chevron-right"></i></span>
-                    </a>
-                  </li>
-                </ul>
-              </nav>
+      <!-- реквизиты -->
+      <section class="section-pb page-payments__requisites">
+        <div class="container">
+          <div class="client-info">
+
+            <!-- Реквизиты организации -->
+            <div class="client-info__item">
+              <h3 class="text-block__title mb-16">Реквизиты организации:</h3>
+              <ul class="list-reset">
+                <li><strong>Наименование организации:</strong> ИП Кривенцев Владимир Александрович</li>
+                <li><strong>ИНН:</strong> 771671245540</li>
+                <li><strong>Фактический адрес:</strong> 129075, г. Москва, Мурманский проезд, д. 1А, стр. 1, офис. 4.10.</li>
+              </ul>
+            </div>
+
+            <!-- Платёжные реквизиты -->
+            <div class="client-info__item">
+              <h3 class="text-block__title mb-16">Платёжные реквизиты:</h3>
+              <ul class="list-reset">
+                <li><strong>Получатель:</strong> ИП Кривенцев В.А.</li>
+                <li><strong>Расчётный счёт:</strong> 40802810070010288994</li>
+                <li><strong>Банк:</strong> Московский Филиал АО КБ «Модульбанк»</li>
+                <li><strong>БИК:</strong> 044525092</li>
+                <li><strong>Корр. счёт:</strong> 30101810645250000092</li>
+              </ul>
             </div>
 
           </div>
@@ -831,7 +649,7 @@
       </div>
     </footer>
 
-  </div>
+    </div>
 
 </body>
 
