@@ -41,14 +41,17 @@
 
   <!-- CSS -->
   <!-- Предварительная загрузка и асинхронность -->
-  <link href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css" rel="preload" as="style" onload="this.rel='stylesheet'">
-  <link href="css/main.css" rel="preload" as="style" onload="this.rel='stylesheet'">
+  <!-- <link href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css" rel="preload" as="style" onload="this.rel='stylesheet'">
+	<link href="css/main.css" rel="preload" as="style" onload="this.rel='stylesheet'"> -->
 
   <!-- если браузер не поддерживает js или отключен у пользователя в браузере -->
-  <noscript>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
-    <link rel="stylesheet" href="css/main.css">
-  </noscript>
+  <!-- <noscript>
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+		<link rel="stylesheet" href="css/main.css">
+	</noscript> -->
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+  <link rel="stylesheet" href="css/main.css">
 
 </head>
 
@@ -251,7 +254,7 @@
                 <div class="dropdown">
                   <!-- dropdown__search -->
                   <div class="dropdown__search">
-                    <input type="text" name="dropdown-search" class="form__input input-search" placeholder="Поиск">
+                    <input type="text" name="dropdown-search" class="form__input input-search" placeholder="Поиск" autocomplete="off">
                   </div>
                   <!-- dropdown__list -->
                   <ul class="list-reset dropdown__list dropdown__list--scroll">
@@ -278,7 +281,7 @@
                 <div class="dropdown">
                   <!-- dropdown__search -->
                   <div class="dropdown__search">
-                    <input type="text" name="dropdown-search" class="form__input input-search" placeholder="Поиск">
+                    <input type="text" name="dropdown-search" class="form__input input-search" placeholder="Поиск" autocomplete="off">
                   </div>
                   <!-- dropdown__list -->
                   <ul class="list-reset dropdown__list dropdown__list--scroll">
@@ -305,7 +308,7 @@
                 <div class="dropdown">
                   <!-- dropdown__search -->
                   <div class="dropdown__search">
-                    <input type="text" name="dropdown-search" class="form__input input-search" placeholder="Поиск">
+                    <input type="text" name="dropdown-search" class="form__input input-search" placeholder="Поиск" autocomplete="off">
                   </div>
                   <!-- dropdown__list -->
                   <ul class="list-reset dropdown__list dropdown__list--scroll">
@@ -487,14 +490,15 @@
               <div class="price-table__prices">
                 <!-- розничная цена -->
                 <div class="price price--rozn" id="prize-rozn">
-                  <div class="price__sum">1130 ₽</div>
+                  <div class="price__sum">1130</div>
                   <div class="price__label">Розн. цена</div>
                 </div>
                 <!-- скидка -->
-                <div class="tovar-sale"><i class="bx bxs-offer"></i> -220 ₽</div>
+                <div class="tovar-sale"><i class="bx bxs-offer"></i>  <span>-220</span>
+                </div>
                 <!-- клубная цена -->
                 <div class="price price--club" id="price-club">
-                  <div class="price__sum">1130 ₽</div>
+                  <div class="price__sum">1130</div>
                   <div class="price__label">Клуб. цена</div>
                 </div>
               </div>
@@ -511,12 +515,12 @@
               <!-- счетчик выбора кол-ва товара -->
               <div class="t-counter">
                 <button aria-label="Убрать 1 шт." class="t-counter__btn t-counter__btn--minus"></button>
-                <input class="t-counter__input" type="text" name="tovarСount" value="1" disabled="">
+                <input class="input-reset t-counter__input" type="text" name="tovarСount" value="1" disabled="">
                 <button aria-label="Добавить 1 шт." class="t-counter__btn t-counter__btn--plus"></button>
               </div>
               <!-- Итоговая сумма -->
               <div class="price price--total" id="price-total">
-                <div class="price__sum">910 ₽</div>
+                <div class="price__sum">910</div>
                 <div class="price__label">Итого</div>
               </div>
 
@@ -531,14 +535,15 @@
               <div class="price-table__prices">
                 <!-- розничная цена -->
                 <div class="price price--rozn" id="prize-rozn">
-                  <div class="price__sum">1130 ₽</div>
+                  <div class="price__sum">1130</div>
                   <div class="price__label">Розн. цена</div>
                 </div>
                 <!-- скидка -->
-                <div class="tovar-sale"><i class="bx bxs-offer"></i> -220 ₽</div>
+                <div class="tovar-sale"><i class="bx bxs-offer"></i>  <span>-220</span>
+                </div>
                 <!-- клубная цена -->
                 <div class="price price--club" id="price-club">
-                  <div class="price__sum">1130 ₽</div>
+                  <div class="price__sum">1130</div>
                   <div class="price__label">Клуб. цена</div>
                 </div>
               </div>
@@ -555,12 +560,12 @@
               <!-- счетчик выбора кол-ва товара -->
               <div class="t-counter">
                 <button aria-label="Убрать 1 шт." class="t-counter__btn t-counter__btn--minus"></button>
-                <input class="t-counter__input" type="text" name="tovarСount" value="1" disabled="">
+                <input class="input-reset t-counter__input" type="text" name="tovarСount" value="1" disabled="">
                 <button aria-label="Добавить 1 шт." class="t-counter__btn t-counter__btn--plus"></button>
               </div>
               <!-- Итоговая сумма -->
               <div class="price price--total" id="price-total">
-                <div class="price__sum">910 ₽</div>
+                <div class="price__sum">910</div>
                 <div class="price__label">Итого</div>
               </div>
 
@@ -575,7 +580,7 @@
               <div class="price-table__prices">
                 <!-- розничная цена -->
                 <div class="price price--rozn" id="prize-rozn">
-                  <div class="price__sum">1130 ₽</div>
+                  <div class="price__sum">1130</div>
                   <div class="price__label">Розн. цена</div>
                 </div>
               </div>
@@ -592,12 +597,12 @@
               <!-- счетчик выбора кол-ва товара -->
               <div class="t-counter">
                 <button aria-label="Убрать 1 шт." class="t-counter__btn t-counter__btn--minus"></button>
-                <input class="t-counter__input" type="text" name="tovarСount" value="1" disabled="">
+                <input class="input-reset t-counter__input" type="text" name="tovarСount" value="1" disabled="">
                 <button aria-label="Добавить 1 шт." class="t-counter__btn t-counter__btn--plus"></button>
               </div>
               <!-- Итоговая сумма -->
               <div class="price price--total" id="price-total">
-                <div class="price__sum">910 ₽</div>
+                <div class="price__sum">910</div>
                 <div class="price__label">Итого</div>
               </div>
 
@@ -612,7 +617,7 @@
               <div class="price-table__prices">
                 <!-- розничная цена -->
                 <div class="price price--rozn" id="prize-rozn">
-                  <div class="price__sum">1130 ₽</div>
+                  <div class="price__sum">1130</div>
                   <div class="price__label">Розн. цена</div>
                 </div>
               </div>
@@ -629,12 +634,12 @@
               <!-- счетчик выбора кол-ва товара -->
               <div class="t-counter">
                 <button aria-label="Убрать 1 шт." class="t-counter__btn t-counter__btn--minus"></button>
-                <input class="t-counter__input" type="text" name="tovarСount" value="1" disabled="">
+                <input class="input-reset t-counter__input" type="text" name="tovarСount" value="1" disabled="">
                 <button aria-label="Добавить 1 шт." class="t-counter__btn t-counter__btn--plus"></button>
               </div>
               <!-- Итоговая сумма -->
               <div class="price price--total" id="price-total">
-                <div class="price__sum">910 ₽</div>
+                <div class="price__sum">910</div>
                 <div class="price__label">Итого</div>
               </div>
 
@@ -649,7 +654,7 @@
               <div class="price-table__prices">
                 <!-- розничная цена -->
                 <div class="price price--rozn" id="prize-rozn">
-                  <div class="price__sum">1130 ₽</div>
+                  <div class="price__sum">1130</div>
                   <div class="price__label">Розн. цена</div>
                 </div>
               </div>
@@ -666,12 +671,12 @@
               <!-- счетчик выбора кол-ва товара -->
               <div class="t-counter">
                 <button aria-label="Убрать 1 шт." class="t-counter__btn t-counter__btn--minus"></button>
-                <input class="t-counter__input" type="text" name="tovarСount" value="1" disabled="">
+                <input class="input-reset t-counter__input" type="text" name="tovarСount" value="1" disabled="">
                 <button aria-label="Добавить 1 шт." class="t-counter__btn t-counter__btn--plus"></button>
               </div>
               <!-- Итоговая сумма -->
               <div class="price price--total" id="price-total">
-                <div class="price__sum">910 ₽</div>
+                <div class="price__sum">910</div>
                 <div class="price__label">Итого</div>
               </div>
 
@@ -1194,7 +1199,7 @@
 
             <div class="feedback__head">
               <h3 class="feedback__title">Не нашли нужной запчасти или остались вопросы?</h3>
-              <p class="feedback__descr">Свяжитесь с нами по телолефону <a class="feedback__phone" href="tel:+79629105600">
+              <p class="feedback__descr">Свяжитесь с нами по телефону <a class="feedback__phone" href="tel:+79629105600">
                             +7 962 910-56-00</a> или напишите в чат.</p>
             </div>
             <!-- кнопки чатов -->
