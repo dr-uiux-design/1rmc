@@ -1,0 +1,865 @@
+<!DOCTYPE html>
+<html lang="ru" class="page" id="top-page">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <!-- Favicon -->
+  <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png">
+  <link rel="icon" href="./favicon/favicon.ico" type="image/x-icon">
+  <link rel="manifest" href="./favicon/site.webmanifest">
+  <link rel="mask-icon" href="./favicon/safari-pinned-tab.svg" color="#212121">
+  <meta name="msapplication-TileColor" content="#212121">
+  <meta name="theme-color" content="#212121">
+
+  <!--  Seo-->
+  <title>Интернет-магазин мотозапчастей с доставкой по России с 2008 года</title>
+  <meta name="Description" content="">
+  <meta name="Keywords" content="">
+  <meta name="Robots" content="ALL">
+  <meta name="Revisit-After" content="1 Days">
+  <!--  Мета теги (OGG)-->
+  <meta property="og:title" content="" />
+  <meta property="og:description" content="" />
+  <meta property="og:image" content="" />
+  <meta property="og:url" content="" />
+  <meta property="og:type" content="website" />
+  <meta property="og:phone_number" content="" />
+  <meta property="og:email" content="" />
+  <meta property="og:site_name" content="" />
+  <meta property="og:street_address" content="" />
+  <meta property="og:postal-code" content="" />
+  <meta property="og:locality" content="" />
+  <meta property="og:region" content="" />
+  <meta property="og:country-name" content="" />
+  <meta property="og:latitude" content="" />
+  <meta property="og:longitude" content="" />
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body class="page__body">
+
+  <div class="page__wrapper">
+    <header class="header header-fixed">
+      <!-- header-top -->
+      <div class="header__top">
+        <div class="container header__top-container">
+          <div class="header__address">
+            <i class="bx bx__left bx-map header__top-icon"></i>
+            <div>Москва, Мурманский проезд, дом 1А., стр. 1.</div>
+          </div>
+
+          <!-- menu-top -->
+          <nav class="header__menu-top menu-top">
+            <ul class="list-reset menu-top__list">
+              <li class="menu-top__item"><a href="./index.html" class="menu-top__link is-active">Главная</a>
+              </li>
+              <li class="menu-top__item"><a href="./about.html" class="menu-top__link">О нас</a>
+              </li>
+              <li class="menu-top__item"><a href="./delivery.html" class="menu-top__link">Доставка</a>
+              </li>
+              <li class="menu-top__item"><a href="./payments.html" class="menu-top__link">Оплата</a>
+              </li>
+              <li class="menu-top__item"><a href="./order-back.html" class="menu-top__link">Возврат</a>
+              </li>
+              <li class="menu-top__item"><a href="./brends.html" class="menu-top__link">Бренды</a>
+              </li>
+              <!-- <li class="menu-top__item"><a href="./sales.html" class="menu-top__link">Акции</a></li> -->
+              <li class="menu-top__item"><a href="./blog.html" class="menu-top__link">Блог</a>
+              </li>
+              <li class="menu-top__item"><a href="./contacts.html" class="menu-top__link">Контакты</a>
+              </li>
+              <li class="menu-top__item"><a href="./partners.html" class="menu-top__link">Партнёрам</a>
+              </li>
+            </ul>
+          </nav>
+
+          <!-- login -->
+          <button aria-label="Открыть форму авторизации" aria-expanded="false" class="btn-reset header__login btn-login">
+            <i class="bx bx__left bx-user header__top-icon btn-login__icon"></i>
+            <span class="btn-login__text">Войти</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- header-search -->
+      <div class="header__search search-header">
+        <div class="container header__search-container">
+          <!-- burger (активирует крестик класс is-active) -->
+          <button class="burger" title="открыть меню">
+            <span class="burger__line"></span>
+          </button>
+          <!-- logo -->
+          <div class="logo">
+            <a href="./" class="logo__link">
+              <img class="logo__img" loading="lazy" src=" img/logo.svg" width="109" height="48" alt="RMC">
+            </a>
+            <div class="description">Интернет-магазин мотозапчастей <span class="h-mob">с доставкой по России с 2008 года</span>
+            </div>
+          </div>
+
+          <div class="header__search--box-1">
+            <!-- btn-catalog -->
+            <button class="btn btn-catalog"><i class="btn-catalog__icon bx bx__left bx-menu-alt-left"></i> Каталог</button>
+
+            <!-- form-search -->
+            <form action="/catalog.html" class="form form-search">
+              <div class="form-search__inner">
+                <input type="text" name="search-tovar" class="form__input input-search" placeholder="Поиск товаров" autocomplete="off">
+                <button aria-label="Поиск товаров" aria-expanded="false" type="submit" class="btn-reset form-search__btn"><i class="bx bx-search form-search__btn-icon"></i>
+                </button>
+              </div>
+            </form>
+
+            <!-- btn cart (выделяем когда товар добавлен в корзину классом is-active) -->
+            <button class="btn-reset btn-cart is-active">
+              <div class="btn-cart__number">0</div>
+              <i class="bx bx-cart-alt btn-cart__icon"></i>
+            </button>
+          </div>
+
+          <div class="header__search--box-2">
+            <!-- phone + link-callback -->
+            <div class="phone">
+              <a href="tel:+79629105600" class="phone__number">+7 962 910-56-00</a>
+              <button aria-label="Заказать звонок" aria-hidden="true" class="btn-reset phone__callback"><i class="bx bx__left bx-phone header__top-icon"></i> Заказать звонок
+              </button>
+            </div>
+
+            <!-- btn-chat -->
+            <div class="dropdown-chat">
+              <button class="btn btn__outline btn-chat">
+                <i class="btn-chat__icon bx bx__left bx-chat"></i>
+                <span class="btn-chat__text">Написать</span>
+              </button>
+              <ul class="dropdown-chat__list">
+                <li>
+                  <a href="whatsapp://send?phone=+79629105600&text=Приветствуем! Рады будем помочь!" target="_blank">
+                    <i class="bx bx__left bxl-whatsapp" title="Написать в Whatsapp"></i>
+                    Whatsapp
+                  </a>
+                </li>
+                <li>
+                  <a href="https://t.me/+79629105600" target="_blank">
+                    <i class="bx bx__left bxl-telegram" title="Написать в Telegram"></i>
+                    Telegram
+                  </a>
+                </li>
+                <li>
+                  <a href="mailto:zakaz@1rmc.ru" target="_blank">
+                    <i class="bx bx__left bx-mail-send"></i>
+                    Email
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- menu-category -->
+      <nav class="header__menu-top menu-top menu-category">
+        <div class="container">
+          <ul class="list-reset menu-top__list">
+            <li class="menu-top__item"><a href="#" class="menu-top__link is-active">Масла и Химия</a>
+            </li>
+            <li class="menu-top__item"><a href="#" class="menu-top__link">Двигатель</a>
+            </li>
+            <li class="menu-top__item"><a href="#" class="menu-top__link">Трансмиссия</a>
+            </li>
+            <li class="menu-top__item"><a href="#" class="menu-top__link">Тормозная система</a>
+            </li>
+            <li class="menu-top__item"><a href="#" class="menu-top__link">Управление</a>
+            </li>
+            <li class="menu-top__item"><a href="#" class="menu-top__link">Подвеска</a>
+            </li>
+            <li class="menu-top__item"><a href="#" class="menu-top__link">Колеса</a>
+            </li>
+            <li class="menu-top__item"><a href="#" class="menu-top__link">Электрика</a>
+            </li>
+            <li class="menu-top__item"><a href="#" class="menu-top__link">Все категории</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <!-- main -->
+    <main class="page__main">
+
+      <section class="section-ptb">
+        <div class="container">
+
+          <h1 class="page-title">Мобильное меню</h1>
+
+          <!-- Мобильное меню -->
+          <div class="menu-mob">
+            <div class="menu-mob__overlay">
+              <div class="menu-mob__content">
+                <div class="menu-mob__top">
+                  <div class="menu-mob__title">Каталог товаров</div>
+
+                  <!-- Переход на страницу с категориями -->
+                  <a href="./categories.html" class="btn btn-catalog-mob" title="Открыть категории"><i
+						class="btn-catalog__icon bx bx__left bx-menu-alt-left"></i>
+                    Каталог</a>
+
+                  <!-- кнопка закрыть -->
+                  <button aria-label="Закрыть мобильное меню" aria-hidden="true" class="btn-reset menu-mob__close"><i class=" bx bx-x"></i>
+                  </button>
+                </div>
+
+                <!-- menu-catalog -->
+                <nav class="menu-catalog">
+                  <ul class="list-reset menu-catalog__list">
+                    <li class="menu-catalog__item is-active">Масла и Химия
+                      <nav class="submenu">
+                        <ul class="submenu__list">
+                          <li><a href="#" class="submenu__link">Моторное масло <span class="submenu__number">276</span></a>
+                          </li>
+                          <li><a href="#" class="submenu__link">Вилочное масло<span class="submenu__number">39</span></a>
+                          </li>
+                          <li><a href="#" class="submenu__link">Трансмиссионное масло <span class="submenu__number">26</span></a>
+                          </li>
+                          <li><a href="#" class="submenu__link">Масло для аммортизатора <span class="submenu__number">4</span></a>
+                          </li>
+                          <li><a href="#" class="submenu__link">Смазка цепей <span class="submenu__number">33</span></a>
+                          </li>
+                          <li><a href="#" class="submenu__link">Антифриз <span class="submenu__number">4</span></a>
+                          </li>
+                          <li><a href="#" class="submenu__link">Тормозная жидкость <span class="submenu__number">23</span></a>
+                          </li>
+                          <li><a href="#" class="submenu__link">Очистители <span class="submenu__number">23</span></a>
+                          </li>
+                          <li><a href="#" class="submenu__link">Масла для лодочных моторов <span class="submenu__number">4</span></a>
+                          </li>
+                          <li><a href="#" class="submenu__link">Прочие жидкости <span class="submenu__number">46</span></a>
+                          </li>
+                        </ul>
+                      </nav>
+                    </li>
+                    <li class="menu-catalog__item">Двигатель
+                      <nav class="submenu">
+                        <ul class="submenu__list">
+                          <li><a href="#" class="submenu__link">Подкатегория <span class="submenu__number">11</span></a>
+                          </li>
+                          <li><a href="#" class="submenu__link">Подкатегория <span class="submenu__number">12</span></a>
+                          </li>
+                          <li><a href="#" class="submenu__link">Подкатегория <span class="submenu__number">12</span></a>
+                          </li>
+                          <li><a href="#" class="submenu__link">Подкатегория <span class="submenu__number">12</span></a>
+                          </li>
+                          <li><a href="#" class="submenu__link">Подкатегория <span class="submenu__number">12</span></a>
+                          </li>
+                          <li><a href="#" class="submenu__link">Подкатегория <span class="submenu__number">12</span></a>
+                          </li>
+                          <li><a href="#" class="submenu__link">Подкатегория <span class="submenu__number">12</span></a>
+                          </li>
+                          <li><a href="#" class="submenu__link">Подкатегория <span class="submenu__number">12</span></a>
+                          </li>
+                          <li><a href="#" class="submenu__link">Подкатегория <span class="submenu__number">12</span></a>
+                          </li>
+                          <li><a href="#" class="submenu__link">Подкатегория <span class="submenu__number">12</span></a>
+                          </li>
+                          <li><a href="#" class="submenu__link">Подкатегория <span class="submenu__number">12</span></a>
+                          </li>
+                          <li><a href="#" class="submenu__link">Подкатегория <span class="submenu__number">12</span></a>
+                          </li>
+                          <li><a href="#" class="submenu__link">Подкатегория <span class="submenu__number">12</span></a>
+                          </li>
+                          <li><a href="#" class="submenu__link">Подкатегория <span class="submenu__number">12</span></a>
+                          </li>
+                          <li><a href="#" class="submenu__link">Подкатегория <span class="submenu__number">12</span></a>
+                          </li>
+                          <li><a href="#" class="submenu__link">Подкатегория <span class="submenu__number">12</span></a>
+                          </li>
+                        </ul>
+                      </nav>
+                    </li>
+                    <li class="menu-catalog__item">Трансмиссия
+                      <nav class="submenu">
+                        <ul class="submenu__list">
+                          <li><a href="#" class="submenu__link">Подкатегория <span class="submenu__number">12</span></a>
+                          </li>
+                          <li><a href="#" class="submenu__link">Подкатегория <span class="submenu__number">12</span></a>
+                          </li>
+                          <li><a href="#" class="submenu__link">Подкатегория <span class="submenu__number">12</span></a>
+                          </li>
+                          <li><a href="#" class="submenu__link">Подкатегория <span class="submenu__number">12</span></a>
+                          </li>
+                          <li><a href="#" class="submenu__link">Подкатегория <span class="submenu__number">12</span></a>
+                          </li>
+                          <li><a href="#" class="submenu__link">Подкатегория <span class="submenu__number">12</span></a>
+                          </li>
+                          <li><a href="#" class="submenu__link">Подкатегория <span class="submenu__number">12</span></a>
+                          </li>
+                          <li><a href="#" class="submenu__link">Подкатегория <span class="submenu__number">12</span></a>
+                          </li>
+                          <li><a href="#" class="submenu__link">Подкатегория <span class="submenu__number">12</span></a>
+                          </li>
+                          <li><a href="#" class="submenu__link">Подкатегория <span class="submenu__number">12</span></a>
+                          </li>
+                          <li><a href="#" class="submenu__link">Подкатегория <span class="submenu__number">12</span></a>
+                          </li>
+                          <li><a href="#" class="submenu__link">Подкатегория <span class="submenu__number">12</span></a>
+                          </li>
+                          <li><a href="#" class="submenu__link">Подкатегория <span class="submenu__number">12</span></a>
+                          </li>
+                          <li><a href="#" class="submenu__link">Подкатегория <span class="submenu__number">12</span></a>
+                          </li>
+                          <li><a href="#" class="submenu__link">Подкатегория <span class="submenu__number">12</span></a>
+                          </li>
+                          <li><a href="#" class="submenu__link">Подкатегория <span class="submenu__number">12</span></a>
+                          </li>
+                        </ul>
+                      </nav>
+                    </li>
+                    <li class="menu-catalog__item">Тормозная система
+                      <nav class="submenu">
+                        <ul class="submenu__list">
+                          <li><a href="#" class="submenu__link">Подкатегория <span class="submenu__number">12</span></a>
+                          </li>
+                          <li><a href="#" class="submenu__link">Подкатегория <span class="submenu__number">12</span></a>
+                          </li>
+                          <li><a href="#" class="submenu__link">Подкатегория <span class="submenu__number">12</span></a>
+                          </li>
+                          <li><a href="#" class="submenu__link">Подкатегория <span class="submenu__number">12</span></a>
+                          </li>
+                          <li><a href="#" class="submenu__link">Подкатегория <span class="submenu__number">12</span></a>
+                          </li>
+                          <li><a href="#" class="submenu__link">Подкатегория <span class="submenu__number">12</span></a>
+                          </li>
+                          <li><a href="#" class="submenu__link">Подкатегория <span class="submenu__number">12</span></a>
+                          </li>
+                          <li><a href="#" class="submenu__link">Подкатегория <span class="submenu__number">12</span></a>
+                          </li>
+                          <li><a href="#" class="submenu__link">Подкатегория <span class="submenu__number">12</span></a>
+                          </li>
+                          <li><a href="#" class="submenu__link">Подкатегория <span class="submenu__number">12</span></a>
+                          </li>
+                          <li><a href="#" class="submenu__link">Подкатегория <span class="submenu__number">12</span></a>
+                          </li>
+                          <li><a href="#" class="submenu__link">Подкатегория <span class="submenu__number">12</span></a>
+                          </li>
+                          <li><a href="#" class="submenu__link">Подкатегория <span class="submenu__number">12</span></a>
+                          </li>
+                          <li><a href="#" class="submenu__link">Подкатегория <span class="submenu__number">12</span></a>
+                          </li>
+                          <li><a href="#" class="submenu__link">Подкатегория <span class="submenu__number">12</span></a>
+                          </li>
+                          <li><a href="#" class="submenu__link">Подкатегория <span class="submenu__number">12</span></a>
+                          </li>
+                        </ul>
+                      </nav>
+                    </li>
+                    <li class="menu-catalog__item">Управление
+                      <nav class="submenu">
+                        <ul class="submenu__list">
+                          <li><a href="#" class="submenu__link">Подкатегория <span class="submenu__number">12</span></a>
+                          </li>
+                          <li><a href="#" class="submenu__link">Подкатегория <span class="submenu__number">12</span></a>
+                          </li>
+                          <li><a href="#" class="submenu__link">Подкатегория <span class="submenu__number">12</span></a>
+                          </li>
+                          <li><a href="#" class="submenu__link">Подкатегория <span class="submenu__number">12</span></a>
+                          </li>
+                          <li><a href="#" class="submenu__link">Подкатегория <span class="submenu__number">12</span></a>
+                          </li>
+                          <li><a href="#" class="submenu__link">Подкатегория <span class="submenu__number">12</span></a>
+                          </li>
+                          <li><a href="#" class="submenu__link">Подкатегория <span class="submenu__number">12</span></a>
+                          </li>
+                          <li><a href="#" class="submenu__link">Подкатегория <span class="submenu__number">12</span></a>
+                          </li>
+                          <li><a href="#" class="submenu__link">Подкатегория <span class="submenu__number">12</span></a>
+                          </li>
+                          <li><a href="#" class="submenu__link">Подкатегория <span class="submenu__number">12</span></a>
+                          </li>
+                          <li><a href="#" class="submenu__link">Подкатегория <span class="submenu__number">12</span></a>
+                          </li>
+                          <li><a href="#" class="submenu__link">Подкатегория <span class="submenu__number">12</span></a>
+                          </li>
+                          <li><a href="#" class="submenu__link">Подкатегория <span class="submenu__number">12</span></a>
+                          </li>
+                          <li><a href="#" class="submenu__link">Подкатегория <span class="submenu__number">12</span></a>
+                          </li>
+                          <li><a href="#" class="submenu__link">Подкатегория <span class="submenu__number">12</span></a>
+                          </li>
+                          <li><a href="#" class="submenu__link">Подкатегория <span class="submenu__number">12</span></a>
+                          </li>
+                        </ul>
+                      </nav>
+                    </li>
+                    <li class="menu-catalog__item">Подвеска
+                      <nav class="submenu">
+                        <ul class="submenu__list">
+                          <li><a href="#" class="submenu__link">Подкатегория <span class="submenu__number">12</span></a>
+                          </li>
+                          <li><a href="#" class="submenu__link">Подкатегория <span class="submenu__number">12</span></a>
+                          </li>
+                          <li><a href="#" class="submenu__link">Подкатегория <span class="submenu__number">12</span></a>
+                          </li>
+                          <li><a href="#" class="submenu__link">Подкатегория <span class="submenu__number">12</span></a>
+                          </li>
+                          <li><a href="#" class="submenu__link">Подкатегория <span class="submenu__number">12</span></a>
+                          </li>
+                          <li><a href="#" class="submenu__link">Подкатегория <span class="submenu__number">12</span></a>
+                          </li>
+                          <li><a href="#" class="submenu__link">Подкатегория <span class="submenu__number">12</span></a>
+                          </li>
+                          <li><a href="#" class="submenu__link">Подкатегория <span class="submenu__number">12</span></a>
+                          </li>
+                          <li><a href="#" class="submenu__link">Подкатегория <span class="submenu__number">12</span></a>
+                          </li>
+                          <li><a href="#" class="submenu__link">Подкатегория <span class="submenu__number">12</span></a>
+                          </li>
+                          <li><a href="#" class="submenu__link">Подкатегория <span class="submenu__number">12</span></a>
+                          </li>
+                          <li><a href="#" class="submenu__link">Подкатегория <span class="submenu__number">12</span></a>
+                          </li>
+                          <li><a href="#" class="submenu__link">Подкатегория <span class="submenu__number">12</span></a>
+                          </li>
+                          <li><a href="#" class="submenu__link">Подкатегория <span class="submenu__number">12</span></a>
+                          </li>
+                          <li><a href="#" class="submenu__link">Подкатегория <span class="submenu__number">12</span></a>
+                          </li>
+                          <li><a href="#" class="submenu__link">Подкатегория <span class="submenu__number">12</span></a>
+                          </li>
+                        </ul>
+                      </nav>
+                    </li>
+                    <li class="menu-catalog__item">Колеса
+                      <nav class="submenu">
+                        <ul class="submenu__list">
+                          <li><a href="#" class="submenu__link">Подкатегория <span class="submenu__number">12</span></a>
+                          </li>
+                          <li><a href="#" class="submenu__link">Подкатегория <span class="submenu__number">12</span></a>
+                          </li>
+                          <li><a href="#" class="submenu__link">Подкатегория <span class="submenu__number">12</span></a>
+                          </li>
+                          <li><a href="#" class="submenu__link">Подкатегория <span class="submenu__number">12</span></a>
+                          </li>
+                          <li><a href="#" class="submenu__link">Подкатегория <span class="submenu__number">12</span></a>
+                          </li>
+                          <li><a href="#" class="submenu__link">Подкатегория <span class="submenu__number">12</span></a>
+                          </li>
+                          <li><a href="#" class="submenu__link">Подкатегория <span class="submenu__number">12</span></a>
+                          </li>
+                          <li><a href="#" class="submenu__link">Подкатегория <span class="submenu__number">12</span></a>
+                          </li>
+                          <li><a href="#" class="submenu__link">Подкатегория <span class="submenu__number">12</span></a>
+                          </li>
+                          <li><a href="#" class="submenu__link">Подкатегория <span class="submenu__number">12</span></a>
+                          </li>
+                          <li><a href="#" class="submenu__link">Подкатегория <span class="submenu__number">12</span></a>
+                          </li>
+                          <li><a href="#" class="submenu__link">Подкатегория <span class="submenu__number">12</span></a>
+                          </li>
+                          <li><a href="#" class="submenu__link">Подкатегория <span class="submenu__number">12</span></a>
+                          </li>
+                          <li><a href="#" class="submenu__link">Подкатегория <span class="submenu__number">12</span></a>
+                          </li>
+                          <li><a href="#" class="submenu__link">Подкатегория <span class="submenu__number">12</span></a>
+                          </li>
+                          <li><a href="#" class="submenu__link">Подкатегория <span class="submenu__number">12</span></a>
+                          </li>
+                        </ul>
+                      </nav>
+                    </li>
+                    <li class="menu-catalog__item">Электрика
+                      <nav class="submenu">
+                        <ul class="submenu__list">
+                          <li><a href="#" class="submenu__link">Подкатегория <span class="submenu__number">12</span></a>
+                          </li>
+                          <li><a href="#" class="submenu__link">Подкатегория <span class="submenu__number">12</span></a>
+                          </li>
+                          <li><a href="#" class="submenu__link">Подкатегория <span class="submenu__number">12</span></a>
+                          </li>
+                          <li><a href="#" class="submenu__link">Подкатегория <span class="submenu__number">12</span></a>
+                          </li>
+                          <li><a href="#" class="submenu__link">Подкатегория <span class="submenu__number">12</span></a>
+                          </li>
+                          <li><a href="#" class="submenu__link">Подкатегория <span class="submenu__number">12</span></a>
+                          </li>
+                          <li><a href="#" class="submenu__link">Подкатегория <span class="submenu__number">12</span></a>
+                          </li>
+                          <li><a href="#" class="submenu__link">Подкатегория <span class="submenu__number">12</span></a>
+                          </li>
+                          <li><a href="#" class="submenu__link">Подкатегория <span class="submenu__number">12</span></a>
+                          </li>
+                          <li><a href="#" class="submenu__link">Подкатегория <span class="submenu__number">12</span></a>
+                          </li>
+                          <li><a href="#" class="submenu__link">Подкатегория <span class="submenu__number">12</span></a>
+                          </li>
+                          <li><a href="#" class="submenu__link">Подкатегория <span class="submenu__number">12</span></a>
+                          </li>
+                          <li><a href="#" class="submenu__link">Подкатегория <span class="submenu__number">12</span></a>
+                          </li>
+                          <li><a href="#" class="submenu__link">Подкатегория <span class="submenu__number">12</span></a>
+                          </li>
+                          <li><a href="#" class="submenu__link">Подкатегория <span class="submenu__number">12</span></a>
+                          </li>
+                          <li><a href="#" class="submenu__link">Подкатегория <span class="submenu__number">12</span></a>
+                          </li>
+                        </ul>
+                      </nav>
+                    </li>
+                    <li class="menu-catalog__item">Багаж
+                      <nav class="submenu">
+                        <ul class="submenu__list">
+                          <li><a href="#" class="submenu__link">Подкатегория <span class="submenu__number">12</span></a>
+                          </li>
+                          <li><a href="#" class="submenu__link">Подкатегория <span class="submenu__number">12</span></a>
+                          </li>
+                          <li><a href="#" class="submenu__link">Подкатегория <span class="submenu__number">12</span></a>
+                          </li>
+                          <li><a href="#" class="submenu__link">Подкатегория <span class="submenu__number">12</span></a>
+                          </li>
+                          <li><a href="#" class="submenu__link">Подкатегория <span class="submenu__number">12</span></a>
+                          </li>
+                          <li><a href="#" class="submenu__link">Подкатегория <span class="submenu__number">12</span></a>
+                          </li>
+                          <li><a href="#" class="submenu__link">Подкатегория <span class="submenu__number">12</span></a>
+                          </li>
+                          <li><a href="#" class="submenu__link">Подкатегория <span class="submenu__number">12</span></a>
+                          </li>
+                          <li><a href="#" class="submenu__link">Подкатегория <span class="submenu__number">12</span></a>
+                          </li>
+                          <li><a href="#" class="submenu__link">Подкатегория <span class="submenu__number">12</span></a>
+                          </li>
+                          <li><a href="#" class="submenu__link">Подкатегория <span class="submenu__number">12</span></a>
+                          </li>
+                          <li><a href="#" class="submenu__link">Подкатегория <span class="submenu__number">12</span></a>
+                          </li>
+                          <li><a href="#" class="submenu__link">Подкатегория <span class="submenu__number">12</span></a>
+                          </li>
+                          <li><a href="#" class="submenu__link">Подкатегория <span class="submenu__number">12</span></a>
+                          </li>
+                          <li><a href="#" class="submenu__link">Подкатегория <span class="submenu__number">12</span></a>
+                          </li>
+                          <li><a href="#" class="submenu__link">Подкатегория <span class="submenu__number">12</span></a>
+                          </li>
+                        </ul>
+                      </nav>
+                    </li>
+                    <li class="menu-catalog__item">Инструмент
+                      <nav class="submenu">
+                        <ul class="submenu__list">
+                          <li><a href="#" class="submenu__link">Подкатегория <span class="submenu__number">12</span></a>
+                          </li>
+                          <li><a href="#" class="submenu__link">Подкатегория <span class="submenu__number">12</span></a>
+                          </li>
+                          <li><a href="#" class="submenu__link">Подкатегория <span class="submenu__number">12</span></a>
+                          </li>
+                          <li><a href="#" class="submenu__link">Подкатегория <span class="submenu__number">12</span></a>
+                          </li>
+                          <li><a href="#" class="submenu__link">Подкатегория <span class="submenu__number">12</span></a>
+                          </li>
+                          <li><a href="#" class="submenu__link">Подкатегория <span class="submenu__number">12</span></a>
+                          </li>
+                          <li><a href="#" class="submenu__link">Подкатегория <span class="submenu__number">12</span></a>
+                          </li>
+                          <li><a href="#" class="submenu__link">Подкатегория <span class="submenu__number">12</span></a>
+                          </li>
+                          <li><a href="#" class="submenu__link">Подкатегория <span class="submenu__number">12</span></a>
+                          </li>
+                          <li><a href="#" class="submenu__link">Подкатегория <span class="submenu__number">12</span></a>
+                          </li>
+                          <li><a href="#" class="submenu__link">Подкатегория <span class="submenu__number">12</span></a>
+                          </li>
+                          <li><a href="#" class="submenu__link">Подкатегория <span class="submenu__number">12</span></a>
+                          </li>
+                          <li><a href="#" class="submenu__link">Подкатегория <span class="submenu__number">12</span></a>
+                          </li>
+                          <li><a href="#" class="submenu__link">Подкатегория <span class="submenu__number">12</span></a>
+                          </li>
+                          <li><a href="#" class="submenu__link">Подкатегория <span class="submenu__number">12</span></a>
+                          </li>
+                          <li><a href="#" class="submenu__link">Подкатегория <span class="submenu__number">12</span></a>
+                          </li>
+                        </ul>
+                      </nav>
+                    </li>
+                    <li class="menu-catalog__item">Товары для снегоходов
+                      <nav class="submenu">
+                        <ul class="submenu__list">
+                          <li><a href="#" class="submenu__link">Подкатегория <span class="submenu__number">12</span></a>
+                          </li>
+                          <li><a href="#" class="submenu__link">Подкатегория <span class="submenu__number">12</span></a>
+                          </li>
+                          <li><a href="#" class="submenu__link">Подкатегория <span class="submenu__number">12</span></a>
+                          </li>
+                          <li><a href="#" class="submenu__link">Подкатегория <span class="submenu__number">12</span></a>
+                          </li>
+                          <li><a href="#" class="submenu__link">Подкатегория <span class="submenu__number">12</span></a>
+                          </li>
+                          <li><a href="#" class="submenu__link">Подкатегория <span class="submenu__number">12</span></a>
+                          </li>
+                          <li><a href="#" class="submenu__link">Подкатегория <span class="submenu__number">12</span></a>
+                          </li>
+                          <li><a href="#" class="submenu__link">Подкатегория <span class="submenu__number">12</span></a>
+                          </li>
+                          <li><a href="#" class="submenu__link">Подкатегория <span class="submenu__number">12</span></a>
+                          </li>
+                          <li><a href="#" class="submenu__link">Подкатегория <span class="submenu__number">12</span></a>
+                          </li>
+                          <li><a href="#" class="submenu__link">Подкатегория <span class="submenu__number">12</span></a>
+                          </li>
+                          <li><a href="#" class="submenu__link">Подкатегория <span class="submenu__number">12</span></a>
+                          </li>
+                          <li><a href="#" class="submenu__link">Подкатегория <span class="submenu__number">12</span></a>
+                          </li>
+                          <li><a href="#" class="submenu__link">Подкатегория <span class="submenu__number">12</span></a>
+                          </li>
+                          <li><a href="#" class="submenu__link">Подкатегория <span class="submenu__number">12</span></a>
+                          </li>
+                          <li><a href="#" class="submenu__link">Подкатегория <span class="submenu__number">12</span></a>
+                          </li>
+                        </ul>
+                      </nav>
+                    </li>
+                    <li class="menu-catalog__item">OEM — Оригинальные запчасти
+                      <nav class="submenu">
+                        <ul class="submenu__list">
+                          <li><a href="#" class="submenu__link">Подкатегория <span class="submenu__number">12</span></a>
+                          </li>
+                          <li><a href="#" class="submenu__link">Подкатегория <span class="submenu__number">12</span></a>
+                          </li>
+                          <li><a href="#" class="submenu__link">Подкатегория <span class="submenu__number">12</span></a>
+                          </li>
+                          <li><a href="#" class="submenu__link">Подкатегория <span class="submenu__number">12</span></a>
+                          </li>
+                          <li><a href="#" class="submenu__link">Подкатегория <span class="submenu__number">12</span></a>
+                          </li>
+                          <li><a href="#" class="submenu__link">Подкатегория <span class="submenu__number">12</span></a>
+                          </li>
+                          <li><a href="#" class="submenu__link">Подкатегория <span class="submenu__number">12</span></a>
+                          </li>
+                          <li><a href="#" class="submenu__link">Подкатегория <span class="submenu__number">12</span></a>
+                          </li>
+                          <li><a href="#" class="submenu__link">Подкатегория <span class="submenu__number">12</span></a>
+                          </li>
+                          <li><a href="#" class="submenu__link">Подкатегория <span class="submenu__number">12</span></a>
+                          </li>
+                          <li><a href="#" class="submenu__link">Подкатегория <span class="submenu__number">12</span></a>
+                          </li>
+                          <li><a href="#" class="submenu__link">Подкатегория <span class="submenu__number">12</span></a>
+                          </li>
+                          <li><a href="#" class="submenu__link">Подкатегория <span class="submenu__number">12</span></a>
+                          </li>
+                          <li><a href="#" class="submenu__link">Подкатегория <span class="submenu__number">12</span></a>
+                          </li>
+                          <li><a href="#" class="submenu__link">Подкатегория <span class="submenu__number">12</span></a>
+                          </li>
+                          <li><a href="#" class="submenu__link">Подкатегория <span class="submenu__number">12</span></a>
+                          </li>
+                        </ul>
+                      </nav>
+                    </li>
+                    <li class="menu-catalog__item">Комплекты для ТО
+                      <nav class="submenu">
+                        <ul class="submenu__list">
+                          <li><a href="#" class="submenu__link">Подкатегория <span class="submenu__number">12</span></a>
+                          </li>
+                          <li><a href="#" class="submenu__link">Подкатегория <span class="submenu__number">12</span></a>
+                          </li>
+                          <li><a href="#" class="submenu__link">Подкатегория <span class="submenu__number">12</span></a>
+                          </li>
+                          <li><a href="#" class="submenu__link">Подкатегория <span class="submenu__number">12</span></a>
+                          </li>
+                          <li><a href="#" class="submenu__link">Подкатегория <span class="submenu__number">12</span></a>
+                          </li>
+                          <li><a href="#" class="submenu__link">Подкатегория <span class="submenu__number">12</span></a>
+                          </li>
+                          <li><a href="#" class="submenu__link">Подкатегория <span class="submenu__number">12</span></a>
+                          </li>
+                          <li><a href="#" class="submenu__link">Подкатегория <span class="submenu__number">12</span></a>
+                          </li>
+                          <li><a href="#" class="submenu__link">Подкатегория <span class="submenu__number">12</span></a>
+                          </li>
+                          <li><a href="#" class="submenu__link">Подкатегория <span class="submenu__number">12</span></a>
+                          </li>
+                          <li><a href="#" class="submenu__link">Подкатегория <span class="submenu__number">12</span></a>
+                          </li>
+                          <li><a href="#" class="submenu__link">Подкатегория <span class="submenu__number">12</span></a>
+                          </li>
+                          <li><a href="#" class="submenu__link">Подкатегория <span class="submenu__number">12</span></a>
+                          </li>
+                          <li><a href="#" class="submenu__link">Подкатегория <span class="submenu__number">12</span></a>
+                          </li>
+                          <li><a href="#" class="submenu__link">Подкатегория <span class="submenu__number">12</span></a>
+                          </li>
+                          <li><a href="#" class="submenu__link">Подкатегория <span class="submenu__number">12</span></a>
+                          </li>
+                        </ul>
+                      </nav>
+                    </li>
+                    <li class="menu-catalog__item">Экипировка
+                      <nav class="submenu">
+                        <ul class="submenu__list">
+                          <li><a href="#" class="submenu__link">Подкатегория <span class="submenu__number">12</span></a>
+                          </li>
+                          <li><a href="#" class="submenu__link">Подкатегория <span class="submenu__number">12</span></a>
+                          </li>
+                          <li><a href="#" class="submenu__link">Подкатегория <span class="submenu__number">12</span></a>
+                          </li>
+                          <li><a href="#" class="submenu__link">Подкатегория <span class="submenu__number">12</span></a>
+                          </li>
+                          <li><a href="#" class="submenu__link">Подкатегория <span class="submenu__number">12</span></a>
+                          </li>
+                          <li><a href="#" class="submenu__link">Подкатегория <span class="submenu__number">12</span></a>
+                          </li>
+                          <li><a href="#" class="submenu__link">Подкатегория <span class="submenu__number">12</span></a>
+                          </li>
+                          <li><a href="#" class="submenu__link">Подкатегория <span class="submenu__number">12</span></a>
+                          </li>
+                          <li><a href="#" class="submenu__link">Подкатегория <span class="submenu__number">12</span></a>
+                          </li>
+                          <li><a href="#" class="submenu__link">Подкатегория <span class="submenu__number">12</span></a>
+                          </li>
+                          <li><a href="#" class="submenu__link">Подкатегория <span class="submenu__number">12</span></a>
+                          </li>
+                          <li><a href="#" class="submenu__link">Подкатегория <span class="submenu__number">12</span></a>
+                          </li>
+                          <li><a href="#" class="submenu__link">Подкатегория <span class="submenu__number">12</span></a>
+                          </li>
+                          <li><a href="#" class="submenu__link">Подкатегория <span class="submenu__number">12</span></a>
+                          </li>
+                          <li><a href="#" class="submenu__link">Подкатегория <span class="submenu__number">12</span></a>
+                          </li>
+                          <li><a href="#" class="submenu__link">Подкатегория <span class="submenu__number">12</span></a>
+                          </li>
+                        </ul>
+                      </nav>
+                    </li>
+                    <li class="menu-catalog__item">Выхлопные системы
+                      <nav class="submenu">
+                        <ul class="submenu__list">
+                          <li><a href="#" class="submenu__link">Подкатегория <span class="submenu__number">12</span></a>
+                          </li>
+                          <li><a href="#" class="submenu__link">Подкатегория <span class="submenu__number">12</span></a>
+                          </li>
+                          <li><a href="#" class="submenu__link">Подкатегория <span class="submenu__number">12</span></a>
+                          </li>
+                          <li><a href="#" class="submenu__link">Подкатегория <span class="submenu__number">12</span></a>
+                          </li>
+                          <li><a href="#" class="submenu__link">Подкатегория <span class="submenu__number">12</span></a>
+                          </li>
+                          <li><a href="#" class="submenu__link">Подкатегория <span class="submenu__number">12</span></a>
+                          </li>
+                          <li><a href="#" class="submenu__link">Подкатегория <span class="submenu__number">12</span></a>
+                          </li>
+                          <li><a href="#" class="submenu__link">Подкатегория <span class="submenu__number">12</span></a>
+                          </li>
+                          <li><a href="#" class="submenu__link">Подкатегория <span class="submenu__number">12</span></a>
+                          </li>
+                          <li><a href="#" class="submenu__link">Подкатегория <span class="submenu__number">12</span></a>
+                          </li>
+                          <li><a href="#" class="submenu__link">Подкатегория <span class="submenu__number">12</span></a>
+                          </li>
+                          <li><a href="#" class="submenu__link">Подкатегория <span class="submenu__number">12</span></a>
+                          </li>
+                          <li><a href="#" class="submenu__link">Подкатегория <span class="submenu__number">12</span></a>
+                          </li>
+                          <li><a href="#" class="submenu__link">Подкатегория <span class="submenu__number">12</span></a>
+                          </li>
+                          <li><a href="#" class="submenu__link">Подкатегория <span class="submenu__number">12</span></a>
+                          </li>
+                          <li><a href="#" class="submenu__link">Подкатегория <span class="submenu__number">12</span></a>
+                          </li>
+                        </ul>
+                      </nav>
+                    </li>
+                  </ul>
+                </nav>
+
+                <!-- menu-top -->
+                <nav class="menu-top">
+                  <ul class="list-reset menu-top__list">
+                    <li class="menu-top__item"><a href="./index.html" class="menu-top__link is-active">Главная</a>
+                    </li>
+                    <li class="menu-top__item"><a href="./about.html" class="menu-top__link">О нас</a>
+                    </li>
+                    <li class="menu-top__item"><a href="./delivery.html" class="menu-top__link">Доставка</a>
+                    </li>
+                    <li class="menu-top__item"><a href="./oplata.html" class="menu-top__link">Оплата</a>
+                    </li>
+                    <li class="menu-top__item"><a href="./vozvrat.html" class="menu-top__link">Возврат</a>
+                    </li>
+                    <li class="menu-top__item"><a href="./brends.html" class="menu-top__link">Бренды</a>
+                    </li>
+                    <li class="menu-top__item"><a href="./sales.html" class="menu-top__link">Акции</a>
+                    </li>
+                    <li class="menu-top__item"><a href="./blog.html" class="menu-top__link">Блог</a>
+                    </li>
+                    <li class="menu-top__item"><a href="./contacts.html" class="menu-top__link">Контакты</a>
+                    </li>
+                    <li class="menu-top__item"><a href="./partners.html" class="menu-top__link">Партнёрам</a>
+                    </li>
+                  </ul>
+                </nav>
+
+                <!-- Контакты -->
+                <div class="menu-mob__contacts">
+                  <a href="tel:+79629105600" class="menu-mob__contacts-phone">+7 962 910-56-00</a>
+
+                  <div class="feedback__buttons">
+                    <!-- whatsapp -->
+                    <a class="btn btn-whatsapp" href="whatsapp://send?phone=+79629105600&amp;text=Приветствуем! Рады будем помочь!" target="_blank" title="Написать в Whatsapp"><i class="bx bx__left bxl-whatsapp"></i>
+                    </a>
+                    <!-- telegram -->
+                    <a class="btn btn-telegram" href="https://t.me/+79629105600" target="_blank" title="Написать в Telegram"><i
+							class="bx bx__left bxl-telegram"></i>
+                    </a>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+    </main>
+
+  </div>
+
+  <!-- Скрипты -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+  <script>
+    // Открытие каталога на десктопе
+    		$('.btn-catalog').click(function () {
+    			$('.menu-mob').addClass('is-open');
+    			$('.menu-mob__content').addClass('is-active');
+    			$('body').addClass('dis-scroll');
+    			return false;
+    		});
+    
+    		// Открываем меню по бургеру
+    		$('.burger').click(function () {
+    			$('.menu-mob').addClass('is-open');
+    			$('.menu-mob__content').addClass('is-active');
+    			$('body').addClass('dis-scroll');
+    			return false;
+    		});
+    
+    		// Закрываем мобильное меню
+    		$('.menu-mob__close').click(function () {
+    			$('.menu-mob').removeClass('is-open');
+    			$('.menu-mob__content').removeClass('is-active');
+    			$('body').removeClass('dis-scroll');
+    			return false;
+    		});
+  </script>
+</body>
+
+</html>

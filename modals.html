@@ -1,0 +1,1213 @@
+<!DOCTYPE html>
+<html lang="ru" class="page" id="top-page">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <!-- Favicon -->
+  <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png">
+  <link rel="icon" href="./favicon/favicon.ico" type="image/x-icon">
+  <link rel="manifest" href="./favicon/site.webmanifest">
+  <link rel="mask-icon" href="./favicon/safari-pinned-tab.svg" color="#212121">
+  <meta name="msapplication-TileColor" content="#212121">
+  <meta name="theme-color" content="#212121">
+
+  <!--  Seo-->
+  <title>Интернет-магазин мотозапчастей с доставкой по России с 2008 года</title>
+  <meta name="Description" content="">
+  <meta name="Keywords" content="">
+  <meta name="Robots" content="ALL">
+  <meta name="Revisit-After" content="1 Days">
+  <!--  Мета теги (OGG)-->
+  <meta property="og:title" content="" />
+  <meta property="og:description" content="" />
+  <meta property="og:image" content="" />
+  <meta property="og:url" content="" />
+  <meta property="og:type" content="website" />
+  <meta property="og:phone_number" content="" />
+  <meta property="og:email" content="" />
+  <meta property="og:site_name" content="" />
+  <meta property="og:street_address" content="" />
+  <meta property="og:postal-code" content="" />
+  <meta property="og:locality" content="" />
+  <meta property="og:region" content="" />
+  <meta property="og:country-name" content="" />
+  <meta property="og:latitude" content="" />
+  <meta property="og:longitude" content="" />
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body class="page__body">
+
+  <div class="page__wrapper">
+
+    <!-- main -->
+    <main class="page__main">
+
+      <section class="section-ptb modals">
+        <div class="container">
+
+          <h1 class="page-title">Модальные окна</h1>
+
+          <!-- ====================== Кнопки ========================= -->
+
+          <!-- пустая корзина -->
+          <button aria-label="Корзина" aria-hidden="true" class="btn-reset btn-cart">
+            <div class="btn-cart__number">0</div>
+            <i class="bx bx-cart-alt btn-cart__icon"></i>
+          </button>
+
+          <br>
+
+          <!-- Товары в корзине -->
+          <button aria-label="Корзина" aria-hidden="true" class="btn-reset btn-cart is-active">
+            <div class="btn-cart__number is-active">2</div>
+            <i class="bx bx-cart-alt btn-cart__icon"></i>
+          </button>
+
+          <br>
+          <br>
+
+          <button aria-label="Добавить товар в корзину" aria-hidden="true" class="btn-resset btn-icon card-tovar__cart-btn"><i class="bx bx-cart-add"></i>
+          </button>
+
+          <br>
+          <br>
+
+          <!-- Удалить товар -->
+          <button aria-label="Удалить товар c корзины" aria-hidden="true" class="btn-reset btn btn__outline btn-delete">Удалить товар
+          </button>
+
+          <br>
+          <br>
+
+          <!-- Заказать звонок -->
+          <button aria-label="Заказать звонок" aria-hidden="true" class="btn-reset phone__callback"><i class="bx bx__left bx-phone header__top-icon"></i> Заказать звонок
+          </button>
+
+          <br>
+          <br>
+
+          <!-- Войти -->
+          <button aria-label="Открыть форму авторизации" aria-expanded="false" class="btn-reset header__login btn-login">
+            <i class="bx bx__left bx-user header__top-icon btn-login__icon"></i>
+            <span class="btn-login__text">Войти</span>
+          </button>
+
+          <br>
+          <br>
+
+          <!-- Добавить отзыв -->
+          <button class="btn btn__outline reviews__btn-add">Добавить отзыв</button>
+
+          <br>
+          <br>
+
+          <!-- Удалить мототранспорт -->
+          <li class="mototransport-result__item" style="max-width: 450px;">
+            <img class="mototransport-result__icon" loading="lazy" src="img/icons/ic-atv.png" width="32" height="32" alt="Квадрацикл">
+            <div class="mototransport-result__text-result">
+              <strong>Квадрацикл</strong> — BMW / F650GS (K75) / 2001
+            </div>
+            <button aria-label="Удалить" type="button" class="btn-reset mototransport-result__delete"><i class="bx bx-x"></i>
+            </button>
+          </li>
+
+          <br>
+          <br>
+
+          <!-- Добавить мототранспорт -->
+          <button type="button" class="btn-reset btn btn__outline addtransport-btn">Добавить</button>
+
+          <br>
+          <br>
+
+          <!-- Инфо модалка -->
+          <button type="button" class="btn-reset btn info-btn">Информационная модалка</button>
+
+          <!-- ====================== Модальные окна ========================= -->
+
+          <!-- Информационная модалка -->
+          <div class="modal modal-sm modal-info">
+            <div class="modal__overlay">
+              <div class="modal__container">
+                <button aria-label="Закрыть" aria-hidden="true" class="modal__close"><i class="bx bx-x"></i>
+                </button>
+
+                <div class="modal__head text-center">
+                  <img class="modal__icon" loading="lazy" src="img/icons/ic_modal-info.svg" width="64" height="64" alt="Корзина пуста">
+                  <h3 class="modal__title">Важная информация!</h3>
+                </div>
+
+                <div class="modal__body text-center">
+                  <p class="mb-0 modal__text">Далеко-далеко за словесными горами в стране.</p>
+                  <a class="btn modal__btn" href="" target="_blank">Кнопка</a>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <!-- / Корзина пуста -->
+
+          <!-- Корзина пуста -->
+          <div class="modal modal-sm modal-cart">
+            <div class="modal__overlay">
+              <div class="modal__container">
+                <button aria-label="Закрыть" aria-hidden="true" class="modal__close"><i class="bx bx-x"></i>
+                </button>
+
+                <div class="modal__head text-center">
+                  <img class="modal__icon" loading="lazy" src="img/icons/ic_cart-empty.svg" width="64" height="64" alt="Корзина пуста">
+                  <h3 class="modal__title">Ваша корзина пуста!</h3>
+                </div>
+
+                <div class="modal__body text-center">
+                  <p class="mb-24 modal__text">Выберите в каталоге интересующий вас товар и нажмите кнопку «В корзину».</p>
+                  <a class="btn modal__btn" href="./catalog.html" target="_blank">Перейти в каталог <i class="bx bx-chevron-right"></i></a>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <!-- / Корзина пуста -->
+
+          <!-- Добавить товар в корзину -->
+          <div class="modal modal-lg modal-tovar">
+            <div class="modal__overlay">
+              <div class="modal__container">
+                <button aria-label="Закрыть" aria-hidden="true" class="modal__close"><i class="bx bx-x"></i>
+                </button>
+
+                <div class="mb-32 modal__head">
+
+                  <!-- Товар -->
+                  <div class="modal-tovar tovar-modal">
+                    <a href="" class="tovar-modal__img" target="_blank">
+                      <picture>
+                        <source srcset="img/tovar-img.webp" type="image/webp">
+                          <img loading="lazy" src="img/tovar-img.jpg" class="" width="80" height="80" alt="название товара">
+                      </picture>
+                    </a>
+                    <div class="tovar-modal__info">
+                      <div class="tovar-modal__artikul">Артикул: <span class="cart-tovar__num">024-0093</span>
+                      </div>
+                      <a href="#" class="tovar-modal__name" target="_blank">Водонепроницаемый чехол для телефона KAPPA KS956B,
+                                                универсальный</a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="modal__body">
+                  <div class="modal-tovar__price">
+                    <!-- таблица с ценами -->
+                    <div class="price-table">
+                      <!-- строки с ценами -->
+
+                      <!-- цена 1 -->
+                      <div class="price-table__row price-row-club">
+                        <div class="price-table__prices">
+                          <!-- розничная цена -->
+                          <div class="price price--rozn" id="prize-rozn">
+                            <div class="price__sum">1130</div>
+                            <div class="price__label">Розн. цена</div>
+                          </div>
+                          <!-- скидка -->
+                          <div class="tovar-sale"><i class="bx bxs-offer"></i>  <span>-220</span>
+                          </div>
+                          <!-- клубная цена -->
+                          <div class="price price--club" id="price-club">
+                            <div class="price__sum">1130</div>
+                            <div class="price__label">Клуб. цена</div>
+                          </div>
+                        </div>
+
+                        <!-- информация в ценах -->
+                        <div class="price__info">
+                          <div class="price__info--label">Перемещение
+                            <br>со склада
+                            <span class="price__info--days">3дня</span>:
+                            <span class="price__info--num">21 шт.</span>
+                          </div>
+                        </div>
+
+                        <!-- счетчик выбора кол-ва товара -->
+                        <div class="t-counter">
+                          <button aria-label="Убрать 1 шт." class="t-counter__btn t-counter__btn--minus"></button>
+                          <input class="input-reset t-counter__input" type="text" name="tovarСount" value="1" disabled="">
+                          <button aria-label="Добавить 1 шт." class="t-counter__btn t-counter__btn--plus"></button>
+                        </div>
+                        <!-- Итоговая сумма -->
+                        <div class="price price--total" id="price-total">
+                          <div class="price__sum">910</div>
+                          <div class="price__label">Итого</div>
+                        </div>
+
+                        <!-- кнопка добавить в корзину -->
+                        <button aria-label="Добавить в корзину" class="btn btn__outline tovar__btn">
+                          <span class="tovar__btn--text">Вкорзину</span>
+                        </button>
+                      </div>
+
+                      <!-- цена 2 -->
+                      <div class="price-table__row price-row-club">
+                        <div class="price-table__prices">
+                          <!-- розничная цена -->
+                          <div class="price price--rozn" id="prize-rozn">
+                            <div class="price__sum">1130</div>
+                            <div class="price__label">Розн. цена</div>
+                          </div>
+                          <!-- скидка -->
+                          <div class="tovar-sale"><i class="bx bxs-offer"></i>  <span>-220</span>
+                          </div>
+                          <!-- клубная цена -->
+                          <div class="price price--club" id="price-club">
+                            <div class="price__sum">1130</div>
+                            <div class="price__label">Клуб. цена</div>
+                          </div>
+                        </div>
+
+                        <!-- информация в ценах -->
+                        <div class="price__info">
+                          <div class="price__info--label">Перемещение
+                            <br>со склада
+                            <span class="price__info--days">3 дня</span>:
+                            <span class="price__info--num">21 шт.</span>
+                          </div>
+                        </div>
+
+                        <!-- счетчик выбора кол-ва товара -->
+                        <div class="t-counter">
+                          <button aria-label="Убрать 1 шт." class="t-counter__btn t-counter__btn--minus"></button>
+                          <input class="input-reset t-counter__input" type="text" name="tovarСount" value="1" disabled="">
+                          <button aria-label="Добавить 1 шт." class="t-counter__btn t-counter__btn--plus"></button>
+                        </div>
+                        <!-- Итоговая сумма -->
+                        <div class="price price--total" id="price-total">
+                          <div class="price__sum">910</div>
+                          <div class="price__label">Итого</div>
+                        </div>
+
+                        <!-- кнопка добавить в корзину -->
+                        <button aria-label="Добавить в корзину" class="btn btn__outline tovar__btn">
+                          <span class="tovar__btn--text">Вкорзину</span>
+                        </button>
+                      </div>
+
+                      <!-- цена 3 -->
+                      <div class="price-table__row in-cart">
+                        <div class="price-table__prices">
+                          <!-- розничная цена -->
+                          <div class="price price--rozn" id="prize-rozn">
+                            <div class="price__sum">1130</div>
+                            <div class="price__label">Розн. цена</div>
+                          </div>
+                        </div>
+
+                        <!-- информация в ценах -->
+                        <div class="price__info">
+                          <div class="price__info--label">В магазине
+                            <br>
+                            <span class="price__info--days">сегодня</span>:
+                            <span class="price__info--num">5 шт.</span>
+                          </div>
+                        </div>
+
+                        <!-- счетчик выбора кол-ва товара -->
+                        <div class="t-counter">
+                          <button aria-label="Убрать 1 шт." class="t-counter__btn t-counter__btn--minus"></button>
+                          <input class="input-reset t-counter__input" type="text" name="tovarСount" value="1" disabled="">
+                          <button aria-label="Добавить 1 шт." class="t-counter__btn t-counter__btn--plus"></button>
+                        </div>
+                        <!-- Итоговая сумма -->
+                        <div class="price price--total" id="price-total">
+                          <div class="price__sum">910</div>
+                          <div class="price__label">Итого</div>
+                        </div>
+
+                        <!-- кнопка добавить в корзину -->
+                        <button aria-label="Добавить в корзину" class="btn btn__outline tovar__btn in-card">
+                          <span class="tovar__btn--text">В корзине</span>
+                        </button>
+                      </div>
+
+                      <!-- цена 4 -->
+                      <div class="price-table__row">
+                        <div class="price-table__prices">
+                          <!-- розничная цена -->
+                          <div class="price price--rozn" id="prize-rozn">
+                            <div class="price__sum">1130</div>
+                            <div class="price__label">Розн. цена</div>
+                          </div>
+                        </div>
+
+                        <!-- информация в ценах -->
+                        <div class="price__info">
+                          <div class="price__info--label">В магазине
+                            <br>
+                            <span class="price__info--days">сегодня</span>:
+                            <span class="price__info--num">5 шт.</span>
+                          </div>
+                        </div>
+
+                        <!-- счетчик выбора кол-ва товара -->
+                        <div class="t-counter">
+                          <button aria-label="Убрать 1 шт." class="t-counter__btn t-counter__btn--minus"></button>
+                          <input class="input-reset t-counter__input" type="text" name="tovarСount" value="1" disabled="">
+                          <button aria-label="Добавить 1 шт." class="t-counter__btn t-counter__btn--plus"></button>
+                        </div>
+                        <!-- Итоговая сумма -->
+                        <div class="price price--total" id="price-total">
+                          <div class="price__sum">910</div>
+                          <div class="price__label">Итого</div>
+                        </div>
+
+                        <!-- кнопка добавить в корзину -->
+                        <button aria-label="Добавить в корзину" class="btn btn__outline tovar__btn">
+                          <span class="tovar__btn--text">Вкорзину</span>
+                        </button>
+                      </div>
+
+                      <!-- цена 5 -->
+                      <div class="price-table__row">
+                        <div class="price-table__prices">
+                          <!-- розничная цена -->
+                          <div class="price price--rozn" id="prize-rozn">
+                            <div class="price__sum">1130</div>
+                            <div class="price__label">Розн. цена</div>
+                          </div>
+                        </div>
+
+                        <!-- информация в ценах -->
+                        <div class="price__info">
+                          <div class="price__info--label">В магазине
+                            <br>
+                            <span class="price__info--days">сегодня</span>:
+                            <span class="price__info--num">5 шт.</span>
+                          </div>
+                        </div>
+
+                        <!-- счетчик выбора кол-ва товара -->
+                        <div class="t-counter">
+                          <button aria-label="Убрать 1 шт." class="t-counter__btn t-counter__btn--minus"></button>
+                          <input class="input-reset t-counter__input" type="text" name="tovarСount" value="1" disabled="">
+                          <button aria-label="Добавить 1 шт." class="t-counter__btn t-counter__btn--plus"></button>
+                        </div>
+                        <!-- Итоговая сумма -->
+                        <div class="price price--total" id="price-total">
+                          <div class="price__sum">910</div>
+                          <div class="price__label">Итого</div>
+                        </div>
+
+                        <!-- кнопка добавить в корзину -->
+                        <button aria-label="Добавить в корзину" class="btn btn__outline tovar__btn">
+                          <span class="tovar__btn--text">Вкорзину</span>
+                        </button>
+                      </div>
+
+                      <div class="price-table__footer-info">
+                        <p>Цены действительны только для нашего интернет-магазина и могут отличаться от цен в розничных магазинах.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- кнопки -->
+                <div class="modal__btns">
+                  <button aria-label="Продолжить покупки" type="button" class="btn-reset btn btn__outline btn-back btn-cancel"><i class="bx bx-chevron-left"></i> Продолжить покупки</button>
+
+                  <a href="./cart.html" class="btn-reset btn btn-cartgo">Перейти в корзину <i class="bx bx-chevron-right"></i></a>
+                </div>
+              </div>
+
+            </div>
+          </div>
+          <!-- / Добавить товар в корзину -->
+
+          <!-- Товары в корзине -->
+          <div class="modal modal-sm modal-tovar-delete modal-cart-add">
+            <div class="modal__overlay">
+              <div class="modal__container">
+                <button aria-label="Закрыть" aria-hidden="true" class="modal__close"><i class="bx bx-x"></i>
+                </button>
+
+                <div class="mb-24 modal__head modal__head-flex">
+                  <img class="modal__icon" loading="lazy" src="img/icons/ic_add-tovar.svg" width="48" height="48" alt="Корзина пуста">
+                  <h3 class="modal__title">Товары в корзине:</h3>
+                </div>
+
+                <!-- текст + кнопка  -->
+                <div class="modal__body">
+                  <ul class="modal-tovar__list">
+                    <li>
+                      <!-- Товар -->
+                      <div class="modal-tovar tovar-modal">
+                        <a href="" class="tovar-modal__img" target="_blank">
+                          <picture>
+                            <source srcset="img/tovar-img.webp" type="image/webp">
+                              <img loading="lazy" src="img/tovar-img.jpg" class="" width="80" height="80" alt="название товара">
+                          </picture>
+                        </a>
+                        <div class="tovar-modal__info">
+                          <div class="tovar-modal__artikul">Артикул: <span class="cart-tovar__num">024-0093</span>
+                          </div>
+                          <a href="#" class="tovar-modal__name" target="_blank">Водонепроницаемый чехол для телефона KAPPA KS956B,
+                                                        универсальный</a>
+                          <div class="mt-4 tovar-price">2 360</div>
+                        </div>
+                      </div>
+                    </li>
+
+                    <li>
+                      <!-- Товар -->
+                      <div class="modal-tovar tovar-modal">
+
+                        <a href="" class="tovar-modal__img" target="_blank">
+                          <picture>
+                            <source srcset="img/tovar-img.webp" type="image/webp">
+                              <img loading="lazy" src="img/tovar-img.jpg" class="" width="80" height="80" alt="название товара">
+                          </picture>
+                        </a>
+
+                        <div class="tovar-modal__info">
+                          <div class="tovar-modal__artikul">Артикул: <span class="cart-tovar__num">024-0093</span>
+                          </div>
+                          <a href="#" class="tovar-modal__name">Водонепроницаемый чехол для телефона KAPPA KS956B, универсальный</a>
+                          <div class="mt-4 tovar-price">2 360</div>
+                        </div>
+                      </div>
+                    </li>
+
+                  </ul>
+
+                  <!-- кнопки -->
+                  <a href="./cart.html" class="btn-reset btn modal__btn btn-cartgo">Перейти в корзину <i
+											class="bx bx-chevron-right"></i></a>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <!-- Товары в корзине -->
+
+          <!-- Удаление товара с корзины -->
+          <div class="modal modal-sm modal-tovar-delete">
+            <div class="modal__overlay">
+              <div class="modal__container">
+                <button aria-label="Закрыть" aria-hidden="true" class="modal__close"><i class="bx bx-x"></i>
+                </button>
+
+                <div class="modal__head modal__head-flex">
+                  <img class="modal__icon" loading="lazy" src="img/icons/ic_cart-delete.svg" width="48" height="48" alt="Корзина пуста">
+                  <h3 class="modal__title">Удаление товара</h3>
+                </div>
+
+                <div class="modal__body">
+                  <p class="mb-24 modal__text">Вы действительно хотите удалить выбранные товары?</p>
+
+                  <ul class="modal-tovar__list">
+                    <li>
+                      <!-- Товар -->
+                      <div class="modal-tovar tovar-modal">
+                        <a href="" class="tovar-modal__img" target="_blank">
+                          <picture>
+                            <source srcset="img/tovar-img.webp" type="image/webp">
+                              <img loading="lazy" src="img/tovar-img.jpg" class="" width="80" height="80" alt="название товара">
+                          </picture>
+                        </a>
+                        <div class="tovar-modal__info">
+                          <div class="tovar-modal__artikul">Артикул: <span class="cart-tovar__num">024-0093</span>
+                          </div>
+                          <a href="#" class="tovar-modal__name" target="_blank">Водонепроницаемый чехол для телефона KAPPA KS956B,
+                                                        универсальный</a>
+                          <div class="mt-4 tovar-price">2 360</div>
+                        </div>
+                      </div>
+                    </li>
+
+                    <li>
+                      <!-- Товар -->
+                      <div class="modal-tovar tovar-modal">
+                        <!-- картинка -->
+                        <a href="" class="tovar-modal__img" target="_blank">
+                          <picture>
+                            <source srcset="img/tovar-img.webp" type="image/webp">
+                              <img loading="lazy" src="img/tovar-img.jpg" class="" width="80" height="80" alt="название товара">
+                          </picture>
+                        </a>
+                        <!-- артикул + название -->
+                        <div class="tovar-modal__info">
+                          <div class="tovar-modal__artikul">Артикул: <span class="cart-tovar__num">024-0093</span>
+                          </div>
+                          <a href="#" class="tovar-modal__name">Водонепроницаемый чехол для телефона KAPPA KS956B, универсальный</a>
+                          <div class="mt-4 tovar-price">2 360</div>
+                        </div>
+                      </div>
+                    </li>
+
+                  </ul>
+
+                  <!-- кнопки -->
+                  <div class="modal__btns">
+                    <button aria-label="Отменить" type="button" class="btn-reset btn btn__outline btn-back modal__btn-cancel">Отменить</button>
+                    <button aria-label="Удалить товар с корзины" type="button" class="btn-reset btn btn__outline btn-delete">Удалить</button>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+          <!-- / Удаление товара с корзины -->
+
+          <!-- ============= Модальные Формы ============= -->
+
+          <!-- Заказать звонок -->
+          <div class="modal modal-sm modal-form modal-form--calback">
+            <div class="modal__overlay">
+              <div class="modal__container">
+                <button aria-label="Закрыть" aria-hidden="true" class="modal__close"><i class="bx bx-x"></i>
+                </button>
+
+                <div class="mb-32 modal__head modal__head-flex">
+                  <img class="modal__icon" loading="lazy" src="img/icons/ic-callback.svg" width="48" height="48" alt="Корзина пуста">
+                  <h3 class="modal__title">Заказать <br> обратный звонок</h3>
+                </div>
+
+                <div class="modal__body">
+                  <!-- форма -->
+                  <form class="form-callback" action="" method="post">
+
+                    <div class="form__item">
+                      <span class="form__label">Ваше имя</span>
+                      <div class="input-box">
+                        <input class="form__input input-icon" type="text" name="name" placeholder="Имя" autocomplete="off">
+                        <i class="bx bx-user-circle icon-input"></i>
+                      </div>
+                    </div>
+
+                    <div class="form__item input-required">
+                      <span class="form__label">Телефон</span>
+                      <div class="input-box">
+                        <input class="form__input input-icon input-phone" type="text" name="phone" required placeholder="Введите телефон" autocomplete="off">
+                        <i class="bx bx-phone icon-input"></i>
+                      </div>
+                      <!-- error message -->
+                      <div class="form__error-label">Это поле обязательно для заполнения!</div>
+                    </div>
+                    <button type="submit" class="btn-reset btn form__btn">Перезвоните мне</button>
+
+                    <label class="mt-8 check form-agreement">
+                      <input class="check__input" type="checkbox" name="afreement-order" required>
+                      <span class="check__box"></span>
+                      <span class="check__label">Я соглашаюсь с условиями  <a href="./privacy.html" target="_blank">политикой
+                                                    конфиденциальности</a></span>
+                    </label>
+                  </form>
+
+                </div>
+
+              </div>
+            </div>
+          </div>
+          <!-- / Заказать звонок -->
+
+          <!-- Войти -->
+          <div class="modal modal-sm modal-form modal-form--login">
+            <div class="modal__overlay">
+              <div class="modal__container">
+                <button aria-label="Закрыть" aria-hidden="true" class="modal__close"><i class="bx bx-x"></i>
+                </button>
+
+                <div class="mb-32 modal__head modal__head-flex">
+                  <img class="modal__icon" loading="lazy" src="img/icons/ic_modal-user.svg" width="48" height="48" alt="Корзина пуста">
+                  <h3 class="modal__title">Войти <br> в личный кабинет!</h3>
+                </div>
+
+                <div class="modal__body">
+                  <!-- форма логин -->
+                  <form class="form-login" action="" method="post">
+
+                    <div class="form__item input-required">
+                      <span class="form__label">Телефон</span>
+                      <div class="input-box">
+                        <input class="form__input input-icon" type="email" name="login" required placeholder="Введите email адрес" autocomplete="off">
+                        <i class="bx bx-mail-send icon-input"></i>
+                      </div>
+                      <!-- error message -->
+                      <div class="form__error-label">Это поле обязательно для заполнения!</div>
+                    </div>
+
+                    <div class="form__item input-required">
+                      <span class="form__label">Пароль</span>
+                      <div class="input-box">
+                        <input class="form__input input-icon" type="password" name="password" required placeholder="Введите пароль" autocomplete="off">
+                        <i class="bx bx-lock-alt icon-input"></i>
+                      </div>
+                      <!-- error message -->
+                      <div class="form__error-label">Это поле обязательно для заполнения!</div>
+                    </div>
+
+                    <div class="modal-form__flex">
+                      <button aria-label="Восстановить пароль" aria-hidden="true" class="btn-reset modal-passwordrecovery">Забыли пароль?
+                      </button>
+                    </div>
+
+                    <button type="submit" class="btn-reset btn form__btn">Войти</button>
+
+                    <div class="modal-form__footer">
+                      <p>Нет аккаунта?</p>
+                      <button aria-label="Зарегистрироваться" aria-hidden="true" class="btn-reset modal-signup">Зарегистрироваться</button>
+                    </div>
+                  </form>
+
+                </div>
+
+              </div>
+            </div>
+          </div>
+          <!-- / Войти -->
+
+          <!-- Восстановить пароль -->
+          <div class="modal modal-sm modal-form modal-form--passrecovery">
+            <div class="modal__overlay">
+              <div class="modal__container">
+                <button aria-label="Закрыть" aria-hidden="true" class="modal__close"><i class="bx bx-x"></i>
+                </button>
+
+                <div class="mb-32 modal__head modal__head-flex">
+                  <img class="modal__icon" loading="lazy" src="img/icons/ic_modal-lock.svg" width="48" height="48" alt="Корзина пуста">
+                  <h3 class="modal__title">Восстановить <br> пароль</h3>
+                </div>
+
+                <div class="modal__body">
+                  <!-- форма регистрация -->
+                  <form class="form-pa">
+
+                    <div class="form__item input-required">
+                      <span class="form__label">Телефон</span>
+                      <div class="input-box">
+                        <input class="form__input input-icon" type="text" name="phone" required placeholder="Введите номер телефона" autocomplete="off">
+                        <i class="bx bx-phone icon-input"></i>
+                      </div>
+                      <!-- error message -->
+                      <div class="form__error-label">Это поле обязательно для заполнения!</div>
+                    </div>
+
+                    <button type="submit" class="btn-reset btn form__btn btn-passrecovery">Восстановить</button>
+
+                    <label class="mt-8 check form-agreement">
+                      <input class="check__input" type="checkbox" name="afreement-order" required>
+                      <span class="check__box"></span>
+                      <span class="check__label">Я соглашаюсь с условиями  <a href="./privacy.html" target="_blank">политикой
+                                                    конфиденциальности</a></span>
+                    </label>
+
+                    <div class="modal-form__footer">
+                      <p>Вспомнили пароль?</p>
+                      <button aria-label="Войти в личный кабинет" aria-hidden="true" class="btn-reset modal-login">Войти</button>
+                    </div>
+                  </form>
+
+                  <!-- Запрос пароля из СМС -->
+                  <form class="form-signup__success" style="display: none;">
+                    <p class="mb-24 modal-form__descr">Код отправлен в СМС на ваше устройство. Проверьте уведомления!</p>
+                    <div class="form__item input-required">
+                      <span class="form__label">Код из СМС</span>
+                      <div class="input-box">
+                        <input class="form__input" type="text" name="phone" required placeholder="Введите код из СМС" autocomplete="off">
+                      </div>
+                      <!-- error message -->
+                      <div class="form__error-label">Это поле обязательно для заполнения!</div>
+                    </div>
+
+                    <button type="submit" class="btn-reset btn form__btn">Подтвердить</button>
+                    <button type="submit" class="btn-reset btn form__btn btn-sms-replace is-hidden">Отправить код повторно</button>
+
+                    <p class="modal-form__message">Запросить код на телефон через: <span>00:59</span>
+                    </p>
+                  </form>
+
+                </div>
+
+              </div>
+            </div>
+          </div>
+          <!-- / Восстановить пароль -->
+
+          <!-- Регистрация -->
+          <div class="modal modal-sm modal-form modal-form--signup">
+            <div class="modal__overlay">
+              <div class="modal__container">
+                <button aria-label="Закрыть" aria-hidden="true" class="modal__close"><i class="bx bx-x"></i>
+                </button>
+
+                <div class="mb-32 modal__head modal__head-flex">
+                  <img class="modal__icon" loading="lazy" src="img/icons/ic_modal-user.svg" width="48" height="48" alt="Корзина пуста">
+                  <h3 class="modal__title">Регистрация</h3>
+                </div>
+
+                <div class="modal__body">
+                  <!-- форма регистрация -->
+                  <form class="form-signup">
+
+                    <div class="form__item input-required">
+                      <span class="form__label">Телефон</span>
+                      <div class="input-box">
+                        <input class="form__input input-icon" type="text" name="phone" required placeholder="Введите номер телефона" autocomplete="off">
+                        <i class="bx bx-phone icon-input"></i>
+                      </div>
+                      <!-- error message -->
+                      <div class="form__error-label">Это поле обязательно для заполнения!</div>
+                    </div>
+
+                    <button type="submit" class="btn-reset btn form__btn">Зарегистрироваться</button>
+
+                    <label class="mt-8 check form-agreement">
+                      <input class="check__input" type="checkbox" name="afreement-order" required>
+                      <span class="check__box"></span>
+                      <span class="check__label">Я соглашаюсь с условиями  <a href="./privacy.html" target="_blank">политикой
+                                                    конфиденциальности</a></span>
+                    </label>
+
+                    <div class="modal-form__footer">
+                      <p>Есть аккаунт?</p>
+                      <button aria-label="Войти в личный кабинет" aria-hidden="true" class="btn-reset modal-login">Войти</button>
+                    </div>
+                  </form>
+
+                  <!-- Подтверждение регистрации -->
+                  <form class="form-signup__success" style="display: none;">
+                    <p class="mb-24 modal-form__descr">Код отправлен в СМС на ваше устройство. Проверьте уведомления!</p>
+                    <div class="form__item input-required">
+                      <span class="form__label">Код из СМС</span>
+                      <div class="input-box">
+                        <input class="form__input" type="text" name="phone" required placeholder="Введите код из СМС" autocomplete="off">
+                      </div>
+                      <!-- error message -->
+                      <div class="form__error-label">Это поле обязательно для заполнения!</div>
+                    </div>
+
+                    <button type="submit" class="btn-reset btn form__btn">Подтвердить</button>
+                    <button type="submit" class="btn-reset btn form__btn btn-sms-replace is-hidden">Отправить код повторно</button>
+
+                    <p class="modal-form__message">Запросить код на телефон через: <span>00:59</span>
+                    </p>
+                  </form>
+
+                </div>
+
+              </div>
+            </div>
+          </div>
+          <!-- / Регистрация -->
+
+          <!-- Добавить отзыв -->
+          <div class="modal modal-lg modal-review">
+            <div class="modal__overlay">
+              <div class="modal__container">
+                <button aria-label="Закрыть" aria-hidden="true" class="modal__close"><i class="bx bx-x"></i>
+                </button>
+
+                <div class="mb-24 modal__head-flex">
+                  <img class="modal__icon" loading="lazy" src="img/icons/ic_modal-review.svg" width="64" height="64" alt="Корзина пуста">
+                  <h3 class="modal__title">Добавить отзыв</h3>
+                </div>
+
+                <!-- Товар -->
+                <div class="modal-tovar tovar-modal">
+                  <a href="" class="tovar-modal__img" target="_blank">
+                    <picture>
+                      <source srcset="img/tovar-img.webp" type="image/webp">
+                        <img loading="lazy" src="img/tovar-img.jpg" class="" width="80" height="80" alt="название товара">
+                    </picture>
+                  </a>
+                  <div class="tovar-modal__info">
+                    <div class="tovar-modal__artikul">Артикул: <span class="cart-tovar__num">024-0093</span>
+                    </div>
+                    <a href="#" class="tovar-modal__name" target="_blank">Водонепроницаемый чехол для телефона KAPPA KS956B,
+                                            универсальный</a>
+                  </div>
+                </div>
+
+                <form class="form form-addreview" action="">
+
+                  <!-- Оценка -->
+                  <div class="form-addreview__rating">
+                    <span class="form-addreview__rating-label">Оценка товара</span>
+                    <!-- рейтинг -->
+                    <div class="rating-area">
+                      <input type="radio" id="star-5" name="rating" value="5">
+                      <label for="star-5" title="Оценка «5»"></label>
+                      <input type="radio" id="star-4" name="rating" value="4">
+                      <label for="star-4" title="Оценка «4»"></label>
+                      <input type="radio" id="star-3" name="rating" value="3">
+                      <label for="star-3" title="Оценка «3»"></label>
+                      <input type="radio" id="star-2" name="rating" value="2">
+                      <label for="star-2" title="Оценка «2»"></label>
+                      <input type="radio" id="star-1" name="rating" value="1">
+                      <label for="star-1" title="Оценка «1»"></label>
+                    </div>
+                  </div>
+
+                  <div class="form__item input-required">
+                    <span class="form__label">Имя</span>
+                    <div class="input-box">
+                      <input class="form__input" type="text" name="name" placeholder="Введите ваше имя" autocomplete="off">
+                    </div>
+                  </div>
+
+                  <div class="form__item input-required">
+                    <span class="form__label">Достоинства</span>
+                    <div class="input-box">
+                      <textarea class="form__textarea" type="text" name="name" placeholder="Что в товаре вам больше всего понравилось" autocomplete="off"></textarea>
+                    </div>
+                  </div>
+
+                  <div class="form__item input-required">
+                    <span class="form__label">Недостатки</span>
+                    <div class="input-box">
+                      <textarea class="form__textarea" type="text" name="name" placeholder="Что не понравилось" autocomplete="off"></textarea>
+                    </div>
+                  </div>
+
+                  <div class="form__item input-required">
+                    <span class="form__label">Отзыв</span>
+                    <div class="input-box">
+                      <textarea class="form__textarea" type="text" name="name" placeholder="Ваш отзыв от товаре" autocomplete="off"></textarea>
+                    </div>
+                  </div>
+
+                  <div class="form-addreview__footer">
+                    <label class="mt-8 check form-agreement">
+                      <input class="check__input" type="checkbox" name="afreement-order" required>
+                      <span class="check__box"></span>
+                      <span class="check__label">Я соглашаюсь с условиями <br> <a href="./privacy.html" target="_blank">политикой
+                                                    конфиденциальности</a></span>
+                    </label>
+                    <button type="submit" class="btn-reset btn">Отправить отзыв</button>
+                  </div>
+                </form>
+
+              </div>
+            </div>
+          </div>
+          <!-- / Добавить отзыв -->
+
+          <!-- Спасибо за отзыв -->
+          <div class="modal modal-review-success">
+            <div class="modal__overlay">
+              <div class="modal__container">
+                <button aria-label="Закрыть" aria-hidden="true" class="modal__close"><i class="bx bx-x"></i>
+                </button>
+
+                <div class="modal__head text-center">
+                  <img class="modal__icon" loading="lazy" src="img/icons/ic_check-success.svg" width="64" height="64" alt="Корзина пуста">
+                  <h3 class="mb-8 modal__title">Спасибо за отзыв!</h3>
+                  <p class="modal__descr">После прохождения модерации, ваш отзыв будет добавлен.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- / Спасибо за отзыв -->
+
+          <!-- Удаление мототранспорта из личного кабинета -->
+          <div class="modal modal-sm modal-delete-transport">
+            <div class="modal__overlay">
+              <div class="modal__container">
+                <button aria-label="Закрыть" aria-hidden="true" class="modal__close"><i class="bx bx-x"></i>
+                </button>
+
+                <div class="modal__head text-center">
+                  <img class="modal__icon" loading="lazy" src="img/icons/ic_modal-info.svg" width="64" height="64" alt="Корзина пуста">
+                  <h3 class="mb-8 modal__title">Удаление транспорта!</h3>
+                </div>
+
+                <div class="modal__body text-center">
+                  <p class="modal__descr">Вы действительно хотите удалить
+                    <br> <span class="mototransport-result__text-result">
+                                            <strong>Мотоцикл — BMW / F650GS (K75) / 2001</strong>?
+                                        </span>
+                  </p>
+
+                  <!-- кнопки -->
+                  <div class="modal__btns">
+                    <button aria-label="Отменить" type="button" class="btn-reset btn btn__outline btn-back modal__btn-cancel">Отменить</button>
+                    <button aria-label="Удалить товар с корзины" type="button" class="btn-reset btn btn__outline btn-delete">Удалить</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Удаление мототранспорта из личного кабинета -->
+
+          <!-- Добавить мототранспорт в личном кабинете -->
+          <div class="modal modal-sm modal-add-transport">
+            <div class="modal__overlay">
+              <div class="modal__container">
+                <button aria-label="Закрыть" aria-hidden="true" class="modal__close"><i class="bx bx-x"></i>
+                </button>
+
+                <div class="mb-24 modal__head-flex">
+                  <img class="modal__icon" loading="lazy" src="img/icons/ic_modal-add.svg" width="64" height="64" alt="Корзина пуста">
+                  <h3 class="modal__title">Добавить <br> мототранспорт!</h3>
+                </div>
+
+                <div class="modal__body">
+
+                  <!-- селекты выбора (бренд/модель/год) -->
+                  <div class="modal-podbor">
+                    <div class="select-custom">
+                      <div class="select-custom__item">Тип</div>
+                      <!-- dropdown + search -->
+                      <div class="dropdown">
+                        <!-- dropdown__search -->
+                        <div class="dropdown__search">
+                          <input type="text" name="dropdown-search" class="form__input input-search" placeholder="Поиск" autocomplete="off">
+                        </div>
+                        <!-- dropdown__list -->
+                        <ul class="list-reset dropdown__list dropdown__list--scroll">
+                          <li class="dropdown__item">Option</li>
+                          <li class="dropdown__item">Option</li>
+                          <li class="dropdown__item">Option</li>
+                          <li class="dropdown__item is-active">Option Selected</li>
+                          <li class="dropdown__item">Option</li>
+                          <li class="dropdown__item">Option</li>
+                          <li class="dropdown__item">Option</li>
+                          <li class="dropdown__item">Option</li>
+                          <li class="dropdown__item">Option</li>
+                          <li class="dropdown__item">Option</li>
+                          <li class="dropdown__item">Option</li>
+                          <li class="dropdown__item">Option</li>
+                          <li class="dropdown__item">Option</li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="select-custom">
+                      <div class="select-custom__item">Бренд</div>
+                      <!-- dropdown + search -->
+                      <div class="dropdown">
+                        <!-- dropdown__search -->
+                        <div class="dropdown__search">
+                          <input type="text" name="dropdown-search" class="form__input input-search" placeholder="Поиск" autocomplete="off">
+                        </div>
+                        <!-- dropdown__list -->
+                        <ul class="list-reset dropdown__list dropdown__list--scroll">
+                          <li class="dropdown__item">Option</li>
+                          <li class="dropdown__item">Option</li>
+                          <li class="dropdown__item">Option</li>
+                          <li class="dropdown__item is-active">Option Selected</li>
+                          <li class="dropdown__item">Option</li>
+                          <li class="dropdown__item">Option</li>
+                          <li class="dropdown__item">Option</li>
+                          <li class="dropdown__item">Option</li>
+                          <li class="dropdown__item">Option</li>
+                          <li class="dropdown__item">Option</li>
+                          <li class="dropdown__item">Option</li>
+                          <li class="dropdown__item">Option</li>
+                          <li class="dropdown__item">Option</li>
+                        </ul>
+                      </div>
+                    </div>
+
+                    <div class="select-custom">
+                      <div class="select-custom__item">Модель</div>
+                      <!-- dropdown + search -->
+                      <div class="dropdown">
+                        <!-- dropdown__search -->
+                        <div class="dropdown__search">
+                          <input type="text" name="dropdown-search" class="form__input input-search" placeholder="Поиск" autocomplete="off">
+                        </div>
+                        <!-- dropdown__list -->
+                        <ul class="list-reset dropdown__list dropdown__list--scroll">
+                          <li class="dropdown__item">Option</li>
+                          <li class="dropdown__item">Option</li>
+                          <li class="dropdown__item">Option</li>
+                          <li class="dropdown__item is-active">Option Selected</li>
+                          <li class="dropdown__item">Option</li>
+                          <li class="dropdown__item">Option</li>
+                          <li class="dropdown__item">Option</li>
+                          <li class="dropdown__item">Option</li>
+                          <li class="dropdown__item">Option</li>
+                          <li class="dropdown__item">Option</li>
+                          <li class="dropdown__item">Option</li>
+                          <li class="dropdown__item">Option</li>
+                          <li class="dropdown__item">Option</li>
+                        </ul>
+                      </div>
+                    </div>
+
+                    <div class="select-custom">
+                      <div class="select-custom__item">Год</div>
+                      <!-- dropdown + search -->
+                      <div class="dropdown">
+                        <!-- dropdown__search -->
+                        <div class="dropdown__search">
+                          <input type="text" name="dropdown-search" class="form__input input-search" placeholder="Поиск" autocomplete="off">
+                        </div>
+                        <!-- dropdown__list -->
+                        <ul class="list-reset dropdown__list dropdown__list--scroll">
+                          <li class="dropdown__item">Option</li>
+                          <li class="dropdown__item">Option</li>
+                          <li class="dropdown__item">Option</li>
+                          <li class="dropdown__item is-active">Option Selected</li>
+                          <li class="dropdown__item">Option</li>
+                          <li class="dropdown__item">Option</li>
+                          <li class="dropdown__item">Option</li>
+                          <li class="dropdown__item">Option</li>
+                          <li class="dropdown__item">Option</li>
+                          <li class="dropdown__item">Option</li>
+                          <li class="dropdown__item">Option</li>
+                          <li class="dropdown__item">Option</li>
+                          <li class="dropdown__item">Option</li>
+                        </ul>
+                      </div>
+                    </div>
+
+                    <!-- кнопка подбора -->
+                    <button class="btn btn podbor__btn podbor__btn--success">Добавить</button>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Удаление мототранспорта из личного кабинета -->
+
+          <!-- ============= / Модальные Формы ============= -->
+
+        </div>
+      </section>
+
+    </main>
+
+  </div>
+
+  <!-- Скрипты -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+  <script>
+    // Модалка корзины - Корзина пуста
+    		$('.btn-cart').click(function () {
+    			$('.modal-cart').addClass('is-open');
+    			$('body').addClass('dis-scroll');
+    			return false;
+    		});
+    
+    		// Модалка корзины - Товары в корзине
+    		$('.btn-cart.is-active').click(function () {
+    			$('.modal-cart-add').addClass('is-open');
+    			$('body').addClass('dis-scroll');
+    			return false;
+    		});
+    
+    		// товар добавлен в корзину
+    		$('.card-tovar__cart-btn').click(function () {
+    			$('.modal-tovar').addClass('is-open');
+    			$('body').addClass('dis-scroll');
+    			return false;
+    		});
+    
+    		// удалить товары с корзины
+    		$('.btn-delete').click(function () {
+    			$('.modal-tovar-delete').addClass('is-open');
+    			$('body').addClass('dis-scroll');
+    			return false;
+    		});
+    
+    		// Заказать звонок
+    		$('.phone__callback').click(function () {
+    			$('.modal-form--calback').addClass('is-open');
+    			$('body').addClass('dis-scroll');
+    			return false;
+    		});
+    
+    		// Войти
+    		$('.btn-login').click(function () {
+    			$('.modal-form--login').addClass('is-open');
+    			$('body').addClass('dis-scroll');
+    			return false;
+    		});
+    
+    		// Воостановить пароль
+    		$('.modal-passwordrecovery').click(function () {
+    			$('.modal-form--login').removeClass('is-open');
+    			$('.modal-form--passrecovery').addClass('is-open');
+    			$('body').addClass('dis-scroll');
+    			return false;
+    		});
+    
+    		// Возврат ко входу
+    		$('.modal-login').click(function () {
+    			$('.modal-form--login').addClass('is-open');
+    			$('.modal-form--passrecovery').removeClass('is-open');
+    			$('body').addClass('dis-scroll');
+    			return false;
+    		});
+    
+    		// Регистрация
+    		$('.modal-signup').click(function () {
+    			$('.modal-form--signup').addClass('is-open');
+    			$('.modal-form--login').removeClass('is-open');
+    			$('body').addClass('dis-scroll');
+    			return false;
+    		});
+    
+    		// Возврат ко входу
+    		$('.modal-login').click(function () {
+    			$('.modal-form--signup').removeClass('is-open');
+    			$('.modal-form--login').addClass('is-open');
+    			$('body').addClass('dis-scroll');
+    			return false;
+    		});
+    
+    		// Спасибо за отзыв
+    		$('.reviews__btn-add').click(function () {
+    			$('.modal-review').addClass('is-open');
+    			$('body').addClass('dis-scroll');
+    			return false;
+    		});
+    
+    		// Удалить мототранспорт
+    		$('.mototransport-result__delete').click(function () {
+    			$('.modal-delete-transport').addClass('is-open');
+    			$('body').addClass('dis-scroll');
+    			return false;
+    		});
+    
+    		// Добавить мототранспорт
+    		$('.addtransport-btn').click(function () {
+    			$('.modal-add-transport').addClass('is-open');
+    			$('body').addClass('dis-scroll');
+    			return false;
+    		});
+    
+    		// Инфо модалка
+    		$('.info-btn').click(function () {
+    			$('.modal-info').addClass('is-open');
+    			$('body').addClass('dis-scroll');
+    			return false;
+    		});
+    
+    		// закрываем модалку
+    		$('.modal__close').click(function () { // кликаем на крестик закрытия модалки
+    			$('.modal').removeClass('is-open'); // удаляем класс is-open и закрываем модалку
+    			$('body').removeClass('dis-scroll'); // удалям класс dis-scroll у body
+    			return false;
+    		});
+    
+    		$('.btn-cancel').click(function () { // кликаем на кнопку отмены
+    			$('.modal').removeClass('is-open'); // удаляем класс is-open и закрываем модалку
+    			$('body').removeClass('dis-scroll'); // удалям класс dis-scroll у body
+    			return false;
+    		});
+  </script>
+
+</body>
+
+</html>
