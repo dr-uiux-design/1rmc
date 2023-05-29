@@ -40,8 +40,18 @@
   <meta property="og:longitude" content="" />
 
   <!-- CSS -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
   <link rel="stylesheet" href="css/main.css">
+
+  <!-- JS -->
+  <!-- Main JS -->
+  <script defer src="js/main.min.js"></script>
+  <!-- Google Analytics -->
+  <!-- тут код -->
+  <!-- /Google Analytics -->
+
+  <!-- Yandex.Metrika counter -->
+  <!-- тут код -->
+  <!-- /Yandex.Metrika counter -->
 </head>
 
 <body class="page__body">
@@ -160,10 +170,8 @@
 
           <div class="mb16"></div>
 
-          <!-- select custom + search -->
           <div class="select-custom">
-            <div class="select-custom__item">Select Search</div>
-
+            <div class="select-custom__item">Select + Search</div>
             <!-- dropdown + search -->
             <div class="dropdown">
               <!-- dropdown__search -->
@@ -171,11 +179,7 @@
                 <input type="text" name="dropdown-search" class="form__input input-search" placeholder="Поиск" autocomplete="off">
               </div>
               <!-- dropdown__list -->
-              <ul class="list-reset dropdown__list dropdown__list--scroll">
-                <li class="dropdown__item">Option</li>
-                <li class="dropdown__item">Option</li>
-                <li class="dropdown__item">Option</li>
-                <li class="dropdown__item is-active">Option Selected</li>
+              <ul class="list-reset dropdown__list">
                 <li class="dropdown__item">Option</li>
                 <li class="dropdown__item">Option</li>
                 <li class="dropdown__item">Option</li>
@@ -185,6 +189,14 @@
                 <li class="dropdown__item">Option</li>
                 <li class="dropdown__item">Option</li>
                 <li class="dropdown__item">Option</li>
+                <li class="dropdown__item">Option</li>
+                <li class="dropdown__item">Option</li>
+                <li class="dropdown__item">Option</li>
+                <li class="dropdown__item">Option</li>
+                <li class="dropdown__item">Option</li>
+                <li class="dropdown__item">Option</li>
+                <li class="dropdown__item">Option</li>
+                <li class="no-results is-hidden">Ничего не найдено!</li>
               </ul>
             </div>
           </div>
@@ -212,11 +224,7 @@
               <input type="text" name="dropdown-search" class="form__input input-search" placeholder="Поиск" autocomplete="off">
             </div>
             <!-- dropdown__list -->
-            <ul class="list-reset dropdown__list dropdown__list--scroll">
-              <li class="dropdown__item">Option</li>
-              <li class="dropdown__item">Option</li>
-              <li class="dropdown__item">Option</li>
-              <li class="dropdown__item is-active">Option Selected</li>
+            <ul class="list-reset dropdown__list">
               <li class="dropdown__item">Option</li>
               <li class="dropdown__item">Option</li>
               <li class="dropdown__item">Option</li>
@@ -226,6 +234,14 @@
               <li class="dropdown__item">Option</li>
               <li class="dropdown__item">Option</li>
               <li class="dropdown__item">Option</li>
+              <li class="dropdown__item">Option</li>
+              <li class="dropdown__item">Option</li>
+              <li class="dropdown__item">Option</li>
+              <li class="dropdown__item">Option</li>
+              <li class="dropdown__item">Option</li>
+              <li class="dropdown__item">Option</li>
+              <li class="dropdown__item">Option</li>
+              <li class="no-results is-hidden">Ничего не найдено!</li>
             </ul>
           </div>
 
@@ -664,6 +680,40 @@
                     </button>
                   </div>
                 </div>
+                <!-- карточка товара горизонтальная -->
+                <div class="card-tovar card-tovar--horizontal">
+                  <!-- бэйджи -->
+                  <div class="card-tovar__badges">
+                    <div class="badge badge--hit">Хит</div>
+                  </div>
+
+                  <div class="card-tovar__body">
+                    <!-- картинка -->
+                    <a href="#" class="card-tovar__img">
+                      <picture>
+                        <source srcset="img/tovar-img.webp" type="image/webp">
+                          <img loading="lazy" src="img/tovar-img.jpg" class="" width="180" height="180" alt="название товара">
+                      </picture>
+                    </a>
+
+                    <!-- информация -->
+                    <div class="card-tovar__info">
+                      <div class="card-tovar__artikul">Артикул: <span class="card-tovar__artikul--number">024-0093</span>
+                      </div>
+                      <a href="#" class="card-tovar__name">Набор IPONE для ухода за цепью ROAD</a>
+                      <div class="card-tovar__price">от <span class="card-tovar__price--sum"> 2 280</span> ₽</div>
+                      <div class="card-tovar__nalichie">В наличии: <span class="card-tovar__nalichie--sum">7 шт.</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- кнопки -->
+                  <div class="card-tovar__buttons">
+                    <a href="#" class="btn btn__outline card-tovar__more-btn">Подробнее</a>
+                    <button aria-label="Добавить товар в корзину" aria-expanded="false" class="btn-resset btn-icon card-tovar__cart-btn"><i class="bx bx-cart-add"></i>
+                    </button>
+                  </div>
+                </div>
               </div>
 
               <div class="tovars__footer">
@@ -784,17 +834,6 @@
         </div>
       </div>
     </footer>
-    <!-- jQuery -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
-    <!-- Main JS -->
-    <script src="js/main.min.js"></script>
-    <!-- Google Analytics -->
-    <!-- тут код -->
-    <!-- /Google Analytics -->
-
-    <!-- Yandex.Metrika counter -->
-    <!-- тут код -->
-    <!-- /Yandex.Metrika counter -->
   </div>
 
 </body>

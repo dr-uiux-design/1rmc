@@ -40,8 +40,18 @@
   <meta property="og:longitude" content="" />
 
   <!-- CSS -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
   <link rel="stylesheet" href="css/main.css">
+
+  <!-- JS -->
+  <!-- Main JS -->
+  <script defer src="js/main.min.js"></script>
+  <!-- Google Analytics -->
+  <!-- тут код -->
+  <!-- /Google Analytics -->
+
+  <!-- Yandex.Metrika counter -->
+  <!-- тут код -->
+  <!-- /Yandex.Metrika counter -->
 </head>
 
 <body class="page__body">
@@ -49,7 +59,7 @@
   <a href="#top-page" class="btn-reset btn-top is-active" title="Наверх"></a>
 
   <div class="page__wrapper">
-    <header class="header header-fixed">
+    <header class="header">
       <!-- header-top -->
       <div class="header__top">
         <div class="container header__top-container">
@@ -100,7 +110,7 @@
           <!-- logo -->
           <div class="logo">
             <a href="./" class="logo__link">
-              <img class="logo__img" loading="lazy" src=" img/logo.svg" width="109" height="48" alt="RMC">
+              <img class="logo__img" loading="lazy" src=" img/logo.png" alt="RMC">
             </a>
             <div class="description">Интернет-магазин мотозапчастей <span class="h-mob">с доставкой по России с 2008 года</span>
             </div>
@@ -108,7 +118,7 @@
 
           <div class="header__search--box-1">
             <!-- btn-catalog -->
-            <button class="btn btn-catalog"><i class="btn-catalog__icon bx bx__left bx-menu-alt-left"></i> Каталог</button>
+            <button class="btn btn-catalog"><i class="btn-catalog__icon bx bx__left bx-menu"></i> Каталог</button>
 
             <!-- form-search -->
             <form action="" method="get" class="form form-search">
@@ -238,10 +248,11 @@
     <main class="page__main">
       <!-- podbor-pages -->
       <div class="podbor podbor--pages">
+        <div class="podbor-bg">
+          <img loading="lazy" src="./img/podbor-bg.webp" width="100%" height="400" alt="">
+        </div>
         <div class="container">
-
           <h3 class="podbor__title">Подобрать запчасть</h3>
-
           <!-- выбранные параметры -->
           <div class="podbor__options options-podbor">
             <div class="options-podbor__group">
@@ -254,7 +265,6 @@
               </ul>
             </div>
           </div>
-
           <!-- выбор типа транспорта -->
           <div class="podbor__tips tips-moto">
             <div class="tips-moto__item">
@@ -274,7 +284,6 @@
               <div class="tips-moto__name">Снегоход</div>
             </div>
           </div>
-
           <!-- селекты выбора (бренд/модель/год) -->
           <div class="podbor__selects">
             <div class="selects-group">
@@ -287,11 +296,7 @@
                     <input type="text" name="dropdown-search" class="form__input input-search" placeholder="Поиск" autocomplete="off">
                   </div>
                   <!-- dropdown__list -->
-                  <ul class="list-reset dropdown__list dropdown__list--scroll">
-                    <li class="dropdown__item">Option</li>
-                    <li class="dropdown__item">Option</li>
-                    <li class="dropdown__item">Option</li>
-                    <li class="dropdown__item is-active">Option Selected</li>
+                  <ul class="list-reset dropdown__list">
                     <li class="dropdown__item">Option</li>
                     <li class="dropdown__item">Option</li>
                     <li class="dropdown__item">Option</li>
@@ -301,6 +306,14 @@
                     <li class="dropdown__item">Option</li>
                     <li class="dropdown__item">Option</li>
                     <li class="dropdown__item">Option</li>
+                    <li class="dropdown__item">Option</li>
+                    <li class="dropdown__item">Option</li>
+                    <li class="dropdown__item">Option</li>
+                    <li class="dropdown__item">Option</li>
+                    <li class="dropdown__item">Option</li>
+                    <li class="dropdown__item">Option</li>
+                    <li class="dropdown__item">Option</li>
+                    <li class="no-results is-hidden">Ничего не найдено!</li>
                   </ul>
                 </div>
               </div>
@@ -314,11 +327,7 @@
                     <input type="text" name="dropdown-search" class="form__input input-search" placeholder="Поиск" autocomplete="off">
                   </div>
                   <!-- dropdown__list -->
-                  <ul class="list-reset dropdown__list dropdown__list--scroll">
-                    <li class="dropdown__item">Option</li>
-                    <li class="dropdown__item">Option</li>
-                    <li class="dropdown__item">Option</li>
-                    <li class="dropdown__item is-active">Option Selected</li>
+                  <ul class="list-reset dropdown__list">
                     <li class="dropdown__item">Option</li>
                     <li class="dropdown__item">Option</li>
                     <li class="dropdown__item">Option</li>
@@ -328,6 +337,14 @@
                     <li class="dropdown__item">Option</li>
                     <li class="dropdown__item">Option</li>
                     <li class="dropdown__item">Option</li>
+                    <li class="dropdown__item">Option</li>
+                    <li class="dropdown__item">Option</li>
+                    <li class="dropdown__item">Option</li>
+                    <li class="dropdown__item">Option</li>
+                    <li class="dropdown__item">Option</li>
+                    <li class="dropdown__item">Option</li>
+                    <li class="dropdown__item">Option</li>
+                    <li class="no-results is-hidden">Ничего не найдено!</li>
                   </ul>
                 </div>
               </div>
@@ -341,11 +358,7 @@
                     <input type="text" name="dropdown-search" class="form__input input-search" placeholder="Поиск" autocomplete="off">
                   </div>
                   <!-- dropdown__list -->
-                  <ul class="list-reset dropdown__list dropdown__list--scroll">
-                    <li class="dropdown__item">Option</li>
-                    <li class="dropdown__item">Option</li>
-                    <li class="dropdown__item">Option</li>
-                    <li class="dropdown__item is-active">Option Selected</li>
+                  <ul class="list-reset dropdown__list">
                     <li class="dropdown__item">Option</li>
                     <li class="dropdown__item">Option</li>
                     <li class="dropdown__item">Option</li>
@@ -355,11 +368,18 @@
                     <li class="dropdown__item">Option</li>
                     <li class="dropdown__item">Option</li>
                     <li class="dropdown__item">Option</li>
+                    <li class="dropdown__item">Option</li>
+                    <li class="dropdown__item">Option</li>
+                    <li class="dropdown__item">Option</li>
+                    <li class="dropdown__item">Option</li>
+                    <li class="dropdown__item">Option</li>
+                    <li class="dropdown__item">Option</li>
+                    <li class="dropdown__item">Option</li>
+                    <li class="no-results is-hidden">Ничего не найдено!</li>
                   </ul>
                 </div>
               </div>
             </div>
-
             <!-- кнопка подбора -->
             <button class="btn btn podbor__btn podbor__btn--success">Подобрать</button>
           </div>
@@ -423,41 +443,56 @@
               <!-- миниатюры -->
               <ul class="tovar-gallery__thumbs">
                 <!-- миниатюра 1 -->
-                <li class="tovar-gallery__thumbs--item is-active">
+                <li class="tovar-gallery__thumbs--item">
                   <picture>
-                    <source srcset="img/tovars/tovar-photo_1.webp" type="image/webp">
-                      <img class="tovar-gallery__thumbs--img" loading="lazy" src="img/tovars/tovar-photo_1.jpg" width="80" height="80" alt="">
+                    <source srcset="img/tovars/tovar-hor.webp" type="image/webp">
+                      <img class="tovar-gallery__thumbs--img" loading="lazy" src="img/tovars/tovar-hor.jpg" width="" height="" alt="">
                   </picture>
                 </li>
                 <!-- миниатюра 2 -->
-                <li class="tovar-gallery__thumbs--item">
+                <li class="tovar-gallery__thumbs--item is-active">
                   <picture>
-                    <source srcset="img/tovars/tovar-photo_2.webp" type="image/webp">
-                      <img class="tovar-gallery__thumbs--img" loading="lazy" src="img/tovars/tovar-photo_2.jpg" width="80" height="80" alt="">
+                    <source srcset="img/tovars/tovar-vert.webp" type="image/webp">
+                      <img class="tovar-gallery__thumbs--img" loading="lazy" src="img/tovars/tovar-vert.jpg" width="" height="" alt="">
                   </picture>
                 </li>
                 <!-- миниатюра 3 -->
                 <li class="tovar-gallery__thumbs--item">
                   <picture>
                     <source srcset="img/tovars/tovar-photo_3.webp" type="image/webp">
-                      <img class="tovar-gallery__thumbs--img" loading="lazy" src="img/tovars/tovar-photo_3.jpg" width="80" height="80" alt="">
+                      <img class="tovar-gallery__thumbs--img" loading="lazy" src="img/tovars/tovar-photo_3.jpg" width="" height="" alt="">
                   </picture>
                 </li>
                 <!-- миниатюра 4 -->
                 <li class="tovar-gallery__thumbs--item">
                   <picture>
                     <source srcset="img/tovars/tovar-photo_4.webp" type="image/webp">
-                      <img class="tovar-gallery__thumbs--img" loading="lazy" src="img/tovars/tovar-photo_4.jpg" width="80" height="80" alt="">
+                      <img class="tovar-gallery__thumbs--img" loading="lazy" src="img/tovars/tovar-photo_4.jpg" width="" height="" alt="">
                   </picture>
                 </li>
               </ul>
 
               <!-- большая картинка -->
+
               <div class="tovar-gallery__img-active">
+
+                <!-- Вертикальное фото -->
                 <picture>
-                  <source srcset="img/tovars/tovar-photo_1.webp" type="image/webp">
-                    <img loading="lazy" src="img/tovars/tovar-photo_1.jpg" width="440" height="440" alt="">
+                  <source srcset="img/tovars/tovar-vert.webp" type="image/webp">
+                    <img loading="lazy" src="img/tovars/tovar-vert.jpg" width="" height="" alt="">
                 </picture>
+
+                <!-- Горизонтальное фото -->
+                <!-- <picture>
+									<source srcset="img/tovars/tovar-hor.webp" type="image/webp">
+									<img loading="lazy" src="img/tovars/tovar-hor.jpg" width="" height="" alt="">
+								</picture> -->
+
+                <!-- Квадратное фото -->
+                <!-- <picture>
+									<source srcset="img/tovars/tovar-photo_1.webp" type="image/webp">
+									<img loading="lazy" src="img/tovars/tovar-photo_1.jpg" width="" height="" alt="">
+								</picture> -->
               </div>
             </div>
 
@@ -945,6 +980,40 @@
           </div>
           <!-- tovars-slider -->
           <div class="tovars__list tovars-slider tovars__grid tovars__grid--3">
+            <!-- карточка товара горизонтальная -->
+            <div class="card-tovar card-tovar--horizontal">
+              <!-- бэйджи -->
+              <div class="card-tovar__badges">
+                <div class="badge badge--hit">Хит</div>
+              </div>
+
+              <div class="card-tovar__body">
+                <!-- картинка -->
+                <a href="#" class="card-tovar__img">
+                  <picture>
+                    <source srcset="img/tovar-img.webp" type="image/webp">
+                      <img loading="lazy" src="img/tovar-img.jpg" class="" width="180" height="180" alt="название товара">
+                  </picture>
+                </a>
+
+                <!-- информация -->
+                <div class="card-tovar__info">
+                  <div class="card-tovar__artikul">Артикул: <span class="card-tovar__artikul--number">024-0093</span>
+                  </div>
+                  <a href="#" class="card-tovar__name">Набор IPONE для ухода за цепью ROAD</a>
+                  <div class="card-tovar__price">от <span class="card-tovar__price--sum"> 2 280</span> ₽</div>
+                  <div class="card-tovar__nalichie">В наличии: <span class="card-tovar__nalichie--sum">7 шт.</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- кнопки -->
+              <div class="card-tovar__buttons">
+                <a href="#" class="btn btn__outline card-tovar__more-btn">Подробнее</a>
+                <button aria-label="Добавить товар в корзину" aria-expanded="false" class="btn-resset btn-icon card-tovar__cart-btn"><i class="bx bx-cart-add"></i>
+                </button>
+              </div>
+            </div>
             <!-- карточка товара горизонтальная -->
             <div class="card-tovar card-tovar--horizontal">
               <!-- бэйджи -->

@@ -40,8 +40,18 @@
   <meta property="og:longitude" content="" />
 
   <!-- CSS -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
   <link rel="stylesheet" href="css/main.css">
+
+  <!-- JS -->
+  <!-- Main JS -->
+  <script defer src="js/main.min.js"></script>
+  <!-- Google Analytics -->
+  <!-- тут код -->
+  <!-- /Google Analytics -->
+
+  <!-- Yandex.Metrika counter -->
+  <!-- тут код -->
+  <!-- /Yandex.Metrika counter -->
 </head>
 
 <body class="page__body">
@@ -49,7 +59,7 @@
   <a href="#top-page" class="btn-reset btn-top is-active" title="Наверх"></a>
 
   <div class="page__wrapper">
-    <header class="header header-fixed">
+    <header class="header">
       <!-- header-top -->
       <div class="header__top">
         <div class="container header__top-container">
@@ -100,7 +110,7 @@
           <!-- logo -->
           <div class="logo">
             <a href="./" class="logo__link">
-              <img class="logo__img" loading="lazy" src=" img/logo.svg" width="109" height="48" alt="RMC">
+              <img class="logo__img" loading="lazy" src=" img/logo.png" alt="RMC">
             </a>
             <div class="description">Интернет-магазин мотозапчастей <span class="h-mob">с доставкой по России с 2008 года</span>
             </div>
@@ -108,7 +118,7 @@
 
           <div class="header__search--box-1">
             <!-- btn-catalog -->
-            <button class="btn btn-catalog"><i class="btn-catalog__icon bx bx__left bx-menu-alt-left"></i> Каталог</button>
+            <button class="btn btn-catalog"><i class="btn-catalog__icon bx bx__left bx-menu"></i> Каталог</button>
 
             <!-- form-search -->
             <form action="" method="get" class="form form-search">
@@ -239,10 +249,11 @@
       <!-- подбор -->
       <!-- podbor-pages -->
       <div class="podbor podbor--pages">
+        <div class="podbor-bg">
+          <img loading="lazy" src="./img/podbor-bg.webp" width="100%" height="400" alt="">
+        </div>
         <div class="container">
-
           <h3 class="podbor__title">Подобрать запчасть</h3>
-
           <!-- выбранные параметры -->
           <div class="podbor__options options-podbor">
             <div class="options-podbor__group">
@@ -255,7 +266,6 @@
               </ul>
             </div>
           </div>
-
           <!-- выбор типа транспорта -->
           <div class="podbor__tips tips-moto">
             <div class="tips-moto__item">
@@ -275,7 +285,6 @@
               <div class="tips-moto__name">Снегоход</div>
             </div>
           </div>
-
           <!-- селекты выбора (бренд/модель/год) -->
           <div class="podbor__selects">
             <div class="selects-group">
@@ -288,11 +297,7 @@
                     <input type="text" name="dropdown-search" class="form__input input-search" placeholder="Поиск" autocomplete="off">
                   </div>
                   <!-- dropdown__list -->
-                  <ul class="list-reset dropdown__list dropdown__list--scroll">
-                    <li class="dropdown__item">Option</li>
-                    <li class="dropdown__item">Option</li>
-                    <li class="dropdown__item">Option</li>
-                    <li class="dropdown__item is-active">Option Selected</li>
+                  <ul class="list-reset dropdown__list">
                     <li class="dropdown__item">Option</li>
                     <li class="dropdown__item">Option</li>
                     <li class="dropdown__item">Option</li>
@@ -302,6 +307,14 @@
                     <li class="dropdown__item">Option</li>
                     <li class="dropdown__item">Option</li>
                     <li class="dropdown__item">Option</li>
+                    <li class="dropdown__item">Option</li>
+                    <li class="dropdown__item">Option</li>
+                    <li class="dropdown__item">Option</li>
+                    <li class="dropdown__item">Option</li>
+                    <li class="dropdown__item">Option</li>
+                    <li class="dropdown__item">Option</li>
+                    <li class="dropdown__item">Option</li>
+                    <li class="no-results is-hidden">Ничего не найдено!</li>
                   </ul>
                 </div>
               </div>
@@ -315,11 +328,7 @@
                     <input type="text" name="dropdown-search" class="form__input input-search" placeholder="Поиск" autocomplete="off">
                   </div>
                   <!-- dropdown__list -->
-                  <ul class="list-reset dropdown__list dropdown__list--scroll">
-                    <li class="dropdown__item">Option</li>
-                    <li class="dropdown__item">Option</li>
-                    <li class="dropdown__item">Option</li>
-                    <li class="dropdown__item is-active">Option Selected</li>
+                  <ul class="list-reset dropdown__list">
                     <li class="dropdown__item">Option</li>
                     <li class="dropdown__item">Option</li>
                     <li class="dropdown__item">Option</li>
@@ -329,6 +338,14 @@
                     <li class="dropdown__item">Option</li>
                     <li class="dropdown__item">Option</li>
                     <li class="dropdown__item">Option</li>
+                    <li class="dropdown__item">Option</li>
+                    <li class="dropdown__item">Option</li>
+                    <li class="dropdown__item">Option</li>
+                    <li class="dropdown__item">Option</li>
+                    <li class="dropdown__item">Option</li>
+                    <li class="dropdown__item">Option</li>
+                    <li class="dropdown__item">Option</li>
+                    <li class="no-results is-hidden">Ничего не найдено!</li>
                   </ul>
                 </div>
               </div>
@@ -342,11 +359,7 @@
                     <input type="text" name="dropdown-search" class="form__input input-search" placeholder="Поиск" autocomplete="off">
                   </div>
                   <!-- dropdown__list -->
-                  <ul class="list-reset dropdown__list dropdown__list--scroll">
-                    <li class="dropdown__item">Option</li>
-                    <li class="dropdown__item">Option</li>
-                    <li class="dropdown__item">Option</li>
-                    <li class="dropdown__item is-active">Option Selected</li>
+                  <ul class="list-reset dropdown__list">
                     <li class="dropdown__item">Option</li>
                     <li class="dropdown__item">Option</li>
                     <li class="dropdown__item">Option</li>
@@ -356,11 +369,18 @@
                     <li class="dropdown__item">Option</li>
                     <li class="dropdown__item">Option</li>
                     <li class="dropdown__item">Option</li>
+                    <li class="dropdown__item">Option</li>
+                    <li class="dropdown__item">Option</li>
+                    <li class="dropdown__item">Option</li>
+                    <li class="dropdown__item">Option</li>
+                    <li class="dropdown__item">Option</li>
+                    <li class="dropdown__item">Option</li>
+                    <li class="dropdown__item">Option</li>
+                    <li class="no-results is-hidden">Ничего не найдено!</li>
                   </ul>
                 </div>
               </div>
             </div>
-
             <!-- кнопка подбора -->
             <button class="btn btn podbor__btn podbor__btn--success">Подобрать</button>
           </div>
@@ -408,794 +428,818 @@
           <ul class="categories__list">
             <!-- Категория -->
             <li class="category">
-              <!-- картинка -->
-              <picture class="category__img">
-                <source srcset="img/category/category-img_masla.webp" type="image/webp">
-                  <img class="" loading="lazy" src="img/category/category-img_masla.jpg" class="" width="80" height="80" alt="название категории">
-              </picture>
-
-              <div class="category__content">
-                <!-- Название подкатегории -->
-                <a href="#" class="category__name">Масла и Химия</a>
-
-                <!-- подкатегориии -->
-                <div class="podcategory podcategory--mini">
-                  <a href="#" class="podcategory__link">
-                    <span class="podcategory__name">Моторное масло</span>
-                    <span class="podcategory__num">276</span>
-                  </a>
-                  <a href="#" class="podcategory__link">
-                    <span class="podcategory__name">Вилочное масло</span>
-                    <span class="podcategory__num">39</span>
-                  </a>
-                  <a href="#" class="podcategory__link">
-                    <span class="podcategory__name">Трансмиссионное масло</span>
-                    <span class="podcategory__num">26</span>
-                  </a>
-                  <a href="#" class="podcategory__link">
-                    <span class="podcategory__name">Масло для аммортизатора</span>
-                    <span class="podcategory__num">4</span>
-                  </a>
-                  <a href="#" class="podcategory__link">
-                    <span class="podcategory__name">Смазка цепи</span>
-                    <span class="podcategory__num">11</span>
-                  </a>
-                  <a href="#" class="podcategory__link">
-                    <span class="podcategory__name">Антифриз</span>
-                    <span class="podcategory__num">11</span>
-                  </a>
-                  <a href="#" class="podcategory__link">
-                    <span class="podcategory__name">Тормозная жидкость</span>
-                    <span class="podcategory__num">23</span>
-                  </a>
-                  <a href="#" class="podcategory__link">
-                    <span class="podcategory__name">Очистители</span>
-                    <span class="podcategory__num">23</span>
-                  </a>
-                  <a href="#" class="podcategory__link">
-                    <span class="podcategory__name">Прочие жидкости</span>
-                    <span class="podcategory__num">46</span>
-                  </a>
-                  <a href="#" class="podcategory__link">
-                    <span class="podcategory__name">Масла для лодочных моторов</span>
-                    <span class="podcategory__num">4</span>
-                  </a>
-                  <a href="#" class="podcategory__link">
-                    <span class="podcategory__name">Подкатегория</span>
-                    <span class="podcategory__num">56</span>
-                  </a>
+              <div class="category__head">
+                <!-- картинка -->
+                <div class="category__img">
+                  <picture>
+                    <source srcset="img/category/category-img_masla.webp" type="image/webp">
+                      <img class="" loading="lazy" src="img/category/category-img_masla.jpg" width="80" height="80" alt="название категории">
+                  </picture>
                 </div>
+                <div class="category__content">
+                  <!-- Название подкатегории -->
+                  <a href="#" class="category__name">Масла и Химия</a>
 
-                <div class="category__footer">
-                  <a href="#" class="more-link">Перейти в категорию <i class="bx bx-chevron-right"></i></a>
+                  <!-- подкатегориии -->
+                  <div class="podcategory podcategory--mini">
+                    <a href="#" class="podcategory__link">
+                      <span class="podcategory__name">Моторное масло</span>
+                      <span class="podcategory__num">276</span>
+                    </a>
+                    <a href="#" class="podcategory__link">
+                      <span class="podcategory__name">Вилочное масло</span>
+                      <span class="podcategory__num">39</span>
+                    </a>
+                    <a href="#" class="podcategory__link">
+                      <span class="podcategory__name">Трансмиссионное масло</span>
+                      <span class="podcategory__num">26</span>
+                    </a>
+                    <a href="#" class="podcategory__link">
+                      <span class="podcategory__name">Масло для аммортизатора</span>
+                      <span class="podcategory__num">4</span>
+                    </a>
+                    <a href="#" class="podcategory__link">
+                      <span class="podcategory__name">Смазка цепи</span>
+                      <span class="podcategory__num">11</span>
+                    </a>
+                    <a href="#" class="podcategory__link">
+                      <span class="podcategory__name">Антифриз</span>
+                      <span class="podcategory__num">11</span>
+                    </a>
+                    <a href="#" class="podcategory__link">
+                      <span class="podcategory__name">Тормозная жидкость</span>
+                      <span class="podcategory__num">23</span>
+                    </a>
+                    <a href="#" class="podcategory__link">
+                      <span class="podcategory__name">Очистители</span>
+                      <span class="podcategory__num">23</span>
+                    </a>
+                    <a href="#" class="podcategory__link">
+                      <span class="podcategory__name">Прочие жидкости</span>
+                      <span class="podcategory__num">46</span>
+                    </a>
+                    <a href="#" class="podcategory__link">
+                      <span class="podcategory__name">Масла для лодочных моторов</span>
+                      <span class="podcategory__num">4</span>
+                    </a>
+                    <a href="#" class="podcategory__link">
+                      <span class="podcategory__name">Подкатегория</span>
+                      <span class="podcategory__num">56</span>
+                    </a>
+                  </div>
                 </div>
+              </div>
 
+              <div class="category__footer">
+                <a href="#" class="more-link">Перейти в категорию <i class="bx bx-chevron-right"></i></a>
               </div>
             </li>
             <!-- Категория -->
             <li class="category">
-              <!-- картинка -->
-              <picture class="category__img">
-                <source srcset="img/category/category-img_masla.webp" type="image/webp">
-                  <img class="" loading="lazy" src="img/category/category-img_masla.jpg" class="" width="80" height="80" alt="название категории">
-              </picture>
-
-              <div class="category__content">
-                <!-- Название подкатегории -->
-                <a href="#" class="category__name">Масла и Химия</a>
-
-                <!-- подкатегориии -->
-                <div class="podcategory podcategory--mini">
-                  <a href="#" class="podcategory__link">
-                    <span class="podcategory__name">Моторное масло</span>
-                    <span class="podcategory__num">276</span>
-                  </a>
-                  <a href="#" class="podcategory__link">
-                    <span class="podcategory__name">Вилочное масло</span>
-                    <span class="podcategory__num">39</span>
-                  </a>
-                  <a href="#" class="podcategory__link">
-                    <span class="podcategory__name">Трансмиссионное масло</span>
-                    <span class="podcategory__num">26</span>
-                  </a>
-                  <a href="#" class="podcategory__link">
-                    <span class="podcategory__name">Масло для аммортизатора</span>
-                    <span class="podcategory__num">4</span>
-                  </a>
-                  <a href="#" class="podcategory__link">
-                    <span class="podcategory__name">Смазка цепи</span>
-                    <span class="podcategory__num">11</span>
-                  </a>
-                  <a href="#" class="podcategory__link">
-                    <span class="podcategory__name">Антифриз</span>
-                    <span class="podcategory__num">11</span>
-                  </a>
-                  <a href="#" class="podcategory__link">
-                    <span class="podcategory__name">Тормозная жидкость</span>
-                    <span class="podcategory__num">23</span>
-                  </a>
-                  <a href="#" class="podcategory__link">
-                    <span class="podcategory__name">Очистители</span>
-                    <span class="podcategory__num">23</span>
-                  </a>
-                  <a href="#" class="podcategory__link">
-                    <span class="podcategory__name">Прочие жидкости</span>
-                    <span class="podcategory__num">46</span>
-                  </a>
-                  <a href="#" class="podcategory__link">
-                    <span class="podcategory__name">Масла для лодочных моторов</span>
-                    <span class="podcategory__num">4</span>
-                  </a>
-                  <a href="#" class="podcategory__link">
-                    <span class="podcategory__name">Подкатегория</span>
-                    <span class="podcategory__num">56</span>
-                  </a>
+              <div class="category__head">
+                <!-- картинка -->
+                <div class="category__img">
+                  <picture>
+                    <source srcset="img/category/category-img_masla.webp" type="image/webp">
+                      <img class="" loading="lazy" src="img/category/category-img_masla.jpg" width="80" height="80" alt="название категории">
+                  </picture>
                 </div>
+                <div class="category__content">
+                  <!-- Название подкатегории -->
+                  <a href="#" class="category__name">Масла и Химия</a>
 
-                <div class="category__footer">
-                  <a href="#" class="more-link">Перейти в категорию <i class="bx bx-chevron-right"></i></a>
+                  <!-- подкатегориии -->
+                  <div class="podcategory podcategory--mini">
+                    <a href="#" class="podcategory__link">
+                      <span class="podcategory__name">Моторное масло</span>
+                      <span class="podcategory__num">276</span>
+                    </a>
+                    <a href="#" class="podcategory__link">
+                      <span class="podcategory__name">Вилочное масло</span>
+                      <span class="podcategory__num">39</span>
+                    </a>
+                    <a href="#" class="podcategory__link">
+                      <span class="podcategory__name">Трансмиссионное масло</span>
+                      <span class="podcategory__num">26</span>
+                    </a>
+                    <a href="#" class="podcategory__link">
+                      <span class="podcategory__name">Масло для аммортизатора</span>
+                      <span class="podcategory__num">4</span>
+                    </a>
+                    <a href="#" class="podcategory__link">
+                      <span class="podcategory__name">Смазка цепи</span>
+                      <span class="podcategory__num">11</span>
+                    </a>
+                    <a href="#" class="podcategory__link">
+                      <span class="podcategory__name">Антифриз</span>
+                      <span class="podcategory__num">11</span>
+                    </a>
+                    <a href="#" class="podcategory__link">
+                      <span class="podcategory__name">Тормозная жидкость</span>
+                      <span class="podcategory__num">23</span>
+                    </a>
+                    <a href="#" class="podcategory__link">
+                      <span class="podcategory__name">Очистители</span>
+                      <span class="podcategory__num">23</span>
+                    </a>
+                    <a href="#" class="podcategory__link">
+                      <span class="podcategory__name">Прочие жидкости</span>
+                      <span class="podcategory__num">46</span>
+                    </a>
+                    <a href="#" class="podcategory__link">
+                      <span class="podcategory__name">Масла для лодочных моторов</span>
+                      <span class="podcategory__num">4</span>
+                    </a>
+                    <a href="#" class="podcategory__link">
+                      <span class="podcategory__name">Подкатегория</span>
+                      <span class="podcategory__num">56</span>
+                    </a>
+                  </div>
                 </div>
+              </div>
 
+              <div class="category__footer">
+                <a href="#" class="more-link">Перейти в категорию <i class="bx bx-chevron-right"></i></a>
               </div>
             </li>
             <!-- Категория -->
             <li class="category">
-              <!-- картинка -->
-              <picture class="category__img">
-                <source srcset="img/category/category-img_masla.webp" type="image/webp">
-                  <img class="" loading="lazy" src="img/category/category-img_masla.jpg" class="" width="80" height="80" alt="название категории">
-              </picture>
-
-              <div class="category__content">
-                <!-- Название подкатегории -->
-                <a href="#" class="category__name">Масла и Химия</a>
-
-                <!-- подкатегориии -->
-                <div class="podcategory podcategory--mini">
-                  <a href="#" class="podcategory__link">
-                    <span class="podcategory__name">Моторное масло</span>
-                    <span class="podcategory__num">276</span>
-                  </a>
-                  <a href="#" class="podcategory__link">
-                    <span class="podcategory__name">Вилочное масло</span>
-                    <span class="podcategory__num">39</span>
-                  </a>
-                  <a href="#" class="podcategory__link">
-                    <span class="podcategory__name">Трансмиссионное масло</span>
-                    <span class="podcategory__num">26</span>
-                  </a>
-                  <a href="#" class="podcategory__link">
-                    <span class="podcategory__name">Масло для аммортизатора</span>
-                    <span class="podcategory__num">4</span>
-                  </a>
-                  <a href="#" class="podcategory__link">
-                    <span class="podcategory__name">Смазка цепи</span>
-                    <span class="podcategory__num">11</span>
-                  </a>
-                  <a href="#" class="podcategory__link">
-                    <span class="podcategory__name">Антифриз</span>
-                    <span class="podcategory__num">11</span>
-                  </a>
-                  <a href="#" class="podcategory__link">
-                    <span class="podcategory__name">Тормозная жидкость</span>
-                    <span class="podcategory__num">23</span>
-                  </a>
-                  <a href="#" class="podcategory__link">
-                    <span class="podcategory__name">Очистители</span>
-                    <span class="podcategory__num">23</span>
-                  </a>
-                  <a href="#" class="podcategory__link">
-                    <span class="podcategory__name">Прочие жидкости</span>
-                    <span class="podcategory__num">46</span>
-                  </a>
-                  <a href="#" class="podcategory__link">
-                    <span class="podcategory__name">Масла для лодочных моторов</span>
-                    <span class="podcategory__num">4</span>
-                  </a>
-                  <a href="#" class="podcategory__link">
-                    <span class="podcategory__name">Подкатегория</span>
-                    <span class="podcategory__num">56</span>
-                  </a>
+              <div class="category__head">
+                <!-- картинка -->
+                <div class="category__img">
+                  <picture>
+                    <source srcset="img/category/category-img_masla.webp" type="image/webp">
+                      <img class="" loading="lazy" src="img/category/category-img_masla.jpg" width="80" height="80" alt="название категории">
+                  </picture>
                 </div>
+                <div class="category__content">
+                  <!-- Название подкатегории -->
+                  <a href="#" class="category__name">Масла и Химия</a>
 
-                <div class="category__footer">
-                  <a href="#" class="more-link">Перейти в категорию <i class="bx bx-chevron-right"></i></a>
+                  <!-- подкатегориии -->
+                  <div class="podcategory podcategory--mini">
+                    <a href="#" class="podcategory__link">
+                      <span class="podcategory__name">Моторное масло</span>
+                      <span class="podcategory__num">276</span>
+                    </a>
+                    <a href="#" class="podcategory__link">
+                      <span class="podcategory__name">Вилочное масло</span>
+                      <span class="podcategory__num">39</span>
+                    </a>
+                    <a href="#" class="podcategory__link">
+                      <span class="podcategory__name">Трансмиссионное масло</span>
+                      <span class="podcategory__num">26</span>
+                    </a>
+                    <a href="#" class="podcategory__link">
+                      <span class="podcategory__name">Масло для аммортизатора</span>
+                      <span class="podcategory__num">4</span>
+                    </a>
+                    <a href="#" class="podcategory__link">
+                      <span class="podcategory__name">Смазка цепи</span>
+                      <span class="podcategory__num">11</span>
+                    </a>
+                    <a href="#" class="podcategory__link">
+                      <span class="podcategory__name">Антифриз</span>
+                      <span class="podcategory__num">11</span>
+                    </a>
+                    <a href="#" class="podcategory__link">
+                      <span class="podcategory__name">Тормозная жидкость</span>
+                      <span class="podcategory__num">23</span>
+                    </a>
+                    <a href="#" class="podcategory__link">
+                      <span class="podcategory__name">Очистители</span>
+                      <span class="podcategory__num">23</span>
+                    </a>
+                    <a href="#" class="podcategory__link">
+                      <span class="podcategory__name">Прочие жидкости</span>
+                      <span class="podcategory__num">46</span>
+                    </a>
+                    <a href="#" class="podcategory__link">
+                      <span class="podcategory__name">Масла для лодочных моторов</span>
+                      <span class="podcategory__num">4</span>
+                    </a>
+                    <a href="#" class="podcategory__link">
+                      <span class="podcategory__name">Подкатегория</span>
+                      <span class="podcategory__num">56</span>
+                    </a>
+                  </div>
                 </div>
+              </div>
 
+              <div class="category__footer">
+                <a href="#" class="more-link">Перейти в категорию <i class="bx bx-chevron-right"></i></a>
               </div>
             </li>
             <!-- Категория -->
             <li class="category">
-              <!-- картинка -->
-              <picture class="category__img">
-                <source srcset="img/category/category-img_masla.webp" type="image/webp">
-                  <img class="" loading="lazy" src="img/category/category-img_masla.jpg" class="" width="80" height="80" alt="название категории">
-              </picture>
-
-              <div class="category__content">
-                <!-- Название подкатегории -->
-                <a href="#" class="category__name">Масла и Химия</a>
-
-                <!-- подкатегориии -->
-                <div class="podcategory podcategory--mini">
-                  <a href="#" class="podcategory__link">
-                    <span class="podcategory__name">Моторное масло</span>
-                    <span class="podcategory__num">276</span>
-                  </a>
-                  <a href="#" class="podcategory__link">
-                    <span class="podcategory__name">Вилочное масло</span>
-                    <span class="podcategory__num">39</span>
-                  </a>
-                  <a href="#" class="podcategory__link">
-                    <span class="podcategory__name">Трансмиссионное масло</span>
-                    <span class="podcategory__num">26</span>
-                  </a>
-                  <a href="#" class="podcategory__link">
-                    <span class="podcategory__name">Масло для аммортизатора</span>
-                    <span class="podcategory__num">4</span>
-                  </a>
-                  <a href="#" class="podcategory__link">
-                    <span class="podcategory__name">Смазка цепи</span>
-                    <span class="podcategory__num">11</span>
-                  </a>
-                  <a href="#" class="podcategory__link">
-                    <span class="podcategory__name">Антифриз</span>
-                    <span class="podcategory__num">11</span>
-                  </a>
-                  <a href="#" class="podcategory__link">
-                    <span class="podcategory__name">Тормозная жидкость</span>
-                    <span class="podcategory__num">23</span>
-                  </a>
-                  <a href="#" class="podcategory__link">
-                    <span class="podcategory__name">Очистители</span>
-                    <span class="podcategory__num">23</span>
-                  </a>
-                  <a href="#" class="podcategory__link">
-                    <span class="podcategory__name">Прочие жидкости</span>
-                    <span class="podcategory__num">46</span>
-                  </a>
-                  <a href="#" class="podcategory__link">
-                    <span class="podcategory__name">Масла для лодочных моторов</span>
-                    <span class="podcategory__num">4</span>
-                  </a>
-                  <a href="#" class="podcategory__link">
-                    <span class="podcategory__name">Подкатегория</span>
-                    <span class="podcategory__num">56</span>
-                  </a>
+              <div class="category__head">
+                <!-- картинка -->
+                <div class="category__img">
+                  <picture>
+                    <source srcset="img/category/category-img_masla.webp" type="image/webp">
+                      <img class="" loading="lazy" src="img/category/category-img_masla.jpg" width="80" height="80" alt="название категории">
+                  </picture>
                 </div>
+                <div class="category__content">
+                  <!-- Название подкатегории -->
+                  <a href="#" class="category__name">Масла и Химия</a>
 
-                <div class="category__footer">
-                  <a href="#" class="more-link">Перейти в категорию <i class="bx bx-chevron-right"></i></a>
+                  <!-- подкатегориии -->
+                  <div class="podcategory podcategory--mini">
+                    <a href="#" class="podcategory__link">
+                      <span class="podcategory__name">Моторное масло</span>
+                      <span class="podcategory__num">276</span>
+                    </a>
+                    <a href="#" class="podcategory__link">
+                      <span class="podcategory__name">Вилочное масло</span>
+                      <span class="podcategory__num">39</span>
+                    </a>
+                    <a href="#" class="podcategory__link">
+                      <span class="podcategory__name">Трансмиссионное масло</span>
+                      <span class="podcategory__num">26</span>
+                    </a>
+                    <a href="#" class="podcategory__link">
+                      <span class="podcategory__name">Масло для аммортизатора</span>
+                      <span class="podcategory__num">4</span>
+                    </a>
+                    <a href="#" class="podcategory__link">
+                      <span class="podcategory__name">Смазка цепи</span>
+                      <span class="podcategory__num">11</span>
+                    </a>
+                    <a href="#" class="podcategory__link">
+                      <span class="podcategory__name">Антифриз</span>
+                      <span class="podcategory__num">11</span>
+                    </a>
+                    <a href="#" class="podcategory__link">
+                      <span class="podcategory__name">Тормозная жидкость</span>
+                      <span class="podcategory__num">23</span>
+                    </a>
+                    <a href="#" class="podcategory__link">
+                      <span class="podcategory__name">Очистители</span>
+                      <span class="podcategory__num">23</span>
+                    </a>
+                    <a href="#" class="podcategory__link">
+                      <span class="podcategory__name">Прочие жидкости</span>
+                      <span class="podcategory__num">46</span>
+                    </a>
+                    <a href="#" class="podcategory__link">
+                      <span class="podcategory__name">Масла для лодочных моторов</span>
+                      <span class="podcategory__num">4</span>
+                    </a>
+                    <a href="#" class="podcategory__link">
+                      <span class="podcategory__name">Подкатегория</span>
+                      <span class="podcategory__num">56</span>
+                    </a>
+                  </div>
                 </div>
+              </div>
 
+              <div class="category__footer">
+                <a href="#" class="more-link">Перейти в категорию <i class="bx bx-chevron-right"></i></a>
               </div>
             </li>
             <!-- Категория -->
             <li class="category">
-              <!-- картинка -->
-              <picture class="category__img">
-                <source srcset="img/category/category-img_masla.webp" type="image/webp">
-                  <img class="" loading="lazy" src="img/category/category-img_masla.jpg" class="" width="80" height="80" alt="название категории">
-              </picture>
-
-              <div class="category__content">
-                <!-- Название подкатегории -->
-                <a href="#" class="category__name">Масла и Химия</a>
-
-                <!-- подкатегориии -->
-                <div class="podcategory podcategory--mini">
-                  <a href="#" class="podcategory__link">
-                    <span class="podcategory__name">Моторное масло</span>
-                    <span class="podcategory__num">276</span>
-                  </a>
-                  <a href="#" class="podcategory__link">
-                    <span class="podcategory__name">Вилочное масло</span>
-                    <span class="podcategory__num">39</span>
-                  </a>
-                  <a href="#" class="podcategory__link">
-                    <span class="podcategory__name">Трансмиссионное масло</span>
-                    <span class="podcategory__num">26</span>
-                  </a>
-                  <a href="#" class="podcategory__link">
-                    <span class="podcategory__name">Масло для аммортизатора</span>
-                    <span class="podcategory__num">4</span>
-                  </a>
-                  <a href="#" class="podcategory__link">
-                    <span class="podcategory__name">Смазка цепи</span>
-                    <span class="podcategory__num">11</span>
-                  </a>
-                  <a href="#" class="podcategory__link">
-                    <span class="podcategory__name">Антифриз</span>
-                    <span class="podcategory__num">11</span>
-                  </a>
-                  <a href="#" class="podcategory__link">
-                    <span class="podcategory__name">Тормозная жидкость</span>
-                    <span class="podcategory__num">23</span>
-                  </a>
-                  <a href="#" class="podcategory__link">
-                    <span class="podcategory__name">Очистители</span>
-                    <span class="podcategory__num">23</span>
-                  </a>
-                  <a href="#" class="podcategory__link">
-                    <span class="podcategory__name">Прочие жидкости</span>
-                    <span class="podcategory__num">46</span>
-                  </a>
-                  <a href="#" class="podcategory__link">
-                    <span class="podcategory__name">Масла для лодочных моторов</span>
-                    <span class="podcategory__num">4</span>
-                  </a>
-                  <a href="#" class="podcategory__link">
-                    <span class="podcategory__name">Подкатегория</span>
-                    <span class="podcategory__num">56</span>
-                  </a>
+              <div class="category__head">
+                <!-- картинка -->
+                <div class="category__img">
+                  <picture>
+                    <source srcset="img/category/category-img_masla.webp" type="image/webp">
+                      <img class="" loading="lazy" src="img/category/category-img_masla.jpg" width="80" height="80" alt="название категории">
+                  </picture>
                 </div>
+                <div class="category__content">
+                  <!-- Название подкатегории -->
+                  <a href="#" class="category__name">Масла и Химия</a>
 
-                <div class="category__footer">
-                  <a href="#" class="more-link">Перейти в категорию <i class="bx bx-chevron-right"></i></a>
+                  <!-- подкатегориии -->
+                  <div class="podcategory podcategory--mini">
+                    <a href="#" class="podcategory__link">
+                      <span class="podcategory__name">Моторное масло</span>
+                      <span class="podcategory__num">276</span>
+                    </a>
+                    <a href="#" class="podcategory__link">
+                      <span class="podcategory__name">Вилочное масло</span>
+                      <span class="podcategory__num">39</span>
+                    </a>
+                    <a href="#" class="podcategory__link">
+                      <span class="podcategory__name">Трансмиссионное масло</span>
+                      <span class="podcategory__num">26</span>
+                    </a>
+                    <a href="#" class="podcategory__link">
+                      <span class="podcategory__name">Масло для аммортизатора</span>
+                      <span class="podcategory__num">4</span>
+                    </a>
+                    <a href="#" class="podcategory__link">
+                      <span class="podcategory__name">Смазка цепи</span>
+                      <span class="podcategory__num">11</span>
+                    </a>
+                    <a href="#" class="podcategory__link">
+                      <span class="podcategory__name">Антифриз</span>
+                      <span class="podcategory__num">11</span>
+                    </a>
+                    <a href="#" class="podcategory__link">
+                      <span class="podcategory__name">Тормозная жидкость</span>
+                      <span class="podcategory__num">23</span>
+                    </a>
+                    <a href="#" class="podcategory__link">
+                      <span class="podcategory__name">Очистители</span>
+                      <span class="podcategory__num">23</span>
+                    </a>
+                    <a href="#" class="podcategory__link">
+                      <span class="podcategory__name">Прочие жидкости</span>
+                      <span class="podcategory__num">46</span>
+                    </a>
+                    <a href="#" class="podcategory__link">
+                      <span class="podcategory__name">Масла для лодочных моторов</span>
+                      <span class="podcategory__num">4</span>
+                    </a>
+                    <a href="#" class="podcategory__link">
+                      <span class="podcategory__name">Подкатегория</span>
+                      <span class="podcategory__num">56</span>
+                    </a>
+                  </div>
                 </div>
+              </div>
 
+              <div class="category__footer">
+                <a href="#" class="more-link">Перейти в категорию <i class="bx bx-chevron-right"></i></a>
               </div>
             </li>
             <!-- Категория -->
             <li class="category">
-              <!-- картинка -->
-              <picture class="category__img">
-                <source srcset="img/category/category-img_masla.webp" type="image/webp">
-                  <img class="" loading="lazy" src="img/category/category-img_masla.jpg" class="" width="80" height="80" alt="название категории">
-              </picture>
-
-              <div class="category__content">
-                <!-- Название подкатегории -->
-                <a href="#" class="category__name">Масла и Химия</a>
-
-                <!-- подкатегориии -->
-                <div class="podcategory podcategory--mini">
-                  <a href="#" class="podcategory__link">
-                    <span class="podcategory__name">Моторное масло</span>
-                    <span class="podcategory__num">276</span>
-                  </a>
-                  <a href="#" class="podcategory__link">
-                    <span class="podcategory__name">Вилочное масло</span>
-                    <span class="podcategory__num">39</span>
-                  </a>
-                  <a href="#" class="podcategory__link">
-                    <span class="podcategory__name">Трансмиссионное масло</span>
-                    <span class="podcategory__num">26</span>
-                  </a>
-                  <a href="#" class="podcategory__link">
-                    <span class="podcategory__name">Масло для аммортизатора</span>
-                    <span class="podcategory__num">4</span>
-                  </a>
-                  <a href="#" class="podcategory__link">
-                    <span class="podcategory__name">Смазка цепи</span>
-                    <span class="podcategory__num">11</span>
-                  </a>
-                  <a href="#" class="podcategory__link">
-                    <span class="podcategory__name">Антифриз</span>
-                    <span class="podcategory__num">11</span>
-                  </a>
-                  <a href="#" class="podcategory__link">
-                    <span class="podcategory__name">Тормозная жидкость</span>
-                    <span class="podcategory__num">23</span>
-                  </a>
-                  <a href="#" class="podcategory__link">
-                    <span class="podcategory__name">Очистители</span>
-                    <span class="podcategory__num">23</span>
-                  </a>
-                  <a href="#" class="podcategory__link">
-                    <span class="podcategory__name">Прочие жидкости</span>
-                    <span class="podcategory__num">46</span>
-                  </a>
-                  <a href="#" class="podcategory__link">
-                    <span class="podcategory__name">Масла для лодочных моторов</span>
-                    <span class="podcategory__num">4</span>
-                  </a>
-                  <a href="#" class="podcategory__link">
-                    <span class="podcategory__name">Подкатегория</span>
-                    <span class="podcategory__num">56</span>
-                  </a>
+              <div class="category__head">
+                <!-- картинка -->
+                <div class="category__img">
+                  <picture>
+                    <source srcset="img/category/category-img_masla.webp" type="image/webp">
+                      <img class="" loading="lazy" src="img/category/category-img_masla.jpg" width="80" height="80" alt="название категории">
+                  </picture>
                 </div>
+                <div class="category__content">
+                  <!-- Название подкатегории -->
+                  <a href="#" class="category__name">Масла и Химия</a>
 
-                <div class="category__footer">
-                  <a href="#" class="more-link">Перейти в категорию <i class="bx bx-chevron-right"></i></a>
+                  <!-- подкатегориии -->
+                  <div class="podcategory podcategory--mini">
+                    <a href="#" class="podcategory__link">
+                      <span class="podcategory__name">Моторное масло</span>
+                      <span class="podcategory__num">276</span>
+                    </a>
+                    <a href="#" class="podcategory__link">
+                      <span class="podcategory__name">Вилочное масло</span>
+                      <span class="podcategory__num">39</span>
+                    </a>
+                    <a href="#" class="podcategory__link">
+                      <span class="podcategory__name">Трансмиссионное масло</span>
+                      <span class="podcategory__num">26</span>
+                    </a>
+                    <a href="#" class="podcategory__link">
+                      <span class="podcategory__name">Масло для аммортизатора</span>
+                      <span class="podcategory__num">4</span>
+                    </a>
+                    <a href="#" class="podcategory__link">
+                      <span class="podcategory__name">Смазка цепи</span>
+                      <span class="podcategory__num">11</span>
+                    </a>
+                    <a href="#" class="podcategory__link">
+                      <span class="podcategory__name">Антифриз</span>
+                      <span class="podcategory__num">11</span>
+                    </a>
+                    <a href="#" class="podcategory__link">
+                      <span class="podcategory__name">Тормозная жидкость</span>
+                      <span class="podcategory__num">23</span>
+                    </a>
+                    <a href="#" class="podcategory__link">
+                      <span class="podcategory__name">Очистители</span>
+                      <span class="podcategory__num">23</span>
+                    </a>
+                    <a href="#" class="podcategory__link">
+                      <span class="podcategory__name">Прочие жидкости</span>
+                      <span class="podcategory__num">46</span>
+                    </a>
+                    <a href="#" class="podcategory__link">
+                      <span class="podcategory__name">Масла для лодочных моторов</span>
+                      <span class="podcategory__num">4</span>
+                    </a>
+                    <a href="#" class="podcategory__link">
+                      <span class="podcategory__name">Подкатегория</span>
+                      <span class="podcategory__num">56</span>
+                    </a>
+                  </div>
                 </div>
+              </div>
 
+              <div class="category__footer">
+                <a href="#" class="more-link">Перейти в категорию <i class="bx bx-chevron-right"></i></a>
               </div>
             </li>
             <!-- Категория -->
             <li class="category">
-              <!-- картинка -->
-              <picture class="category__img">
-                <source srcset="img/category/category-img_masla.webp" type="image/webp">
-                  <img class="" loading="lazy" src="img/category/category-img_masla.jpg" class="" width="80" height="80" alt="название категории">
-              </picture>
-
-              <div class="category__content">
-                <!-- Название подкатегории -->
-                <a href="#" class="category__name">Масла и Химия</a>
-
-                <!-- подкатегориии -->
-                <div class="podcategory podcategory--mini">
-                  <a href="#" class="podcategory__link">
-                    <span class="podcategory__name">Моторное масло</span>
-                    <span class="podcategory__num">276</span>
-                  </a>
-                  <a href="#" class="podcategory__link">
-                    <span class="podcategory__name">Вилочное масло</span>
-                    <span class="podcategory__num">39</span>
-                  </a>
-                  <a href="#" class="podcategory__link">
-                    <span class="podcategory__name">Трансмиссионное масло</span>
-                    <span class="podcategory__num">26</span>
-                  </a>
-                  <a href="#" class="podcategory__link">
-                    <span class="podcategory__name">Масло для аммортизатора</span>
-                    <span class="podcategory__num">4</span>
-                  </a>
-                  <a href="#" class="podcategory__link">
-                    <span class="podcategory__name">Смазка цепи</span>
-                    <span class="podcategory__num">11</span>
-                  </a>
-                  <a href="#" class="podcategory__link">
-                    <span class="podcategory__name">Антифриз</span>
-                    <span class="podcategory__num">11</span>
-                  </a>
-                  <a href="#" class="podcategory__link">
-                    <span class="podcategory__name">Тормозная жидкость</span>
-                    <span class="podcategory__num">23</span>
-                  </a>
-                  <a href="#" class="podcategory__link">
-                    <span class="podcategory__name">Очистители</span>
-                    <span class="podcategory__num">23</span>
-                  </a>
-                  <a href="#" class="podcategory__link">
-                    <span class="podcategory__name">Прочие жидкости</span>
-                    <span class="podcategory__num">46</span>
-                  </a>
-                  <a href="#" class="podcategory__link">
-                    <span class="podcategory__name">Масла для лодочных моторов</span>
-                    <span class="podcategory__num">4</span>
-                  </a>
-                  <a href="#" class="podcategory__link">
-                    <span class="podcategory__name">Подкатегория</span>
-                    <span class="podcategory__num">56</span>
-                  </a>
+              <div class="category__head">
+                <!-- картинка -->
+                <div class="category__img">
+                  <picture>
+                    <source srcset="img/category/category-img_masla.webp" type="image/webp">
+                      <img class="" loading="lazy" src="img/category/category-img_masla.jpg" width="80" height="80" alt="название категории">
+                  </picture>
                 </div>
+                <div class="category__content">
+                  <!-- Название подкатегории -->
+                  <a href="#" class="category__name">Масла и Химия</a>
 
-                <div class="category__footer">
-                  <a href="#" class="more-link">Перейти в категорию <i class="bx bx-chevron-right"></i></a>
+                  <!-- подкатегориии -->
+                  <div class="podcategory podcategory--mini">
+                    <a href="#" class="podcategory__link">
+                      <span class="podcategory__name">Моторное масло</span>
+                      <span class="podcategory__num">276</span>
+                    </a>
+                    <a href="#" class="podcategory__link">
+                      <span class="podcategory__name">Вилочное масло</span>
+                      <span class="podcategory__num">39</span>
+                    </a>
+                    <a href="#" class="podcategory__link">
+                      <span class="podcategory__name">Трансмиссионное масло</span>
+                      <span class="podcategory__num">26</span>
+                    </a>
+                    <a href="#" class="podcategory__link">
+                      <span class="podcategory__name">Масло для аммортизатора</span>
+                      <span class="podcategory__num">4</span>
+                    </a>
+                    <a href="#" class="podcategory__link">
+                      <span class="podcategory__name">Смазка цепи</span>
+                      <span class="podcategory__num">11</span>
+                    </a>
+                    <a href="#" class="podcategory__link">
+                      <span class="podcategory__name">Антифриз</span>
+                      <span class="podcategory__num">11</span>
+                    </a>
+                    <a href="#" class="podcategory__link">
+                      <span class="podcategory__name">Тормозная жидкость</span>
+                      <span class="podcategory__num">23</span>
+                    </a>
+                    <a href="#" class="podcategory__link">
+                      <span class="podcategory__name">Очистители</span>
+                      <span class="podcategory__num">23</span>
+                    </a>
+                    <a href="#" class="podcategory__link">
+                      <span class="podcategory__name">Прочие жидкости</span>
+                      <span class="podcategory__num">46</span>
+                    </a>
+                    <a href="#" class="podcategory__link">
+                      <span class="podcategory__name">Масла для лодочных моторов</span>
+                      <span class="podcategory__num">4</span>
+                    </a>
+                    <a href="#" class="podcategory__link">
+                      <span class="podcategory__name">Подкатегория</span>
+                      <span class="podcategory__num">56</span>
+                    </a>
+                  </div>
                 </div>
+              </div>
 
+              <div class="category__footer">
+                <a href="#" class="more-link">Перейти в категорию <i class="bx bx-chevron-right"></i></a>
               </div>
             </li>
             <!-- Категория -->
             <li class="category">
-              <!-- картинка -->
-              <picture class="category__img">
-                <source srcset="img/category/category-img_masla.webp" type="image/webp">
-                  <img class="" loading="lazy" src="img/category/category-img_masla.jpg" class="" width="80" height="80" alt="название категории">
-              </picture>
-
-              <div class="category__content">
-                <!-- Название подкатегории -->
-                <a href="#" class="category__name">Масла и Химия</a>
-
-                <!-- подкатегориии -->
-                <div class="podcategory podcategory--mini">
-                  <a href="#" class="podcategory__link">
-                    <span class="podcategory__name">Моторное масло</span>
-                    <span class="podcategory__num">276</span>
-                  </a>
-                  <a href="#" class="podcategory__link">
-                    <span class="podcategory__name">Вилочное масло</span>
-                    <span class="podcategory__num">39</span>
-                  </a>
-                  <a href="#" class="podcategory__link">
-                    <span class="podcategory__name">Трансмиссионное масло</span>
-                    <span class="podcategory__num">26</span>
-                  </a>
-                  <a href="#" class="podcategory__link">
-                    <span class="podcategory__name">Масло для аммортизатора</span>
-                    <span class="podcategory__num">4</span>
-                  </a>
-                  <a href="#" class="podcategory__link">
-                    <span class="podcategory__name">Смазка цепи</span>
-                    <span class="podcategory__num">11</span>
-                  </a>
-                  <a href="#" class="podcategory__link">
-                    <span class="podcategory__name">Антифриз</span>
-                    <span class="podcategory__num">11</span>
-                  </a>
-                  <a href="#" class="podcategory__link">
-                    <span class="podcategory__name">Тормозная жидкость</span>
-                    <span class="podcategory__num">23</span>
-                  </a>
-                  <a href="#" class="podcategory__link">
-                    <span class="podcategory__name">Очистители</span>
-                    <span class="podcategory__num">23</span>
-                  </a>
-                  <a href="#" class="podcategory__link">
-                    <span class="podcategory__name">Прочие жидкости</span>
-                    <span class="podcategory__num">46</span>
-                  </a>
-                  <a href="#" class="podcategory__link">
-                    <span class="podcategory__name">Масла для лодочных моторов</span>
-                    <span class="podcategory__num">4</span>
-                  </a>
-                  <a href="#" class="podcategory__link">
-                    <span class="podcategory__name">Подкатегория</span>
-                    <span class="podcategory__num">56</span>
-                  </a>
+              <div class="category__head">
+                <!-- картинка -->
+                <div class="category__img">
+                  <picture>
+                    <source srcset="img/category/category-img_masla.webp" type="image/webp">
+                      <img class="" loading="lazy" src="img/category/category-img_masla.jpg" width="80" height="80" alt="название категории">
+                  </picture>
                 </div>
+                <div class="category__content">
+                  <!-- Название подкатегории -->
+                  <a href="#" class="category__name">Масла и Химия</a>
 
-                <div class="category__footer">
-                  <a href="#" class="more-link">Перейти в категорию <i class="bx bx-chevron-right"></i></a>
+                  <!-- подкатегориии -->
+                  <div class="podcategory podcategory--mini">
+                    <a href="#" class="podcategory__link">
+                      <span class="podcategory__name">Моторное масло</span>
+                      <span class="podcategory__num">276</span>
+                    </a>
+                    <a href="#" class="podcategory__link">
+                      <span class="podcategory__name">Вилочное масло</span>
+                      <span class="podcategory__num">39</span>
+                    </a>
+                    <a href="#" class="podcategory__link">
+                      <span class="podcategory__name">Трансмиссионное масло</span>
+                      <span class="podcategory__num">26</span>
+                    </a>
+                    <a href="#" class="podcategory__link">
+                      <span class="podcategory__name">Масло для аммортизатора</span>
+                      <span class="podcategory__num">4</span>
+                    </a>
+                    <a href="#" class="podcategory__link">
+                      <span class="podcategory__name">Смазка цепи</span>
+                      <span class="podcategory__num">11</span>
+                    </a>
+                    <a href="#" class="podcategory__link">
+                      <span class="podcategory__name">Антифриз</span>
+                      <span class="podcategory__num">11</span>
+                    </a>
+                    <a href="#" class="podcategory__link">
+                      <span class="podcategory__name">Тормозная жидкость</span>
+                      <span class="podcategory__num">23</span>
+                    </a>
+                    <a href="#" class="podcategory__link">
+                      <span class="podcategory__name">Очистители</span>
+                      <span class="podcategory__num">23</span>
+                    </a>
+                    <a href="#" class="podcategory__link">
+                      <span class="podcategory__name">Прочие жидкости</span>
+                      <span class="podcategory__num">46</span>
+                    </a>
+                    <a href="#" class="podcategory__link">
+                      <span class="podcategory__name">Масла для лодочных моторов</span>
+                      <span class="podcategory__num">4</span>
+                    </a>
+                    <a href="#" class="podcategory__link">
+                      <span class="podcategory__name">Подкатегория</span>
+                      <span class="podcategory__num">56</span>
+                    </a>
+                  </div>
                 </div>
+              </div>
 
+              <div class="category__footer">
+                <a href="#" class="more-link">Перейти в категорию <i class="bx bx-chevron-right"></i></a>
               </div>
             </li>
             <!-- Категория -->
             <li class="category">
-              <!-- картинка -->
-              <picture class="category__img">
-                <source srcset="img/category/category-img_masla.webp" type="image/webp">
-                  <img class="" loading="lazy" src="img/category/category-img_masla.jpg" class="" width="80" height="80" alt="название категории">
-              </picture>
-
-              <div class="category__content">
-                <!-- Название подкатегории -->
-                <a href="#" class="category__name">Масла и Химия</a>
-
-                <!-- подкатегориии -->
-                <div class="podcategory podcategory--mini">
-                  <a href="#" class="podcategory__link">
-                    <span class="podcategory__name">Моторное масло</span>
-                    <span class="podcategory__num">276</span>
-                  </a>
-                  <a href="#" class="podcategory__link">
-                    <span class="podcategory__name">Вилочное масло</span>
-                    <span class="podcategory__num">39</span>
-                  </a>
-                  <a href="#" class="podcategory__link">
-                    <span class="podcategory__name">Трансмиссионное масло</span>
-                    <span class="podcategory__num">26</span>
-                  </a>
-                  <a href="#" class="podcategory__link">
-                    <span class="podcategory__name">Масло для аммортизатора</span>
-                    <span class="podcategory__num">4</span>
-                  </a>
-                  <a href="#" class="podcategory__link">
-                    <span class="podcategory__name">Смазка цепи</span>
-                    <span class="podcategory__num">11</span>
-                  </a>
-                  <a href="#" class="podcategory__link">
-                    <span class="podcategory__name">Антифриз</span>
-                    <span class="podcategory__num">11</span>
-                  </a>
-                  <a href="#" class="podcategory__link">
-                    <span class="podcategory__name">Тормозная жидкость</span>
-                    <span class="podcategory__num">23</span>
-                  </a>
-                  <a href="#" class="podcategory__link">
-                    <span class="podcategory__name">Очистители</span>
-                    <span class="podcategory__num">23</span>
-                  </a>
-                  <a href="#" class="podcategory__link">
-                    <span class="podcategory__name">Прочие жидкости</span>
-                    <span class="podcategory__num">46</span>
-                  </a>
-                  <a href="#" class="podcategory__link">
-                    <span class="podcategory__name">Масла для лодочных моторов</span>
-                    <span class="podcategory__num">4</span>
-                  </a>
-                  <a href="#" class="podcategory__link">
-                    <span class="podcategory__name">Подкатегория</span>
-                    <span class="podcategory__num">56</span>
-                  </a>
+              <div class="category__head">
+                <!-- картинка -->
+                <div class="category__img">
+                  <picture>
+                    <source srcset="img/category/category-img_masla.webp" type="image/webp">
+                      <img class="" loading="lazy" src="img/category/category-img_masla.jpg" width="80" height="80" alt="название категории">
+                  </picture>
                 </div>
+                <div class="category__content">
+                  <!-- Название подкатегории -->
+                  <a href="#" class="category__name">Масла и Химия</a>
 
-                <div class="category__footer">
-                  <a href="#" class="more-link">Перейти в категорию <i class="bx bx-chevron-right"></i></a>
+                  <!-- подкатегориии -->
+                  <div class="podcategory podcategory--mini">
+                    <a href="#" class="podcategory__link">
+                      <span class="podcategory__name">Моторное масло</span>
+                      <span class="podcategory__num">276</span>
+                    </a>
+                    <a href="#" class="podcategory__link">
+                      <span class="podcategory__name">Вилочное масло</span>
+                      <span class="podcategory__num">39</span>
+                    </a>
+                    <a href="#" class="podcategory__link">
+                      <span class="podcategory__name">Трансмиссионное масло</span>
+                      <span class="podcategory__num">26</span>
+                    </a>
+                    <a href="#" class="podcategory__link">
+                      <span class="podcategory__name">Масло для аммортизатора</span>
+                      <span class="podcategory__num">4</span>
+                    </a>
+                    <a href="#" class="podcategory__link">
+                      <span class="podcategory__name">Смазка цепи</span>
+                      <span class="podcategory__num">11</span>
+                    </a>
+                    <a href="#" class="podcategory__link">
+                      <span class="podcategory__name">Антифриз</span>
+                      <span class="podcategory__num">11</span>
+                    </a>
+                    <a href="#" class="podcategory__link">
+                      <span class="podcategory__name">Тормозная жидкость</span>
+                      <span class="podcategory__num">23</span>
+                    </a>
+                    <a href="#" class="podcategory__link">
+                      <span class="podcategory__name">Очистители</span>
+                      <span class="podcategory__num">23</span>
+                    </a>
+                    <a href="#" class="podcategory__link">
+                      <span class="podcategory__name">Прочие жидкости</span>
+                      <span class="podcategory__num">46</span>
+                    </a>
+                    <a href="#" class="podcategory__link">
+                      <span class="podcategory__name">Масла для лодочных моторов</span>
+                      <span class="podcategory__num">4</span>
+                    </a>
+                    <a href="#" class="podcategory__link">
+                      <span class="podcategory__name">Подкатегория</span>
+                      <span class="podcategory__num">56</span>
+                    </a>
+                  </div>
                 </div>
+              </div>
 
+              <div class="category__footer">
+                <a href="#" class="more-link">Перейти в категорию <i class="bx bx-chevron-right"></i></a>
               </div>
             </li>
             <!-- Категория -->
             <li class="category">
-              <!-- картинка -->
-              <picture class="category__img">
-                <source srcset="img/category/category-img_masla.webp" type="image/webp">
-                  <img class="" loading="lazy" src="img/category/category-img_masla.jpg" class="" width="80" height="80" alt="название категории">
-              </picture>
-
-              <div class="category__content">
-                <!-- Название подкатегории -->
-                <a href="#" class="category__name">Масла и Химия</a>
-
-                <!-- подкатегориии -->
-                <div class="podcategory podcategory--mini">
-                  <a href="#" class="podcategory__link">
-                    <span class="podcategory__name">Моторное масло</span>
-                    <span class="podcategory__num">276</span>
-                  </a>
-                  <a href="#" class="podcategory__link">
-                    <span class="podcategory__name">Вилочное масло</span>
-                    <span class="podcategory__num">39</span>
-                  </a>
-                  <a href="#" class="podcategory__link">
-                    <span class="podcategory__name">Трансмиссионное масло</span>
-                    <span class="podcategory__num">26</span>
-                  </a>
-                  <a href="#" class="podcategory__link">
-                    <span class="podcategory__name">Масло для аммортизатора</span>
-                    <span class="podcategory__num">4</span>
-                  </a>
-                  <a href="#" class="podcategory__link">
-                    <span class="podcategory__name">Смазка цепи</span>
-                    <span class="podcategory__num">11</span>
-                  </a>
-                  <a href="#" class="podcategory__link">
-                    <span class="podcategory__name">Антифриз</span>
-                    <span class="podcategory__num">11</span>
-                  </a>
-                  <a href="#" class="podcategory__link">
-                    <span class="podcategory__name">Тормозная жидкость</span>
-                    <span class="podcategory__num">23</span>
-                  </a>
-                  <a href="#" class="podcategory__link">
-                    <span class="podcategory__name">Очистители</span>
-                    <span class="podcategory__num">23</span>
-                  </a>
-                  <a href="#" class="podcategory__link">
-                    <span class="podcategory__name">Прочие жидкости</span>
-                    <span class="podcategory__num">46</span>
-                  </a>
-                  <a href="#" class="podcategory__link">
-                    <span class="podcategory__name">Масла для лодочных моторов</span>
-                    <span class="podcategory__num">4</span>
-                  </a>
-                  <a href="#" class="podcategory__link">
-                    <span class="podcategory__name">Подкатегория</span>
-                    <span class="podcategory__num">56</span>
-                  </a>
+              <div class="category__head">
+                <!-- картинка -->
+                <div class="category__img">
+                  <picture>
+                    <source srcset="img/category/category-img_masla.webp" type="image/webp">
+                      <img class="" loading="lazy" src="img/category/category-img_masla.jpg" width="80" height="80" alt="название категории">
+                  </picture>
                 </div>
+                <div class="category__content">
+                  <!-- Название подкатегории -->
+                  <a href="#" class="category__name">Масла и Химия</a>
 
-                <div class="category__footer">
-                  <a href="#" class="more-link">Перейти в категорию <i class="bx bx-chevron-right"></i></a>
+                  <!-- подкатегориии -->
+                  <div class="podcategory podcategory--mini">
+                    <a href="#" class="podcategory__link">
+                      <span class="podcategory__name">Моторное масло</span>
+                      <span class="podcategory__num">276</span>
+                    </a>
+                    <a href="#" class="podcategory__link">
+                      <span class="podcategory__name">Вилочное масло</span>
+                      <span class="podcategory__num">39</span>
+                    </a>
+                    <a href="#" class="podcategory__link">
+                      <span class="podcategory__name">Трансмиссионное масло</span>
+                      <span class="podcategory__num">26</span>
+                    </a>
+                    <a href="#" class="podcategory__link">
+                      <span class="podcategory__name">Масло для аммортизатора</span>
+                      <span class="podcategory__num">4</span>
+                    </a>
+                    <a href="#" class="podcategory__link">
+                      <span class="podcategory__name">Смазка цепи</span>
+                      <span class="podcategory__num">11</span>
+                    </a>
+                    <a href="#" class="podcategory__link">
+                      <span class="podcategory__name">Антифриз</span>
+                      <span class="podcategory__num">11</span>
+                    </a>
+                    <a href="#" class="podcategory__link">
+                      <span class="podcategory__name">Тормозная жидкость</span>
+                      <span class="podcategory__num">23</span>
+                    </a>
+                    <a href="#" class="podcategory__link">
+                      <span class="podcategory__name">Очистители</span>
+                      <span class="podcategory__num">23</span>
+                    </a>
+                    <a href="#" class="podcategory__link">
+                      <span class="podcategory__name">Прочие жидкости</span>
+                      <span class="podcategory__num">46</span>
+                    </a>
+                    <a href="#" class="podcategory__link">
+                      <span class="podcategory__name">Масла для лодочных моторов</span>
+                      <span class="podcategory__num">4</span>
+                    </a>
+                    <a href="#" class="podcategory__link">
+                      <span class="podcategory__name">Подкатегория</span>
+                      <span class="podcategory__num">56</span>
+                    </a>
+                  </div>
                 </div>
+              </div>
 
+              <div class="category__footer">
+                <a href="#" class="more-link">Перейти в категорию <i class="bx bx-chevron-right"></i></a>
               </div>
             </li>
             <!-- Категория -->
             <li class="category">
-              <!-- картинка -->
-              <picture class="category__img">
-                <source srcset="img/category/category-img_masla.webp" type="image/webp">
-                  <img class="" loading="lazy" src="img/category/category-img_masla.jpg" class="" width="80" height="80" alt="название категории">
-              </picture>
-
-              <div class="category__content">
-                <!-- Название подкатегории -->
-                <a href="#" class="category__name">Масла и Химия</a>
-
-                <!-- подкатегориии -->
-                <div class="podcategory podcategory--mini">
-                  <a href="#" class="podcategory__link">
-                    <span class="podcategory__name">Моторное масло</span>
-                    <span class="podcategory__num">276</span>
-                  </a>
-                  <a href="#" class="podcategory__link">
-                    <span class="podcategory__name">Вилочное масло</span>
-                    <span class="podcategory__num">39</span>
-                  </a>
-                  <a href="#" class="podcategory__link">
-                    <span class="podcategory__name">Трансмиссионное масло</span>
-                    <span class="podcategory__num">26</span>
-                  </a>
-                  <a href="#" class="podcategory__link">
-                    <span class="podcategory__name">Масло для аммортизатора</span>
-                    <span class="podcategory__num">4</span>
-                  </a>
-                  <a href="#" class="podcategory__link">
-                    <span class="podcategory__name">Смазка цепи</span>
-                    <span class="podcategory__num">11</span>
-                  </a>
-                  <a href="#" class="podcategory__link">
-                    <span class="podcategory__name">Антифриз</span>
-                    <span class="podcategory__num">11</span>
-                  </a>
-                  <a href="#" class="podcategory__link">
-                    <span class="podcategory__name">Тормозная жидкость</span>
-                    <span class="podcategory__num">23</span>
-                  </a>
-                  <a href="#" class="podcategory__link">
-                    <span class="podcategory__name">Очистители</span>
-                    <span class="podcategory__num">23</span>
-                  </a>
-                  <a href="#" class="podcategory__link">
-                    <span class="podcategory__name">Прочие жидкости</span>
-                    <span class="podcategory__num">46</span>
-                  </a>
-                  <a href="#" class="podcategory__link">
-                    <span class="podcategory__name">Масла для лодочных моторов</span>
-                    <span class="podcategory__num">4</span>
-                  </a>
-                  <a href="#" class="podcategory__link">
-                    <span class="podcategory__name">Подкатегория</span>
-                    <span class="podcategory__num">56</span>
-                  </a>
+              <div class="category__head">
+                <!-- картинка -->
+                <div class="category__img">
+                  <picture>
+                    <source srcset="img/category/category-img_masla.webp" type="image/webp">
+                      <img class="" loading="lazy" src="img/category/category-img_masla.jpg" width="80" height="80" alt="название категории">
+                  </picture>
                 </div>
+                <div class="category__content">
+                  <!-- Название подкатегории -->
+                  <a href="#" class="category__name">Масла и Химия</a>
 
-                <div class="category__footer">
-                  <a href="#" class="more-link">Перейти в категорию <i class="bx bx-chevron-right"></i></a>
+                  <!-- подкатегориии -->
+                  <div class="podcategory podcategory--mini">
+                    <a href="#" class="podcategory__link">
+                      <span class="podcategory__name">Моторное масло</span>
+                      <span class="podcategory__num">276</span>
+                    </a>
+                    <a href="#" class="podcategory__link">
+                      <span class="podcategory__name">Вилочное масло</span>
+                      <span class="podcategory__num">39</span>
+                    </a>
+                    <a href="#" class="podcategory__link">
+                      <span class="podcategory__name">Трансмиссионное масло</span>
+                      <span class="podcategory__num">26</span>
+                    </a>
+                    <a href="#" class="podcategory__link">
+                      <span class="podcategory__name">Масло для аммортизатора</span>
+                      <span class="podcategory__num">4</span>
+                    </a>
+                    <a href="#" class="podcategory__link">
+                      <span class="podcategory__name">Смазка цепи</span>
+                      <span class="podcategory__num">11</span>
+                    </a>
+                    <a href="#" class="podcategory__link">
+                      <span class="podcategory__name">Антифриз</span>
+                      <span class="podcategory__num">11</span>
+                    </a>
+                    <a href="#" class="podcategory__link">
+                      <span class="podcategory__name">Тормозная жидкость</span>
+                      <span class="podcategory__num">23</span>
+                    </a>
+                    <a href="#" class="podcategory__link">
+                      <span class="podcategory__name">Очистители</span>
+                      <span class="podcategory__num">23</span>
+                    </a>
+                    <a href="#" class="podcategory__link">
+                      <span class="podcategory__name">Прочие жидкости</span>
+                      <span class="podcategory__num">46</span>
+                    </a>
+                    <a href="#" class="podcategory__link">
+                      <span class="podcategory__name">Масла для лодочных моторов</span>
+                      <span class="podcategory__num">4</span>
+                    </a>
+                    <a href="#" class="podcategory__link">
+                      <span class="podcategory__name">Подкатегория</span>
+                      <span class="podcategory__num">56</span>
+                    </a>
+                  </div>
                 </div>
+              </div>
 
+              <div class="category__footer">
+                <a href="#" class="more-link">Перейти в категорию <i class="bx bx-chevron-right"></i></a>
               </div>
             </li>
             <!-- Категория -->
             <li class="category">
-              <!-- картинка -->
-              <picture class="category__img">
-                <source srcset="img/category/category-img_masla.webp" type="image/webp">
-                  <img class="" loading="lazy" src="img/category/category-img_masla.jpg" class="" width="80" height="80" alt="название категории">
-              </picture>
-
-              <div class="category__content">
-                <!-- Название подкатегории -->
-                <a href="#" class="category__name">Масла и Химия</a>
-
-                <!-- подкатегориии -->
-                <div class="podcategory podcategory--mini">
-                  <a href="#" class="podcategory__link">
-                    <span class="podcategory__name">Моторное масло</span>
-                    <span class="podcategory__num">276</span>
-                  </a>
-                  <a href="#" class="podcategory__link">
-                    <span class="podcategory__name">Вилочное масло</span>
-                    <span class="podcategory__num">39</span>
-                  </a>
-                  <a href="#" class="podcategory__link">
-                    <span class="podcategory__name">Трансмиссионное масло</span>
-                    <span class="podcategory__num">26</span>
-                  </a>
-                  <a href="#" class="podcategory__link">
-                    <span class="podcategory__name">Масло для аммортизатора</span>
-                    <span class="podcategory__num">4</span>
-                  </a>
-                  <a href="#" class="podcategory__link">
-                    <span class="podcategory__name">Смазка цепи</span>
-                    <span class="podcategory__num">11</span>
-                  </a>
-                  <a href="#" class="podcategory__link">
-                    <span class="podcategory__name">Антифриз</span>
-                    <span class="podcategory__num">11</span>
-                  </a>
-                  <a href="#" class="podcategory__link">
-                    <span class="podcategory__name">Тормозная жидкость</span>
-                    <span class="podcategory__num">23</span>
-                  </a>
-                  <a href="#" class="podcategory__link">
-                    <span class="podcategory__name">Очистители</span>
-                    <span class="podcategory__num">23</span>
-                  </a>
-                  <a href="#" class="podcategory__link">
-                    <span class="podcategory__name">Прочие жидкости</span>
-                    <span class="podcategory__num">46</span>
-                  </a>
-                  <a href="#" class="podcategory__link">
-                    <span class="podcategory__name">Масла для лодочных моторов</span>
-                    <span class="podcategory__num">4</span>
-                  </a>
-                  <a href="#" class="podcategory__link">
-                    <span class="podcategory__name">Подкатегория</span>
-                    <span class="podcategory__num">56</span>
-                  </a>
+              <div class="category__head">
+                <!-- картинка -->
+                <div class="category__img">
+                  <picture>
+                    <source srcset="img/category/category-img_masla.webp" type="image/webp">
+                      <img class="" loading="lazy" src="img/category/category-img_masla.jpg" width="80" height="80" alt="название категории">
+                  </picture>
                 </div>
+                <div class="category__content">
+                  <!-- Название подкатегории -->
+                  <a href="#" class="category__name">Масла и Химия</a>
 
-                <div class="category__footer">
-                  <a href="#" class="more-link">Перейти в категорию <i class="bx bx-chevron-right"></i></a>
+                  <!-- подкатегориии -->
+                  <div class="podcategory podcategory--mini">
+                    <a href="#" class="podcategory__link">
+                      <span class="podcategory__name">Моторное масло</span>
+                      <span class="podcategory__num">276</span>
+                    </a>
+                    <a href="#" class="podcategory__link">
+                      <span class="podcategory__name">Вилочное масло</span>
+                      <span class="podcategory__num">39</span>
+                    </a>
+                    <a href="#" class="podcategory__link">
+                      <span class="podcategory__name">Трансмиссионное масло</span>
+                      <span class="podcategory__num">26</span>
+                    </a>
+                    <a href="#" class="podcategory__link">
+                      <span class="podcategory__name">Масло для аммортизатора</span>
+                      <span class="podcategory__num">4</span>
+                    </a>
+                    <a href="#" class="podcategory__link">
+                      <span class="podcategory__name">Смазка цепи</span>
+                      <span class="podcategory__num">11</span>
+                    </a>
+                    <a href="#" class="podcategory__link">
+                      <span class="podcategory__name">Антифриз</span>
+                      <span class="podcategory__num">11</span>
+                    </a>
+                    <a href="#" class="podcategory__link">
+                      <span class="podcategory__name">Тормозная жидкость</span>
+                      <span class="podcategory__num">23</span>
+                    </a>
+                    <a href="#" class="podcategory__link">
+                      <span class="podcategory__name">Очистители</span>
+                      <span class="podcategory__num">23</span>
+                    </a>
+                    <a href="#" class="podcategory__link">
+                      <span class="podcategory__name">Прочие жидкости</span>
+                      <span class="podcategory__num">46</span>
+                    </a>
+                    <a href="#" class="podcategory__link">
+                      <span class="podcategory__name">Масла для лодочных моторов</span>
+                      <span class="podcategory__num">4</span>
+                    </a>
+                    <a href="#" class="podcategory__link">
+                      <span class="podcategory__name">Подкатегория</span>
+                      <span class="podcategory__num">56</span>
+                    </a>
+                  </div>
                 </div>
+              </div>
 
+              <div class="category__footer">
+                <a href="#" class="more-link">Перейти в категорию <i class="bx bx-chevron-right"></i></a>
               </div>
             </li>
           </ul>
